@@ -1,0 +1,18 @@
+# Projetos de exemplo
+- id: analytics-dashboard
+  title: "Analytics Dashboard"
+  short_description: "Painel interativo com métricas e visualizações para datasets de produção."
+  description: |
+    Projeto que demonstra visualizações interativas em Shiny, incluindo dashboards, filters and drill-downs.
+  categories:
+    - dashboard
+    - shiny
+  technologies:
+    - R
+    - shiny
+    - dplyr
+    - echarts4r
+  repo: "https://github.com/marcoleal/analytics-dashboard"
+  demo: "https://marcoleal.shinyapps.io/analytics-dashboard"
+  year: 2024
+  featured: true

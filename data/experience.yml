@@ -1,0 +1,9 @@
+- id: job-1
+  title: "Data Engineer"
+  company: "Empresa X"
+  start_date: "2022-01-01"
+  end_date: "2024-06-30"
+  location: "Remote"
+  responsibilities:
+    - "Construção de pipelines ETL com R e Airflow"
+    - "Modelagem de dados e geração de relatórios analíticos"

@@ -1,0 +1,6 @@
+- id: cert-1
+  name: "Certificação em Data Science"
+  issuer: "Instituição Y"
+  date: "2023-08-01"
+  credential_url: "https://example.com/cert"
+  description: "Curso e avaliação em técnicas de data science."
