@@ -6,8 +6,12 @@ mod_contact_server <- function(id) {
       name <- sanitize_input(input$name)
       email <- sanitize_input(input$email)
       message <- sanitize_input(input$message)
-      # In production: validate and send email / webhook securely
-      showNotification("Mensagem enviada (simulada)", type = "message")
+      # Basic validation
+      if (nzchar(name) && nzchar(email) && nzchar(message)) {
+        showNotification("Mensagem enviada (simulada)", type = "message")
+      } else {
+        showNotification("Por favor preencha todos os campos.", type = "error")
+      }
     })
   })
 }

@@ -10,6 +10,7 @@ addResourcePath("assets", normalizePath("assets", winslash = "/", mustWork = FAL
 
 source("utils/theme.R")
 source("utils/helpers.R")
+source("utils/components.R")
 
 ## Load YAML data (memoised)
 read_yaml_safe <- memoise::memoise(function(path) {

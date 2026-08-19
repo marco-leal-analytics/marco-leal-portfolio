@@ -15,6 +15,20 @@ $text-medium: #AAB6C8;
 $muted: #6B7280;
 $divider: rgba(255,255,255,0.06);
 
+// Interactive tokens
+$color-link: #06B6D4;
+$color-hover: rgba(59,130,246,0.14); // subtle hover overlay of primary
+$color-active: #2563EB;
+
+// Charts default palette (categorical)
+$chart-1: #06B6D4;
+$chart-2: #3B82F6;
+$chart-3: #7C3AED;
+$chart-4: #F59E0B;
+$chart-5: #10B981;
+$chart-6: #EF4444;
+$chart-7: #94A3B8;
+
 // Light mode equivalents (fallbacks)
 $color-primary-light: #2563EB;
 $surface-1-light: #FFFFFF;

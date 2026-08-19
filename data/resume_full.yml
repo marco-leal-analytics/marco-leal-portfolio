@@ -1,0 +1,188 @@
+name: "Marco Aurélio Valles Leal"
+contact:
+  email: "marcoaureliolv@gmail.com"
+  phone: "+55 44991443909"
+  links:
+    - github: "https://github.com/marco-leal-analytics"
+    - linkedin: "https://www.linkedin.com/in/marco-a-v-leal/"
+
+summary: |
+  Profissional de Dados com formação em Estatística pela Universidade Estadual de Maringá (UEM) e aproximadamente 5 anos de experiência em Data Analytics, Business Intelligence, Ciência de Dados, modelagem estatística, automação e engenharia de dados. 
+  
+  Experiência profissional em Crefaz como Cientista de Dados Pleno e Analista de Dados, e em Sicredi como Analista de Business Intelligence II, atuando em ambientes de crédito, risco, finanças, cooperativismo e operações. Forte atuação na transformação de dados em insights, indicadores,dashboards, estudos analíticos e suporte à tomada de decisão baseada em dados. Experiência com Python, SQL, R, Power BI, PySpark, Pandas, PostgreSQL, Luigi, UiPath e Git/GitLab, incluindo desenvolvimento de ETL, pipelines de dados, automações, integrações e soluções analíticas. Sólida base em estatística aplicada, modelagem preditiva, análise exploratória, regressão, métodos não paramétricos, validação cruzada e avaliação de modelos.Experiência na análise de políticas de crédito, indicadores financeiros e operacionais, governança de dados e identificação de oportunidades de eficiência. 
+
+  Orientado à geração de valor, com capacidade de conectar dados, estatística, tecnologia e necessidades de negócio para desenvolver soluções analíticas de ponta a ponta.
+
+
+competencies:
+  - Data Analytics e Data Science
+  - Business Intelligence e Advanced Analytics
+  - Análise Exploratória de Dados
+  - Modelagem Estatística e Preditiva
+  - Estatística Aplicada
+  - Data Visualization e Dashboards
+  - ETL/ELT e Data Pipelines
+  - Business Analysis e Decision Support
+  - Credit Analytics e Risk Analytics
+  - KPI Monitoring e Indicadores de Performance
+  - Automação de Processos
+  - Data Integration e Data Transformation
+  - Análise Financeira e Contábil
+  - Model Validation
+  - Governança e Monitoramento de Políticas de Crédito.
+
+tech_stack:
+  Linguagens de Programação: [Python, R, SQL, SAS, C]
+  Data Analytics: [Data Analysis, Exploratory Data Analysis, Data Transformation, Business Analysis, Analytical Studies, KPI Analysis]
+  Data Science: [Data Science, Predictive Modeling, Predictive Analytics, Model Validation, Scikit-learn]
+  Estatística: [Estatística Aplicada, Regressão, Modelos Lineares Generalizados, Análise de Sobrevivência, Análise Multivariada, Métodos Não Paramétricos, Modelos Estatísticos, Simulação Estatística, Viés e Variância, Modelos Aditivos, K-Fold, Leave-One-Out-Cross-Validation]
+  Business Intelligence e Visualização: [Microsoft Power BI, DAX, Linguagem M, Dashboards, Data Visualization, Indicadores de Performance, KPI Monitoring, Relatórios Gerenciais]
+  Bancos de Dados: [PostgreSQL, SQLite]
+  Engenharia de Dados: [ETL/ELT, Data Pipelines, Data Integration, Data Transformation, Modelagem Dimensional, Star Schema, Luigi, PySpark]
+  Bibliotecas e Frameworks: [Pandas, NumPy, PySpark, Scikit-learn, Dplyr, Shiny, RMarkdown, Selenium]
+  Automação e Integração: [Python Automation, UiPath, API Integration, Process Automation]
+  Ferramentas e Ambientes: [Jupyter Notebook, PyCharm, Visual Studio Code, Excel, SAS]
+  Versionamento: [Git, GitLab]
+
+
+
+experience:
+  - title: "Analista de Business Intelligence II"
+    company: "Sicredi Agroempresarial PR/SP"
+    location: "Mandaguari/PR"
+    start: "2024-02"
+    end: "2026-08"
+    bullets:
+      - Desenvolveu estudos analíticos e análises de dados para áreas contábil e financeira, abrangendo custos, demonstrativos contábeis, balanço patrimonial e custos rateados.
+      - Realizou extração, transformação, manipulação e análise de dados utilizando Python, R e ferramentas analíticas para suporte à tomada de decisão.
+      - Desenvolveu dashboards, relatórios gerenciais, visualizações e indicadores em Microsoft Power BI, apoiando o acompanhamento de resultados financeiros e contábeis.
+      - Desenvolveu automações de processos com Python e UiPath, direcionadas à redução de esforço operacional, custos e melhoria de eficiência.
+      - Estruturou pipeline de dados para extração, transformação e ingestão em PostgreSQL, utilizando Luigi em Python para orquestração das tarefas.
+      - Otimizou a aquisição diária de informações por meio de rotinas estruturadas de dados, reduzindo dependências manuais e aumentando a confiabilidade dos processos analíticos.
+      - Desenvolveu plataforma web para venda de ativos imobilizados a colaboradores, utilizando R, Shiny e PostgreSQL, integrando aplicação, dados e processo de negócio.
+
+
+  - title: "Cientista de Dados Pleno"
+    company: "Crefaz — Financiamentos e Investimentos"
+    location: "Maringá/PR"
+    start: "2023-01"
+    end: "2024-02"
+    bullets:
+      - Desenvolveu estudos analíticos de dados de crédito a partir do motor Crivo, apoiando o monitoramento de políticas de concessão e a análise da jornada de propostas.
+      - Avaliou, validou e apoiou a implantação de políticas de crédito, fornecendo análises para decisões relacionadas à aprovação, recusa, retenção e eficiência operacional da esteira.
+      - Utilizou R, Python e Power BI na construção de análises, relatórios, dashboards e indicadores de crédito.
+      - Desenvolveu dashboard analítico em Power BI para monitoramento da originação de propostas, desde a digitação até a aprovação para a mesa de análise.
+      - Monitorou regras de decisão parametrizadas no motor Crivo, analisando o impacto individual das políticas sobre o funil de aprovação, recusa e retenção.
+      - Desenvolveu visões analíticas por produto, matriz, hierarquia, modalidade, UF, companhia elétrica, vendedor, período e faixa horária.
+      - Criou indicadores de propostas digitadas, recusadas e aprovadas em P1, variação mês contra mês, acumulado por regra e impacto individual das políticas.
+      - Desenvolveu análises waterfall para identificar regras com maior influência sobre redução, retenção, recusa e aprovação de propostas.
+      - Atuou em conjunto com áreas de Crédito, Risco, Operações e Negócios, apoiando identificação de gargalos, governança das políticas e tomada de decisão baseada em dados.
+
+
+  - title: "Analista de Dados"
+    company: "Crefaz — Financiamentos e Investimentos"
+    location: "Maringá/PR"
+    start: "2021-05"
+    end: "2022-12"
+    bullets:
+      - Desenvolveu dashboards e painéis analíticos para acompanhamento de produção, propostas, mesa de análise, pagamentos e indicadores operacionais da esteira de crédito.
+      - Realizou extração, tratamento, consolidação e análise de dados para relatórios gerenciais, estudos analíticos e suporte às áreas de negócio.
+      - Desenvolveu rotina automatizada em Python, PySpark e Pandas para integração de relatórios entre os sistemas RBM e CODE durante processo de transição sistêmica.
+      - Estruturou regras de de-para e padronização de dados, contemplando status, produtos, etapas, decisões, datas, códigos de propostas, canais, subcanais e hierarquias comerciais.
+      - Realizou tratamento de duplicidades, conversão de tipos, padronização de datas e consolidação das bases para alimentação de relatórios e painéis de BI.
+      - Desenvolveu pipeline automatizado de indicadores de performance para envio diário às lojas via WhatsApp Enterprise, utilizando dados do Bitrix, R/RMarkdown e integração de API em Python.
+      - Estruturou indicadores relacionados a leads, contatos, conversão e performance comercial, ampliando a disponibilidade das informações para acompanhamento das áreas de negócio.
+
+
+education:
+  - degree: "MBA - Gestão Empresarial com ênfase em Finanças, Controladoria e Auditoria"
+    institution: "Fundação Getúlio Vargas"
+    start: "2026"
+    end: "Em andamento"
+  - degree: "Bacharelado em Estatística"
+    institution: "Universidade Estadual de Maringá — UEM"
+    start: "2017"
+    end: "2022"
+  - degree: "Técnico em Mecatrônica"
+    institution: "Serviço Nacional de Aprendizagem Industrial — SENAI-CTM"
+    start: "2012"
+    end: "2013"
+  - degree: "Informática Aplicada à Automação e Controle de Processos Industriais"
+    institution: "Serviço Nacional de Aprendizagem Industrial — SENAI-CTM"
+    start: "2010"
+    end: "2011"
+
+certifications:
+  - name: "Python - Fundamentos para Análise de Dados"
+    issuer: "Data Science Academy"
+    year: 2019
+  - name: "Microsoft Power BI para Business Intelligence e Data Science"
+    issuer: "Data Science Academy"
+    year: 2026
+  - name: "Fundamentos de Engenharia de Dados"
+    issuer: "Data Science Academy"
+    year: 2026
+
+projects:
+  - id: analytics-shiny-dashboard
+    title: "Análise de Crédito e Políticas de Aprovação — Motor Crivo"
+    short_description: "Desenvolvimento de dashboard analítico para monitoramento de políticas de crédito, acompanhando propostas desde a digitação até a aprovação para mesa de análise. O painel permitiu analisar volume de propostas, recusas, aprovações P1, variação mensal, acumulado por regra e impacto individual das políticas, incluindo análise waterfall.
+      Competências: Credit Analytics, Risk Analytics, Decision Science, Power BI, KPI Monitoring, Data Visualization e Policy Monitoring."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-shiny-dashboard
+    title: "Integração de Relatórios entre Sistemas Legado e Novo Sistema"
+    short_description: " Desenvolvimento de pipeline em Python, PySpark e Pandas para integração de relatórios entre os sistemas RBM e CODE durante período de transição sistêmica. A solução realizou de-para de campos, status, produtos, etapas, canais, subcanais e hierarquias, além de tratamento de duplicidades, padronização de datas e consolidação das bases.
+      Competências: ETL, Data Integration, PySpark, Pandas, Python, Data Transformation e BI."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-shiny-dashboard
+    title: "Integração de API para Envio de Indicadores via WhatsApp Enterprise"
+    short_description: "Desenvolvimento de pipeline automatizado para envio diário de indicadores de performance às lojas, contemplando métricas de atendimento de leads, volume de contatos, conversão e desempenho operacional. Utilização de Bitrix, R/RMarkdown, HTML/PNG e API integrada com Python para geração e distribuição automatizada dos indicadores.
+      Competências: Data Pipelines, API Integration, Python, R, RMarkdown, KPI Monitoring e Business Analytics."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-shiny-dashboard
+    title: "Automação de Atendimento via WhatsApp Enterprise"
+    short_description: "Desenvolvimento de solução automatizada para solicitações de resgate de sobras por associados, utilizando UiPath integrado ao fluxo de atendimento via WhatsApp Enterprise. A solução automatizou mais de 12 mil atendimentos e apoiou aproximadamente 63% dos resgates sobre o montante total de sobras distribuídas em 2024.
+      Competências: Automação, UiPath, Process Optimization, Data Operations e Business Efficiency."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-shiny-dashboard
+    title: "Automação de Processos com Python e UiPath"
+    short_description: "Desenvolvimento de automação corporativa com Python e UiPath para exclusão de mais de 5.000 associados inativos e sem reciprocidade, reduzindo a execução manual e contribuindo para diminuição de custos operacionais recorrentes. A iniciativa apresentou potencial de redução de custo fixo mensal estimado em aproximadamente R$ 14 mil, considerando custo médio de R$ 2,80 por associado.
+      Competências: Process Automation, Python, UiPath, Data Operations e Eficiência Operacional."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-shiny-dashboard
+    title: "Pipeline de Dados ETL com Python, Luigi e PostgreSQL"
+    short_description: "Desenvolvimento de processo estruturado para extração, transformação, orquestração e ingestão de dados em PostgreSQL, utilizando Python e Luigi. Solução aplicada à otimização da aquisição diária de informações e atualização de dashboards em Power BI.
+      Competências: ETL/ELT, Data Engineering, Data Pipelines, Python, Luigi, PostgreSQL e Power BI."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-shiny-dashboard
+    title: "Painel Interativo para Monitoramento da 15ª Regional de Saúde — COVID-19"
+    short_description: "Projeto de pesquisa e extensão em parceria com a Universidade Estadual de Maringá (UEM) e a 15ª Regional de Saúde do Paraná, com o objetivo de desenvolver um painel interativo em Shiny/R para monitoramento da COVID-19 nos municípios da região. O painel permitiu acompanhar a incidência de casos, evolução temporal e distribuição dos registros por município, apoiando a análise dos indicadores epidemiológicos. 
+      Competências: Data Analytics, Data Visualization, Shiny, R, Indicadores e Decision Support."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-shiny-dashboard
+    title: "Modelagem Estatística e Métodos Não Paramétricos — TCC"
+    short_description: "Trabalho acadêmico voltado à avaliação de métodos não paramétricos aplicados à predição em modelos aditivos, comparando Kernel Smoothing, LOESS e Splines de Regressão linear e cúbica. Aplicação de validação cruzada Leave-One-Out, seleção de hiperparâmetros, simulações estatísticas, análise de viés e variância e avaliação de desempenho preditivo. 
+      Competências: Estatística Aplicada, Modelagem Estatística, Modelagem Preditiva, Validação Cruzada, Simulação e Avaliação de Modelos."
+    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    featured: true
+  - id: analytics-dashboard
+    title: "Analytics Dashboard"
+    short_description: "Painel interativo com métricas e visualizações para datasets de produção."
+    repo: "https://github.com/marcoleal/analytics-dashboard"
+    demo: "https://marcoleal.shinyapps.io/analytics-dashboard"
+    featured: true

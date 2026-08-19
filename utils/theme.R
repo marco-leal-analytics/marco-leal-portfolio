@@ -9,10 +9,17 @@ design_tokens <- list(
   color_success = "#10B981",
   color_warning = "#F59E0B",
   color_error = "#EF4444",
+  color_info = "#60A5FA",
   surface_1 = "#0B1220",
   surface_2 = "#0F1724",
   text_high = "#E6EEF8",
-  text_medium = "#AAB6C8"
+  text_medium = "#AAB6C8",
+  muted = "#6B7280",
+  divider = "rgba(255,255,255,0.06)",
+  link = "#06B6D4",
+  hover = "rgba(59,130,246,0.14)",
+  active = "#2563EB",
+  charts = c("#06B6D4","#3B82F6","#7C3AED","#F59E0B","#10B981","#EF4444","#94A3B8")
 )
 
 app_theme <- function(mode = c("dark", "light")) {
@@ -31,7 +38,7 @@ app_theme <- function(mode = c("dark", "light")) {
       version = 5,
       bg = "#ffffff",
       fg = "#0f1724",
-      primary = "#2563EB",
+      primary = design_tokens$active,
       base_font = font_google("Inter"),
       heading_font = font_google("Merriweather")
     )
