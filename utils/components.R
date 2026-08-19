@@ -5,7 +5,7 @@ library(htmltools)
 ui_card <- function(title = NULL, subtitle = NULL, image = NULL, footer = NULL, ... ) {
   tagList(
     div(class = "ui-card",
-        if (!is.null(image)) tags$div(class = "card-image", tags$img(src = image, alt = safe_html(title), style = "width:100%; height:auto; border-radius:8px;")),
+        if (!is.null(image)) tags$div(class = "card-image", tags$img(src = image, alt = safe_html(title))),
         tags$div(class = "card-body",
                  if (!is.null(title)) tags$h4(title),
                  if (!is.null(subtitle)) tags$p(class = "muted", subtitle),

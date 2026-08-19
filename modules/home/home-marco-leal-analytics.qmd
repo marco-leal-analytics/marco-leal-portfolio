@@ -1,0 +1,679 @@
+---
+title: "Marco Leal"
+description: "Conheça a trajetória, visão e forma de atuação de Marco Aurélio Valles Leal."
+page-layout: full
+format:
+  html:
+    toc: false
+    self-contained: false
+css: ../../assets/css/app.css
+---
+
+<div class="mla-hero">
+
+<div class="hero-copy">
+
+<span class="eyebrow">MARCO LEAL . SOBRE</span>
+
+# Dados para entender.  
+# Estatística para explicar.  
+# Analytics para decidir.
+
+<div class="tag-row">
+<span class="mla-tag accent">Statistcs</span>
+<span class="mla-tag accent">Data Science</span>
+<span class="mla-tag accent">Analytics</span>
+<span class="mla-tag accent">Business Intelligence</span>
+<span class="mla-tag">Data Engineering</span>
+</div>
+
+</div>
+
+<div class="hero-visual">
+
+![](../../assets/www/foto_perfil.jpg){fig-alt="Marco Leal Analytics"}
+
+
+### Marco Aurélio Valles Leal
+
+<p class="hero-summary">
+Profissional de Dados com formação em Estatística e experiência em Data Analytics,
+Ciência de Dados, Business Intelligence, automação de processos, modelagem
+estatística e engenharia de dados — conectando análise técnica, contexto de negócio
+e tomada de decisão baseada em evidências.
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+::: {.kpi-grid}
+::: {.kpi-card}
+**Estatística**
+
+Formação acadêmica
+:::
+
+::: {.kpi-card}
+**5+ anos**
+
+Experiência em dados e analytics
+:::
+
+::: {.kpi-card}
+**Data → Decision**
+
+Orientação profissional
+:::
+
+::: {.kpi-card}
+**Business Value**
+
+Foco em impacto
+:::
+:::
+
+::: {.callout-success}
+## Meu posicionamento
+
+**Transformo dados em evidências, evidências em insights e insights em decisões capazes de gerar valor para o negócio.**
+:::
+
+---
+
+## Minha história
+
+Minha trajetória em dados começou pela **Estatística**, uma formação que me ensinou a olhar para a informação não apenas como um conjunto de números, mas como uma forma de compreender fenômenos, testar hipóteses, mensurar incertezas e apoiar decisões.
+
+Sou bacharel em Estatística pela **Universidade Estadual de Maringá (UEM)** e venho construindo minha carreira na interseção entre estatística, tecnologia e negócio. Minha experiência profissional passou por **análise de dados, Ciência de Dados, Business Intelligence, crédito, risco, finanças, automação e engenharia de dados**.
+
+Na **Crefaz**, atuei como Analista de Dados e posteriormente como **Cientista de Dados Pleno**, trabalhando com dados de crédito, políticas de aprovação, dashboards, estudos analíticos e indicadores para apoiar áreas de crédito, risco, operações e negócio.
+
+Essa experiência também me levou para problemas de integração e engenharia de dados: desenvolvi rotinas com **Python, PySpark e Pandas** para integrar sistemas, tratar duplicidades, padronizar informações e manter dashboards e indicadores durante uma transição sistêmica.
+
+No **Sicredi**, ampliei essa atuação para um ambiente corporativo com forte presença de indicadores financeiros e contábeis, automação e processos estruturados de dados. Trabalhei com Power BI, Python, R, UiPath, Postgres e Luigi, além de desenvolver uma aplicação web em R/Shiny integrada a banco de dados.
+
+Ao longo desse percurso, uma característica permaneceu constante: **a busca por transformar problemas reais em soluções analíticas úteis para quem precisa tomar decisões**.
+
+---
+
+## Quem sou eu como profissional
+
+Eu me posiciono como um profissional de dados com uma combinação que considero particularmente importante: **fundamentação estatística + capacidade técnica + entendimento do negócio**.
+
+Minha forma de trabalhar começa pelo problema, e não pela ferramenta.
+
+Antes de perguntar *"qual modelo posso usar?"*, procuro entender:
+
+- Qual decisão precisa ser tomada?
+- Qual problema estamos tentando resolver?
+- Que evidências existem?
+- Como os dados foram gerados?
+- Quais limitações e incertezas existem?
+- Como o resultado será utilizado pelo negócio?
+
+Essa abordagem influencia tanto minhas análises quanto a forma como desenvolvo dashboards, pipelines, automações e modelos.
+
+A experiência profissional registrada no currículo mostra essa combinação na prática: análise de políticas de crédito, indicadores de performance, dashboards executivos, automações, pipelines ETL e apoio à tomada de decisão.
+
+### Minha mentalidade analítica
+
+**Problema → Dados → Evidência → Análise → Insight → Decisão → Impacto**
+
+A tecnologia é o meio. O valor está na capacidade de responder melhor às perguntas que importam.
+
+::: {.insight-box .highlight}
+
+### O que a estatística representa para mim
+
+Estatística é mais do que uma coleção de métodos: é uma forma disciplinada de lidar com **variabilidade, incerteza, evidência e decisão**.
+
+É essa base que orienta minha forma de interpretar dados, avaliar modelos e questionar conclusões.
+
+:::
+
+---
+
+## Propósito
+
+Trabalhar com dados, para mim, significa ajudar organizações a **reduzir incertezas e tomar decisões melhores**.
+
+Dados podem mostrar o que aconteceu. Analytics pode ajudar a explicar por que aconteceu. Modelagem pode apoiar a antecipação de cenários. Business Intelligence pode tornar a informação acessível. Engenharia de dados pode criar a estrutura necessária para tudo isso funcionar de forma confiável.
+
+Meu propósito está justamente nessa conexão.
+
+Quero desenvolver soluções que aproximem **dados, pessoas e decisões**, transformando informação dispersa em conhecimento acionável e processos manuais em soluções mais estruturadas, automatizadas e escaláveis.
+
+---
+
+## Missão
+
+::: {.closing-statement}
+### Minha missão
+
+**Transformar dados em inteligência aplicada, utilizando estatística, tecnologia e visão de negócio para desenvolver soluções analíticas que apoiem decisões melhores e gerem valor mensurável.**
+:::
+
+---
+
+## Visão
+
+Minha visão profissional é evoluir continuamente na construção de soluções de **Analytics, Ciência de Dados e Estatística Aplicada**, ampliando a capacidade de conectar métodos quantitativos, tecnologia e estratégia.
+
+Busco desenvolver uma carreira orientada por:
+
+- excelência técnica;
+- aprendizado contínuo;
+- inovação aplicada;
+- Analytics avançado;
+- Ciência de Dados orientada a problemas reais;
+- engenharia de soluções analíticas;
+- comunicação clara de resultados;
+- geração de valor para o negócio.
+
+O objetivo não é simplesmente trabalhar com tecnologias mais sofisticadas, mas **utilizar tecnologia e conhecimento quantitativo para resolver problemas cada vez mais relevantes**.
+
+---
+
+## Valores
+
+::: {.insight-grid}
+::: {.insight-box}
+### Ética
+
+Dados devem ser utilizados com responsabilidade, transparência e respeito às pessoas e às organizações.
+
+**Na prática:** decisões analíticas devem ser sustentadas por evidências e premissas claras.
+:::
+
+::: {.insight-box}
+### Pensamento crítico
+
+Nem todo padrão é uma explicação. Nem toda correlação é causalidade.
+
+**Na prática:** questionar dados, hipóteses, métricas e resultados antes de transformá-los em decisão.
+:::
+
+::: {.insight-box}
+### Curiosidade
+
+Problemas complexos exigem perguntas melhores.
+
+**Na prática:** investigar causas, comportamentos, exceções e oportunidades que não aparecem na primeira leitura.
+:::
+
+::: {.insight-box}
+### Aprendizado contínuo
+
+Tecnologia e métodos evoluem constantemente.
+
+**Na prática:** manter uma postura de aprendizado em estatística, programação, engenharia, IA e negócio.
+:::
+
+::: {.insight-box}
+### Colaboração
+
+Dados geram valor quando são compreendidos por quem utiliza a informação.
+
+**Na prática:** trabalhar próximo das áreas de negócio e traduzir necessidades em soluções analíticas.
+:::
+
+::: {.insight-box}
+### Qualidade
+
+Uma análise precisa ser tecnicamente consistente e útil.
+
+**Na prática:** atenção à qualidade dos dados, validação, documentação, reprodutibilidade e comunicação.
+:::
+
+::: {.insight-box}
+### Responsabilidade
+
+Uma decisão baseada em dados continua sendo uma decisão humana.
+
+**Na prática:** explicitar limitações, riscos e incertezas dos resultados.
+:::
+
+::: {.insight-box}
+### Orientação a resultados
+
+Conhecimento analítico precisa chegar à prática.
+
+**Na prática:** conectar indicadores e análises a eficiência, custos, riscos, performance e decisões.
+:::
+:::
+
+---
+
+## Filosofia de trabalho
+
+Minha filosofia pode ser resumida em oito princípios:
+
+### 01 · Evidência antes de opinião
+
+Sempre que possível, decisões devem ser apoiadas por dados, hipóteses testáveis e critérios objetivos.
+
+### 02 · O problema vem antes da ferramenta
+
+Python, R, SQL, Power BI, Machine Learning ou qualquer outra tecnologia são instrumentos. A pergunta de negócio define a abordagem.
+
+### 03 · Estatística aplicada ao negócio
+
+Métodos quantitativos precisam ser traduzidos em conclusões compreensíveis e úteis.
+
+### 04 · Automação inteligente
+
+Automatizar não significa simplesmente eliminar tarefas manuais. Significa criar processos mais confiáveis, repetíveis e escaláveis.
+
+### 05 · Qualidade na origem
+
+Uma boa análise começa com dados confiáveis, bem estruturados e corretamente compreendidos.
+
+### 06 · Comunicação faz parte da análise
+
+Uma solução tecnicamente excelente perde valor se seus resultados não forem compreendidos.
+
+### 07 · Melhoria contínua
+
+Soluções analíticas devem evoluir com novos dados, novos problemas e novas necessidades.
+
+### 08 · Impacto como critério
+
+O sucesso de uma solução não está apenas no código ou no modelo, mas no valor que ela consegue gerar.
+
+---
+
+## Diferenciais profissionais
+
+::: {.metric-grid}
+::: {.metric-card}
+**Estatística**
+
+Fundamentação quantitativa para análise, modelagem e avaliação de incerteza.
+:::
+
+::: {.metric-card}
+**Analytics**
+
+Experiência transformando dados em estudos, indicadores e insights acionáveis.
+:::
+
+::: {.metric-card}
+**Negócio**
+
+Experiência em crédito, risco, finanças, contabilidade e performance operacional.
+:::
+
+::: {.metric-card}
+**Tecnologia**
+
+Python, R, SQL, Power BI, PySpark, Postgres, UiPath, Luigi, Shiny e Git/GitLab.
+:::
+:::
+
+### A combinação que me diferencia
+
+Minha proposta profissional não está em uma única competência isolada.
+
+Ela está na combinação:
+
+**Estatística + Dados + Tecnologia + Negócio + Comunicação**
+
+Essa combinação aparece tanto na experiência com estudos de crédito e políticas de aprovação quanto no desenvolvimento de dashboards, pipelines, automações e aplicações analíticas. fileciteturn4file0L97-L187
+
+Também existe uma dimensão importante de engenharia na minha trajetória. O currículo registra experiência com ETL/ELT, pipelines, Luigi, PySpark, modelagem dimensional, integração e transformação de dados. fileciteturn4file0L66-L77
+
+---
+
+## Principais áreas de atuação
+
+::: {.tech-grid}
+::: {.tech-card}
+### Data Science
+
+Aplicação de estatística, programação e modelagem para responder problemas analíticos e apoiar previsões e decisões.
+:::
+
+::: {.tech-card}
+### Data Analytics
+
+Exploração, tratamento, análise e interpretação de dados para encontrar padrões, explicar comportamentos e gerar insights.
+:::
+
+::: {.tech-card}
+### Estatística Aplicada
+
+Modelagem, regressão, métodos não paramétricos, validação, simulação e avaliação de desempenho.
+:::
+
+::: {.tech-card}
+### Business Intelligence
+
+Dashboards, indicadores, visualizações e estruturas de informação para acompanhamento da performance e tomada de decisão.
+:::
+
+::: {.tech-card}
+### Data Engineering
+
+ETL/ELT, integração, transformação, pipelines, orquestração e estruturação dos dados para consumo analítico.
+:::
+
+::: {.tech-card}
+### Data Visualization
+
+Construção de visualizações e dashboards que tornam padrões, indicadores e resultados mais compreensíveis.
+:::
+
+::: {.tech-card}
+### Automação
+
+Python, UiPath, APIs e processos estruturados para reduzir esforço manual e aumentar eficiência.
+:::
+
+::: {.tech-card}
+### Decision Science
+
+Uso combinado de dados, estatística, indicadores e contexto de negócio para apoiar decisões.
+:::
+:::
+
+Essas áreas estão diretamente relacionadas às competências e experiências descritas no currículo, incluindo análise de dados, modelagem estatística, dashboards, automação, ETL, crédito, risco e suporte à decisão. fileciteturn4file0L41-L55
+
+---
+
+## Competências estratégicas
+
+### Técnicas
+
+- Python
+- R
+- SQL
+- Power BI
+- Pandas
+- NumPy
+- PySpark
+- Scikit-learn
+- Dplyr
+- Shiny
+- RMarkdown
+- Postgres
+- SQLite
+- UiPath
+- Luigi
+- Git/GitLab
+
+A stack registrada no currículo também inclui SAS, DAX, Linguagem M, C, Selenium, Excel, PyCharm, Jupyter Notebook e Visual Studio Code. fileciteturn4file0L56-L77
+
+### Analíticas
+
+- Análise exploratória
+- Modelagem estatística
+- Regressão
+- Análise multivariada
+- Métodos não paramétricos
+- Kernel Smoothing
+- LOESS
+- Splines de regressão
+- Validação cruzada
+- Simulações estatísticas
+- Análise de viés e variância
+- Validação de modelos
+
+### Negócio
+
+- Crédito
+- Risco
+- Finanças
+- Contabilidade
+- Indicadores de performance
+- Políticas de crédito
+- Eficiência operacional
+- Monitoramento de processos
+- Suporte à tomada de decisão
+
+### Comunicação
+
+- Dashboards executivos
+- Relatórios gerenciais
+- Visualização de dados
+- Storytelling analítico
+- Tradução de problemas de negócio em análises quantitativas
+
+---
+
+## Áreas de interesse
+
+Meu interesse profissional está concentrado na evolução de soluções que aproximem **Analytics, Estatística, Ciência de Dados e tecnologia**.
+
+::: {.tag-row}
+<span class="mla-tag accent">Data Science</span>
+<span class="mla-tag accent">Machine Learning</span>
+<span class="mla-tag">Estatística</span>
+<span class="mla-tag">Advanced Analytics</span>
+<span class="mla-tag">Data Engineering</span>
+<span class="mla-tag">Business Intelligence</span>
+<span class="mla-tag">Artificial Intelligence</span>
+<span class="mla-tag">Credit Analytics</span>
+<span class="mla-tag">Risk Analytics</span>
+<span class="mla-tag">Financial Analytics</span>
+<span class="mla-tag">Decision Science</span>
+:::
+
+A base para essa direção já aparece na trajetória profissional, especialmente em Ciência de Dados aplicada a crédito, modelagem estatística, pipelines, BI e automação. fileciteturn4file0L97-L187
+
+---
+
+## Além dos dados
+
+Existe uma dimensão da carreira que não aparece em uma lista de tecnologias.
+
+É a curiosidade de entender **por que** algo acontece.
+
+É a vontade de aprender uma nova ferramenta porque ela pode resolver melhor um problema.
+
+É a satisfação de transformar uma rotina manual em um processo automatizado.
+
+É perceber que um dashboard não é apenas uma tela, mas uma forma de tornar uma decisão mais rápida.
+
+É investigar uma hipótese, encontrar uma evidência inesperada e descobrir uma nova pergunta.
+
+E é continuar evoluindo.
+
+Minha trajetória combina formação quantitativa, experiência corporativa e interesse contínuo por tecnologia e soluções analíticas. Essa combinação é o que pretendo levar para os próximos desafios profissionais.
+
+---
+
+## Frases de posicionamento
+
+::: {.insight-grid}
+::: {.insight-box}
+**01**
+
+Dados não substituem decisões. **Eles tornam decisões melhores.**
+:::
+
+::: {.insight-box}
+**02**
+
+**Estatística transforma incerteza em evidência.**
+:::
+
+::: {.insight-box}
+**03**
+
+Não basta encontrar padrões. **É preciso entender o que eles significam.**
+:::
+
+::: {.insight-box}
+**04**
+
+**Analytics conecta dados a decisões.**
+:::
+
+::: {.insight-box}
+**05**
+
+Um bom indicador informa. **Um bom insight orienta.**
+:::
+
+::: {.insight-box}
+**06**
+
+**Tecnologia escala soluções. Estatística dá rigor. Negócio dá direção.**
+:::
+
+::: {.insight-box}
+**07**
+
+Dados bem estruturados criam possibilidades. **Dados bem interpretados criam valor.**
+:::
+
+::: {.insight-box}
+**08**
+
+**Automatizar é transformar esforço operacional em capacidade analítica.**
+:::
+
+::: {.insight-box}
+**09**
+
+A melhor análise não é a mais complexa. **É a que responde melhor à pergunta certa.**
+:::
+
+::: {.insight-box}
+**10**
+
+**Evidência antes de opinião. Impacto antes de complexidade.**
+:::
+
+::: {.insight-box}
+**11**
+
+Ciência de Dados começa com tecnologia, **mas termina em decisão.**
+:::
+
+::: {.insight-box}
+**12**
+
+**Do dado ao insight. Do insight à decisão. Da decisão ao resultado.**
+:::
+:::
+
+---
+
+## Para recrutadores
+
+### O que você encontrará neste perfil
+
+Sou um profissional de dados com formação em Estatística e experiência multidisciplinar em **Analytics, Ciência de Dados, Business Intelligence, automação e engenharia de dados**. Minha trajetória inclui atuação como Cientista de Dados Pleno e Analista de Dados, além de experiência em BI e ambientes corporativos. fileciteturn4file0L78-L124
+
+### Principais competências
+
+- Forte base estatística.
+- Python, R e SQL.
+- Power BI e visualização de dados.
+- ETL, pipelines e integração de dados.
+- Automação com Python e UiPath.
+- Análise de crédito e risco.
+- Analytics financeiro e operacional.
+- Modelagem estatística e validação.
+- Dashboards e indicadores.
+- Comunicação orientada ao negócio.
+
+### O tipo de desafio que procuro
+
+Busco ambientes nos quais possa combinar **capacidade analítica, estatística, tecnologia e visão de negócio** para desenvolver soluções de dados com aplicação prática.
+
+Tenho especial interesse em desafios relacionados a **Data Science, Data Analytics, Advanced Analytics, Estatística Aplicada, Business Intelligence, Data Engineering e Decision Science**.
+
+### O valor que posso gerar
+
+Posso contribuir desde a preparação e estruturação dos dados até a análise, modelagem, visualização e automação do processo analítico — sempre buscando conectar a solução técnica à decisão que precisa ser tomada.
+
+Minha experiência inclui projetos que automatizaram mais de **5 mil exclusões de associados**, com potencial estimado de redução de custo fixo mensal de aproximadamente **R$ 14 mil**, além de uma solução de atendimento automatizado que processou mais de **12 mil atendimentos**. fileciteturn4file0L158-L167
+
+Também desenvolvi soluções de integração de dados, pipelines e envio automatizado de indicadores, ampliando a disponibilidade das informações para as áreas de negócio. fileciteturn4file0L168-L180
+
+::: {.callout-success}
+### Em uma frase
+
+**Sou um profissional de dados com base estatística e experiência prática em Analytics, tecnologia e negócio, orientado a transformar problemas complexos em soluções analíticas que apoiam decisões e geram valor.**
+:::
+
+---
+
+## Minha evolução profissional
+
+<div class="timeline">
+
+**2017–2022 · Formação em Estatística**
+
+Bacharelado em Estatística pela Universidade Estadual de Maringá, com aprofundamento em modelagem, métodos estatísticos, simulação e avaliação de modelos. fileciteturn4file0L188-L195
+
+**2021–2022 · Data Analytics**
+
+Atuação como Analista de Dados na Crefaz, com dashboards, extração, tratamento, consolidação e automação de dados. fileciteturn4file0L122-L140
+
+**2023–2024 · Data Science**
+
+Atuação como Cientista de Dados Pleno, com foco em crédito, políticas de aprovação, estudos analíticos, indicadores e apoio à tomada de decisão. fileciteturn4file0L97-L121
+
+**2024–2026 · BI + Analytics + Engenharia de Dados**
+
+Atuação no Sicredi com análise financeira e contábil, Power BI, automação, pipelines em Python/Luigi/Postgres e desenvolvimento de aplicação web em R/Shiny. fileciteturn4file0L78-L95
+
+**2026 · Próximo ciclo**
+
+Continuidade da evolução em Analytics, Ciência de Dados, Estatística Aplicada e soluções orientadas a valor.
+</div>
+
+---
+
+## O que vem pela frente
+
+O próximo capítulo da minha trajetória é aprofundar a conexão entre **estatística, Ciência de Dados, Analytics avançado e engenharia de soluções analíticas**.
+
+Quero participar de problemas nos quais dados não sejam apenas utilizados para gerar relatórios, mas para:
+
+- explicar comportamentos;
+- antecipar cenários;
+- identificar oportunidades;
+- reduzir riscos;
+- melhorar processos;
+- automatizar decisões operacionais;
+- apoiar decisões estratégicas;
+- gerar vantagem competitiva.
+
+::: {.closing-statement}
+### Dados • Estatística • Inteligência • Resultados
+
+**Meu objetivo é continuar evoluindo como profissional de dados enquanto transformo problemas reais em soluções que façam diferença.**
+:::
+
+---
+
+## Vamos conversar?
+
+Se você está construindo uma equipe de **Data Science, Analytics, Business Intelligence ou Data Engineering**, ou se possui um problema que pode ser melhor resolvido com dados, vamos conversar.
+
+<div class="contact-panel">
+
+### Marco Leal Analytics
+
+**Marco Aurélio Valles Leal**
+
+Cientista de Dados · Analytics · Estatística Aplicada · Business Intelligence
+
+[Conectar no LinkedIn]({{< meta linkedin >}}) · [Ver GitHub]({{< meta github >}}) · [Conhecer o portfólio]({{< meta portfolio >}})
+
+</div>
+
+::: {.brand-footer}
+**MARCO LEAL ANALYTICS**
+
+Dados • Estatística • Inteligência • Resultados
+:::

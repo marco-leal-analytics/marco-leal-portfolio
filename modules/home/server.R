@@ -281,14 +281,14 @@ mod_home_server <- function(id) {
       rd <- resume_data()
       comps <- rd$competencies
       if (is.null(comps)) return(NULL)
-      tags$ul(lapply(comps, function(x) tags$li(style = "color:#e6eef8;", x)))
+      tags$ul(lapply(comps, function(x) tags$li(class = "resume-competency", x)))
     })
 
     output$name_title <- renderUI({
       rd <- resume_data()
       tags$div(
         tags$span(rd$name),
-        tags$div(style = "font-size:14px; color:#6b7280;", "Data & Analytics | Data Science | Business Intelligence | Estatística Aplicada 
+        tags$div(class = "home-headline", "Data & Analytics | Data Science | Business Intelligence | Estatística Aplicada
 ")
       )
     })

@@ -7,6 +7,7 @@ library(memoise)
 
 # Expose assets/ via resource path so static files (css, img) are served
 addResourcePath("assets", normalizePath("assets", winslash = "/", mustWork = FALSE))
+addResourcePath("home-document", normalizePath(file.path("modules", "home"), winslash = "/", mustWork = FALSE))
 
 source("utils/theme.R")
 source("utils/helpers.R")

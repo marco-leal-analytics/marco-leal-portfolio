@@ -49,7 +49,7 @@ mod_projects_server <- function(id) {
         embed_src <- p$embed %||% p$demo %||% p$repo %||% NULL
         embed_ui <- NULL
         if (!is.null(embed_src) && nzchar(embed_src)) {
-          embed_ui <- tags$iframe(src = embed_src, style = "width:100%; height:600px; border:1px solid rgba(255,255,255,0.04); border-radius:8px;", sandbox = NULL)
+          embed_ui <- tags$iframe(src = embed_src, class = "project-frame", sandbox = NULL)
         }
 
         tabPanel(title,
