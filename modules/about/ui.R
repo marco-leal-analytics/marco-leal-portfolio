@@ -3,15 +3,36 @@ library(shiny)
 mod_about_ui <- function(id) {
   ns <- NS(id)
   tagList(
-    ui_card(title = "Sobre",
-            subtitle = "Biografia e competências",
-            image = NULL,
-            footer = NULL,
-            tags$p("Biografia curta. Competências técnicas e diferenciais.")
+    ui_card(
+      title = "Sobre",
+      subtitle = "Biografia e proposta de valor",
+      image = NULL,
+      footer = NULL,
+      tags$div(
+        tags$p("Sou um profissional de dados com foco em construir soluções analíticas e produtos de dados que transformam decisões de negócio. Minha abordagem combina engenharia de dados, análise avançada e visualização para entregar insights acionáveis rapidamente."),
+        tags$p("Este portfólio apresenta experiências, projetos e competências organizadas para uma leitura objetiva — ideal para recrutadores e gestores que precisam avaliar fit técnico e impacto em menos de 10 segundos."),
+        tags$h4("Proposta de valor"),
+        tags$ul(
+          tags$li("Entregar dashboards e pipelines confiáveis que reduzem o tempo para decisão"),
+          tags$li("Traduzir problemas de negócio em análises replicáveis e automatizadas"),
+          tags$li("Comunicar resultados com clareza para times técnicos e não-técnicos")
+        ),
+        tags$h4("Principais conquistas"),
+        tags$ul(
+          tags$li("Liderança técnica em projetos de analytics end-to-end"),
+          tags$li("Implementação de pipelines que reduziram latência de dados e custos operacionais"),
+          tags$li("Desenvolvimento de soluções de machine learning para classificação e recomendação")
+        ),
+        tags$h4("Call to action"),
+        tags$p("Para um resumo detalhado, faça download do CV ou veja a aba Home. Para contato direto, use a seção 'Contatos' no lado esquerdo."),
+        tags$p(tags$a(href = "assets/www/Marco-Aurelio-Valles-Leal.pdf", "Download CV (PDF)", target = "_blank", rel = "noopener noreferrer"))
+      )
     ),
+
     div(class = "py-4",
-        h3("Competências"),
-        uiOutput(ns("skills"))
+        h3("Competências técnicas e ferramentas"),
+        uiOutput(ns("skills")),
+        tags$p("Principais áreas: Análise de Dados, Engenharia de Dados, Estatística Aplicada, Visualização e Machine Learning.")
     )
   )
 }
