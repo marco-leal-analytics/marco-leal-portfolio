@@ -16,9 +16,11 @@ mod_resume_ui <- function(id) {
         ),
         tags$div(
           class = "tag-row",
-          tags$span(class = "mla-tag accent", "Estatística"),
-          tags$span(class = "mla-tag", "Data Science"),
-          tags$span(class = "mla-tag", "Business Intelligence")
+          tags$span(class = "mla-tag accent", "Statistics"),
+          tags$span(class = "mla-tag accent", "Data Science"),
+          tags$span(class = "mla-tag accent", "Data Analytics"),
+          tags$span(class = "mla-tag accent", "Business Intelligence"),
+          tags$span(class = "mla-tag accent", "Data Engineering")
         )
       ),
       tags$div(
@@ -27,6 +29,58 @@ mod_resume_ui <- function(id) {
       )
     ),
     
+      fluidRow(
+         column(3,
+                HTML('
+                      <div class="callout-success">
+                        <h2>Propósito</h2>
+                        <p>
+                          Trabalhar com dados, para mim, significa ajudar organizações a reduzir
+                          incertezas e tomar decisões melhores. Quero desenvolver soluções que
+                          aproximem dados, pessoas e decisões, transformando informação dispersa
+                          em conhecimento acionável e processos manuais em soluções mais
+                          estruturadas, automatizadas e escaláveis.
+                        </p>
+                      </div>
+                    ')
+               ),
+         column(3,
+               HTML('
+                  <div class="callout-success">
+                    <h2>Visão</h2>
+                    <p>
+                      Minha visão profissional é evoluir continuamente na construção de
+                      soluções de Analytics, Ciência de Dados e Estatística Aplicada,
+                      ampliando a capacidade de conectar métodos quantitativos, tecnologia
+                      e estratégia.
+                    </p>
+                  </div>
+                        ')
+                  ),
+         column(3,
+                HTML('
+                    <div class="callout-success">
+                      <h2>Missão</h2>
+                      <p>
+                        Transformar dados em inteligência aplicada, utilizando estatística,
+                        tecnologia e visão de negócio para desenvolver soluções analíticas
+                        que apoiem decisões melhores e gerem valor mensurável.
+                      </p>
+                    </div>
+                    ')
+                  ),
+         column(3,
+                HTML('
+    <div class="callout-success">
+      <h2>Objetivo</h2>
+      <p>
+        Meu objetivo é continuar evoluindo como profissional de dados enquanto
+        transformo problemas reais em soluções que façam diferença.
+      </p>
+    </div>
+  ')
+         )
+                ),
 
 
 
@@ -56,6 +110,7 @@ mod_resume_ui <- function(id) {
                             tags$div(class = "resume-name", uiOutput(ns("name_title")) ),
                             tags$div(class = "resume-title", uiOutput(ns("headline")))
                    ),
+     
 
                    tags$div(class = "section", id = ns("education"),
                             tags$div(class = "section-title", "Formação Acadêmica"),
@@ -67,22 +122,41 @@ mod_resume_ui <- function(id) {
                             tags$div(class = "timeline", uiOutput(ns("experience_timeline")))
                    ),
 
-                   tags$div(class = "section", id = ns("tech"),
-                            tags$div(class = "section-title", "Tech Stack · Competências · Certificações"),
-                            tags$div(class = "three-col-row",
-                                     tags$div(class = "three-col-item",
-                                              tags$div(class = "section-subtitle", "Tech Stack"),
-                                              uiOutput(ns("tech_stack"))
-                                     ),
-                                     tags$div(class = "three-col-item",
-                                              tags$div(class = "section-subtitle", "Competências"),
-                                              uiOutput(ns("competencies_text"))
-                                     ),
-                                     tags$div(class = "three-col-item",
-                                              tags$div(class = "section-subtitle", "Certificações"),
-                                              uiOutput(ns("certifications_list"))
-                                     )
-                            )
+                   tags$div(
+                              class = "section",
+                              id = ns("tech"),
+
+                              tags$div(
+                                class = "section-title",
+                                "Competências e Tecnologias"
+                              ),
+
+                              tags$div(
+                                class = "two-col-row",
+
+                                tags$div(
+                                  class = "two-col-item",
+                                  tags$div(
+                                    class = "section-subtitle",
+                                    "Tech Stack"
+                                  ),
+                                  uiOutput(ns("tech_stack"))
+                                ),
+
+                                tags$div(
+                                  class = "two-col-item",
+                                  tags$div(
+                                    class = "section-subtitle",
+                                    "Competências e Especialidades"
+                                  ),
+                                  uiOutput(ns("competencies_text"))
+                                )
+                              )
+                            ),
+
+                   tags$div(class = "section", id = ns("certifications"),
+                            tags$div(class = "section-title", "Certificações"),
+                            uiOutput(ns("certifications_list"))
                    ),
 
                    tags$div(class = "section", id = ns("languages"),
@@ -104,7 +178,8 @@ mod_resume_ui <- function(id) {
     tags$nav(class = "sticky-side-nav",
              tags$a(href = paste0("#", ns("education")), "Formação"),
              tags$a(href = paste0("#", ns("experience")), "Experiência"),
-             tags$a(href = paste0("#", ns("tech")), "Tech Stack"),
+             tags$a(href = paste0("#", ns("tech")), "Competências"),
+             tags$a(href = paste0("#", ns("certifications")), "Certificações"),
              tags$a(href = paste0("#", ns("languages")), "Idiomas"),
              tags$a(href = paste0("#", ns("projects")), "Projetos")
     )

@@ -1,0 +1,341 @@
+---
+output:
+  pdf_document:
+    toc: false
+    toc_depth: 4
+    keep_tex: no
+    number_sections: false
+fontsize: 10pt 
+documentclass: article
+classoption: a4paper
+lang: pt-br
+mainfont: Arial
+sansfont: Arial
+monofont: Arial
+indent: true
+nocite: '@*'
+# bibliography: references.bib
+header-includes:
+  - \usepackage{geometry}
+  - \geometry{headheight=30pt,left=1cm,bottom=0.5cm,top=0.5cm,right=1cm}
+  - \usepackage{graphicx}
+  - \usepackage{hyperref}
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[onehalfspacing]{setspace}
+  - \usepackage{fancyhdr}
+  - \usepackage{stmaryrd}
+  - \usepackage{eqnarray,amsmath}
+  - \usepackage{float}
+  - \usepackage[numbers,sort&compress]{natbib}
+  - \usepackage{pdfpages}
+  - \usepackage{booktabs}
+  - \usepackage{mdframed}
+  - \usepackage{stackrel}
+  - \usepackage{ragged2e}
+  - \usepackage{etoolbox}
+  - \usepackage{lipsum}
+  - \usepackage{multicol}
+  - \usepackage{caption}
+---
+
+
+
+
+
+```{r setup, include=FALSE}
+library(yaml)
+library(knitr)
+library(dplyr)
+
+cv <- yaml::read_yaml("../../data/resume_full.yml")
+foto_perfil <- "assets/www/foto_perfil.jpg"
+```
+
+\begin{center}
+\begin{minipage}[c]{0.20\textwidth} \centering \includegraphics[width=0.90\linewidth]{../../assets/www/foto_perfil.jpg} 
+\end{minipage} 
+\hfill 
+\begin{minipage}[c]{0.75\textwidth} 
+{\Huge\textbf{Marco Aurélio Valles Leal}} 
+\vspace{0.15cm}
+
+{\large Data Scientist \textbar{} Data Analyst \textbar{} Data \& Analytics \textbar{} Business Intelligence \textbar{} Statistics } \vspace{0.15cm} Python \textbar{} SQL \textbar{} R \textbar{} Power BI \textbar{} PySpark \textbar{} PostgreSQL 
+
+\vspace{0.25cm}
+
+\begin{minipage}[c]{0.45\textwidth}
+
+\textbf{E-mail:} \href{mailto:`r cv$contact$email`}{`r cv$contact$email`} 
+
+\textbf{Telefone:} `r cv$contact$phone`
+
+\end{minipage} 
+\hfill
+\begin{minipage}[c]{0.55\textwidth} 
+\href{`r cv$contact$links[[1]]$github`}{\textbf{GitHub}} 
+\hspace{0.5cm} 
+\href{`r cv$contact$links[[2]]$linkedin`}{\textbf{LinkedIn}} 
+\hspace{0.5cm} 
+\href{`r cv$contact$links[[3]]$portfolio`}{\textbf{Portfólio}} 
+\end{minipage}
+
+\end{minipage} 
+\end{center} 
+\vspace{0.25cm} 
+\hrule 
+\vspace{0.40cm}
+
+# Resumo Profissional
+
+\begin{multicols}{2}
+`r cv$summary`
+
+\end{multicols}
+\hrule 
+
+# Principais Competências
+
+\begin{multicols}{2}
+
+\begin{itemize}
+```{r echo=FALSE, results='asis'}
+cat(paste0(
+  "\\item ", unlist(cv$competencies),
+  collapse = "\n"
+))
+```
+\end{itemize}
+\end{multicols}
+
+\hrule 
+
+# Stack Tecnológica
+
+
+\begin{multicols}{2}
+
+\begin{itemize}
+```{r echo=FALSE, results='asis'}
+for(cat_name in names(cv$tech_stack)){
+
+  cat("\n\n \\item \\textbf{", cat_name, ":} \n")
+
+  items <- paste(unlist(cv$tech_stack[[cat_name]]),
+                 collapse = " \\textbar{} ")
+
+  cat(items, "\n")
+}
+```
+\end{itemize}
+\end{multicols}
+
+\hrule 
+
+
+```{r echo=FALSE, results='asis', include=FALSE}
+# for(exp in cv$experience){
+# 
+#   cat("\n\n## ", exp$title, "\n")
+# 
+#   cat(
+#     paste0(
+#       "\n**",
+#       exp$company,
+#       " | ",
+#       exp$location,
+#       " | ",
+#       exp$start,
+#       " - ",
+#       exp$end,
+#       "**\n\n"
+#     )
+#   )
+# 
+#   for(item in exp$bullets){
+#     cat("- ", item, "\n")
+#   }
+# }
+
+```
+
+# Experiência Profissional
+
+```{r echo=FALSE, results='asis'}
+
+# ------------------------------------------------------------
+# Função recursiva para renderizar bullets da experiência
+# ------------------------------------------------------------
+
+render_bullets_md <- function(bullets, level = 0) {
+
+  if (is.null(bullets) || length(bullets) == 0) {
+    return()
+  }
+
+  for (item in bullets) {
+
+    # --------------------------------------------------------
+    # Compatibilidade com estrutura antiga:
+    # - "Texto"
+    # --------------------------------------------------------
+
+    if (is.character(item)) {
+
+      cat(
+        strrep("  ", level),
+        "- ",
+        item,
+        "\n",
+        sep = ""
+      )
+
+      next
+    }
+
+    # --------------------------------------------------------
+    # Nova estrutura:
+    # - text: "Texto"
+    #   subbullets:
+    #     - "Subtexto"
+    # --------------------------------------------------------
+
+    text <- item$text
+
+    if (!is.null(text) && nzchar(text)) {
+
+      cat(
+        strrep("  ", level),
+        "- ",
+        text,
+        "\n",
+        sep = ""
+      )
+    }
+
+    # --------------------------------------------------------
+    # Subbullets
+    # --------------------------------------------------------
+
+    subbullets <- item$subbullets
+
+    # Compatibilidade temporária com "subbulets"
+    if (is.null(subbullets)) {
+      subbullets <- item$subbulets
+    }
+
+    if (!is.null(subbullets) && length(subbullets) > 0) {
+
+      render_bullets_md(
+        subbullets,
+        level = level + 1
+      )
+    }
+  }
+}
+
+
+# ------------------------------------------------------------
+# Experiência Profissional
+# ------------------------------------------------------------
+
+for (exp in cv$experience) {
+
+  cat("\n\n## ", exp$title, "\n", sep = "")
+
+  cat(
+    "\n**",
+    exp$company,
+    " | ",
+    exp$location,
+    " | ",
+    exp$start,
+    " - ",
+    exp$end,
+    "**\n\n",
+    sep = ""
+  )
+
+  render_bullets_md(exp$bullets)
+}
+
+```
+
+
+
+\hrule 
+# Projetos Relevantes
+
+```{r echo=FALSE, results='asis'}
+for(project in cv$projects){
+
+  cat("\n\n## ", project$title, "\n")
+
+  if(!is.null(project$short_description)){
+    cat("\n", gsub("<br>", " ", project$short_description), "\n")
+  }
+
+  # if(!is.null(project$repo)){
+  #   cat("\n**GitHub:** ", project$repo, "\n")
+  # }
+  # 
+  # if(!is.null(project$demo)){
+  #   cat("\n**Demo:** ", project$demo, "\n")
+  # }
+
+  cat("\n")
+}
+```
+
+\hrule 
+
+# Formação Acadêmica
+
+
+
+```{r echo=FALSE, results='asis'}
+for(ed in cv$education){
+
+  cat("\n\n## ", ed$degree, "\n")
+
+  cat(
+    "\n",
+    ed$institution,
+    " (",
+    ed$start,
+    " - ",
+    ed$end,
+    ")\n"
+  )
+}
+```
+
+\hrule 
+
+# Certificações
+
+```{r echo=FALSE, results='asis'}
+for(cert in cv$certifications){
+
+  cat(
+    "\n- ",
+    cert$name,
+    " — ",
+    cert$issuer,
+    " (",
+    cert$year,
+    ")"
+  )
+}
+```
+
+\hrule 
+
+# Idiomas
+
+- Inglês — Intermediário
+
+\hrule 
+
+# Competências-Chave
+
+Data Science • Data Analytics • Business Intelligence • Estatística Aplicada • Data Engineering • Python • R • SQL • Power BI • ETL • Data Pipelines • Credit Analytics • Risk Analytics • Modelagem Estatística • Automação • Business Analysis • Decision Support

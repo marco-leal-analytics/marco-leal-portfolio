@@ -165,23 +165,183 @@ mod_resume_server <- function(id) {
       tagList(items)
     })
 
-    ## Timeline-style experience
-    output$experience_timeline <- renderUI({
-      rd <- resume_data()
-      if (is.null(rd$experience) || length(rd$experience) == 0) return(tags$p("Nenhuma experiência disponível."))
-      items <- lapply(rd$experience, function(exp) {
-        date_range <- if (!is.null(exp$end) && nzchar(exp$end)) paste0(fmt_br(exp$start), " — ", fmt_br(exp$end)) else fmt_br(exp$start)
-        tags$div(class = "timeline-item",
-                 tags$div(class = "timeline-date", date_range),
-                 tags$div(class = "timeline-content",
-                          tags$h5(paste0(exp$title, " — ", exp$company)),
-                          tags$div(class = "meta", exp$location %||% ""),
-                          tags$ul(lapply(exp$bullets, tags$li))
-                 )
+
+ render_experience_bullets <- function(bullets, level = 1) {
+
+  if (is.null(bullets) || length(bullets) == 0) {
+    return(NULL)
+  }
+
+  # Classe CSS de acordo com o nível
+  ul_class <- switch(
+    as.character(level),
+    "1" = "experience-bullets",
+    "2" = "experience-subbullets",
+    "3" = "experience-subsubbullets",
+    "experience-subsubbullets"
+  )
+
+  tags$ul(
+    class = ul_class,
+
+    lapply(bullets, function(bullet) {
+
+      # ---------------------------------------------------------
+      # Estrutura antiga:
+      # - "Texto"
+      # ---------------------------------------------------------
+      if (is.character(bullet)) {
+
+        return(
+          tags$li(
+            class = paste0(
+              "experience-bullet-level-",
+              level
+            ),
+
+            bullet
+          )
         )
-      })
-      tagList(items)
+      }
+
+      # ---------------------------------------------------------
+      # Estrutura nova:
+      # - text: "Texto"
+      #   subbullets:
+      #     - "Subtexto"
+      # ---------------------------------------------------------
+
+      bullet_text <- bullet$text %||% ""
+
+      # Aceita a estrutura correta "subbullets"
+      # e também tolera temporariamente o erro "subbulets"
+      subbullets <- bullet$subbullets
+
+      if (is.null(subbullets)) {
+        subbullets <- bullet$subbulets
+      }
+
+      tags$li(
+        class = paste0(
+          "experience-bullet-level-",
+          level
+        ),
+
+        tags$span(
+          class = "bullet-text",
+          bullet_text
+        ),
+
+        # -------------------------------------------------------
+        # Renderiza recursivamente os subbullets
+        # -------------------------------------------------------
+        if (!is.null(subbullets) && length(subbullets) > 0) {
+
+          render_experience_bullets(
+            subbullets,
+            level = level + 1
+          )
+
+        }
+      )
     })
+  )
+}
+    ## Timeline-style experience
+    # output$experience_timeline <- renderUI({
+    #   rd <- resume_data()
+    #   if (is.null(rd$experience) || length(rd$experience) == 0) return(tags$p("Nenhuma experiência disponível."))
+    #   items <- lapply(rd$experience, function(exp) {
+    #     date_range <- if (!is.null(exp$end) && nzchar(exp$end)) paste0(fmt_br(exp$start), " — ", fmt_br(exp$end)) else fmt_br(exp$start)
+    #     tags$div(class = "timeline-item",
+    #              tags$div(class = "timeline-date", date_range),
+    #              tags$div(class = "timeline-content",
+    #                       tags$h5(paste0(exp$title, " — ", exp$company)),
+    #                       tags$div(class = "meta", exp$location %||% ""),
+    #                       tags$ul(lapply(exp$bullets, tags$li))
+    #              )
+    #     )
+    #   })
+    #   tagList(items)
+    # })
+
+  output$experience_timeline <- renderUI({
+
+  rd <- resume_data()
+
+  if (is.null(rd$experience) || length(rd$experience) == 0) {
+
+    return(
+      tags$p("Nenhuma experiência disponível.")
+    )
+
+  }
+
+  items <- lapply(rd$experience, function(exp) {
+
+    date_range <- if (
+      !is.null(exp$end) &&
+      nzchar(exp$end)
+    ) {
+
+      paste0(
+        fmt_br(exp$start),
+        " — ",
+        fmt_br(exp$end)
+      )
+
+    } else {
+
+      fmt_br(exp$start)
+
+    }
+
+    tags$div(
+      class = "timeline-item",
+
+      # ---------------------------------------------------------
+      # DATA
+      # ---------------------------------------------------------
+
+      tags$div(
+        class = "timeline-date",
+        date_range
+      ),
+
+      # ---------------------------------------------------------
+      # CONTEÚDO
+      # ---------------------------------------------------------
+
+      tags$div(
+        class = "timeline-content",
+
+        tags$h5(
+          paste0(
+            exp$title,
+            " — ",
+            exp$company
+          )
+        ),
+
+        tags$div(
+          class = "meta",
+          exp$location %||% ""
+        ),
+
+        # -------------------------------------------------------
+        # BULLETS HIERÁRQUICOS
+        # -------------------------------------------------------
+
+        render_experience_bullets(
+          exp$bullets
+        )
+      )
+    )
+  })
+
+  tagList(items)
+
+})
 
     ## Competencies as bullet list (for two-column layout)
     output$competencies_text <- renderUI({
@@ -208,7 +368,7 @@ mod_resume_server <- function(id) {
     output$about_text_short <- renderUI({
       rd <- resume_data()
       if (is.null(rd$summary)) return(tags$p("Sobre não disponível."))
-      tags$p(class = "section-small", style = "line-height:1.4;", substr(rd$summary, 1, 2000))
+      tags$p(class = "section-small", style = "line-height:1.4;", substr(rd$summary, 1, 3000))
     })
 
     output$sidebar_contact <- renderUI({
@@ -216,6 +376,7 @@ mod_resume_server <- function(id) {
       if (is.null(rd$contact)) return(tags$p("Contato indisponível."))
       email <- rd$contact$email %||% ""
       phone <- rd$contact$phone %||% ""
+      
       tagList(
         tags$div(class = "contact-row",
                  tags$span(class = "icon", HTML('<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>')),
@@ -226,6 +387,8 @@ mod_resume_server <- function(id) {
                  tags$span(class = "sidebar-contact no-wrap", phone)
         )
       )
+
+      
     })
 
     output$sidebar_links <- renderUI({
@@ -251,30 +414,50 @@ mod_resume_server <- function(id) {
                 )
 
                 # search for CV pdf file in common public folders (www/ and assets/www/) and build proper href
-                search_dirs <- c("www", "assets/www")
-                cv_found <- NULL
-                for (d in search_dirs) {
-                  if (dir.exists(d)) {
-                    candidates <- list.files(d, pattern = "Marco.*Leal.*\\.pdf$", ignore.case = TRUE)
-                    if (length(candidates) > 0) {
-                      cv_found <- list(dir = d, file = candidates[1])
-                      break
-                    }
-                  }
-                }
-                if (!is.null(cv_found)) {
-                  cv_rel_path <- file.path(cv_found$dir, cv_found$file)
-                  cv_href <- utils::URLencode(cv_rel_path, reserved = TRUE)
-                  cv_row <- tags$div(class = "link-row",
-                                     tags$a(href = cv_href, target = "_blank", download = cv_found$file, class = "no-wrap",
-                                            tags$span(class = "icon", HTML('<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 20h14v-2H5v2zM11 16h2V8h3l-4-4-4 4h3v8z"/></svg>')),
-                                            tags$span("Download CV")
-                                     )
-                  )
-                  link_rows[[length(link_rows) + 1]] <- cv_row
-                }
+                # search_dirs <- c("www", "Resume.pdf")
+                # cv_found <- NULL
+                # for (d in search_dirs) {
+                #   if (dir.exists(d)) {
+                #     candidates <- list.files(d, pattern = "Resume*\\.pdf$", ignore.case = TRUE)
+                #     if (length(candidates) > 0) {
+                #       cv_found <- list(dir = d, file = candidates[1])
+                #       break
+                #     }
+                #   }
+                # }
+            
+             
+               href = "assets/www/Resume.pdf"
+               cv_row <- tags$div(
+  class = "link-row",
 
-                tagList(tags$div(class = "sidebar-links", link_rows))
+  tags$a(
+    href = "assets/www/Resume.pdf",
+    target = "_blank",
+    download = "Resume.pdf",
+    class = "no-wrap",
+
+    tags$span(
+      class = "icon",
+      HTML('
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 20h14v-2H5v2zM11 16h2V8h3l-4-4-4 4h3v8z"/>
+        </svg>
+      ')
+    ),
+
+    tags$span("Download CV")
+  )
+)
+
+link_rows[[length(link_rows) + 1]] <- cv_row
+
+tagList(
+  tags$div(
+    class = "sidebar-links",
+    link_rows
+  )
+)
     })
 
     output$sidebar_skills <- renderUI({
@@ -372,15 +555,91 @@ mod_resume_server <- function(id) {
       )
     })
 
-    output$experience_list <- renderUI({
-      rd <- resume_data()
-      if (is.null(rd$experience) || length(rd$experience) == 0) return(tags$p("Nenhuma experiência disponível."))
-      tagList(lapply(rd$experience, function(exp) {
-        ui_card(title = paste0(exp$title, " — ", exp$company), subtitle = paste0(exp$start, " — ", exp$end, " ", exp$location %||% ""),
-                footer = tags$ul(lapply(exp$bullets, tags$li)))
-      }))
-    })
+# render_bullets <- function(bullets) {
 
+#   if (is.null(bullets) || length(bullets) == 0)
+#     return(NULL)
+
+#   tags$ul(
+#     class = "experience-bullets",
+
+#     lapply(bullets, function(bullet) {
+
+#       tags$li(
+
+#         # Texto principal
+#         tags$span(
+#           class = "bullet-text",
+#           bullet$text
+#         ),
+
+#         # Sub-bullets (opcional)
+#         if (!is.null(bullet$subbullets) &&
+#             length(bullet$subbullets) > 0) {
+
+#           tags$ul(
+#             class = "experience-subbullets",
+
+#             lapply(bullet$subbullets, function(sub) {
+
+#               tags$li(
+#                 if (is.list(sub)) sub$text else sub
+#               )
+
+#             })
+#           )
+
+#         }
+
+#       )
+
+#     })
+
+#   )
+
+# }
+
+
+    # output$experience_list <- renderUI({
+    #   rd <- resume_data()
+    #   if (is.null(rd$experience) || length(rd$experience) == 0) return(tags$p("Nenhuma experiência disponível."))
+    #   tagList(lapply(rd$experience, function(exp) {
+    #     ui_card(title = paste0(exp$title, " — ", exp$company), subtitle = paste0(exp$start, " — ", exp$end, " ", exp$location %||% ""),
+    #             footer = tags$ul(lapply(exp$bullets, tags$li)))
+    #   }))
+    # })
+#   output$experience_list <- renderUI({
+
+#   rd <- resume_data()
+
+#   if (is.null(rd$experience) || length(rd$experience) == 0)
+#     return(tags$p("Nenhuma experiência disponível."))
+
+#   tagList(
+
+#     lapply(rd$experience, function(exp) {
+
+#       ui_card(
+
+#         title = paste0(exp$title, " — ", exp$company),
+
+#         subtitle = paste0(
+#           exp$start,
+#           " — ",
+#           exp$end,
+#           " ",
+#           exp$location %||% ""
+#         ),
+
+#         footer = render_bullets(exp$bullets)
+
+#       )
+
+#     })
+
+#   )
+
+# })
     output$education_list <- renderUI({
       rd <- resume_data()
       if (is.null(rd$education) || length(rd$education) == 0) return(tags$p("Nenhuma formação disponível."))

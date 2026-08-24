@@ -5,16 +5,25 @@ contact:
   links:
     - github: "https://github.com/marco-leal-analytics"
     - linkedin: "https://www.linkedin.com/in/marco-a-v-leal/"
+    - portfolio: "https://marco-leal-analytics.shinyapps.io/marco-leal-portfolio/"
 
 summary: |
-  Profissional de Dados com formação em Estatística pela Universidade Estadual de Maringá (UEM) e aproximadamente 5 anos de experiência em Data Analytics, Business Intelligence, Ciência de Dados, modelagem estatística, automação e engenharia de dados. 
-  
-  Experiência profissional em Crefaz como Cientista de Dados Pleno e Analista de Dados, e em Sicredi como Analista de Business Intelligence II, atuando em ambientes de crédito, risco, finanças, cooperativismo e operações. Forte atuação na transformação de dados em insights, indicadores,dashboards, estudos analíticos e suporte à tomada de decisão baseada em dados. 
-  
-  Experiência com Python, SQL, R, Power BI, PySpark, Pandas, PostgreSQL, Luigi, UiPath e Git/GitLab, incluindo desenvolvimento de ETL, pipelines de dados, automações, integrações e soluções analíticas. Sólida base em estatística aplicada, modelagem preditiva, análise exploratória, regressão, métodos não paramétricos, validação cruzada e avaliação de modelos.Experiência na análise de políticas de crédito, indicadores financeiros e operacionais, governança de dados e identificação de oportunidades de eficiência. 
+  Sou profissional de Dados com formação em Estatística pela Universidade Estadual de Maringá (UEM) e aproximadamente 5 anos de experiência construindo soluções na interseção entre Estatística, Data Science, Data Analytics, Business Intelligence e Data Engineering.
+  Minha trajetória começou na análise de dados e evoluiu para Ciência de Dados e Business Intelligence, passando por diferentes contextos corporativos e problemas de negócio.
 
-  Orientado à geração de valor, com capacidade de conectar dados, estatística, tecnologia e necessidades de negócio para desenvolver soluções analíticas de ponta a ponta.
+  Na Crefaz, atuei como Analista de Dados e posteriormente como Cientista de Dados Pleno, trabalhando com crédito, risco, políticas de aprovação, indicadores, dashboards e estudos analíticos.
+  No Sicredi, ampliei minha experiência em Business Intelligence, indicadores financeiros e contábeis, automação e processos estruturados de dados.
+  Ao longo dessa trajetória, também desenvolvi soluções relacionadas à integração, tratamento, padronização e disponibilização de dados para análises e indicadores.
+  Minha formação em Estatística é a base da minha maneira de trabalhar: compreender a variabilidade, avaliar evidências, lidar com incertezas e transformar análises quantitativas em suporte à decisão.
 
+  Tenho experiência com Python, SQL, R, Power BI, PySpark, Pandas, PostgreSQL, Luigi, UiPath e Git/GitLab. Minha atuação envolve Statistical Modeling, análise exploratória, modelagem preditiva, ETL, Data Pipelines, automação, Data Visualization e Dashboard Development. 
+  Mais do que produzir análises, busco entender o problema que está por trás do dado e construir soluções que sejam realmente úteis para quem precisa tomar decisões.
+  Acredito na conexão entre dados, tecnologia e negócio como caminho para transformar informação em inteligência aplicada.
+  
+  Meu propósito é reduzir incertezas, apoiar decisões melhores e transformar dados em conhecimento acionável.
+  Minha missão é utilizar estatística, tecnologia e visão de negócio para desenvolver soluções analíticas que apoiem decisões melhores e gerem valor mensurável.
+  Busco continuar evoluindo em Analytics avançado, Estatística Aplicada, Ciência de Dados orientada a problemas reais e engenharia de soluções analíticas.
+  Meu objetivo de carreira é combinar excelência técnica, aprendizado contínuo e comunicação clara para transformar problemas complexos em soluções de dados capazes de gerar impacto real.
 
 competencies:
   - Data Analytics e Data Science
@@ -49,37 +58,91 @@ tech_stack:
 
 
 experience:
+  - title: "O Que vem pela frente"
+    company: "Open to Work"
+    location: "Presencial/Híbrido/Remoto"
+    start: "2026"
+    end: "Próximo ciclo"
+    bullets:
+      - text: "O próximo ciclo da minha trajetória é aprofundar a atuação na interseção entre Estatística Aplicada, Ciência de Dados, Análise de dados e engenharia de soluções analíticas, ampliando minha capacidade de transformar dados em inteligência e problemas de negócio em soluções orientadas a valor."
+        subbullets:
+          - "Busco participar de desafios em que dados tenham um papel efetivo na compreensão e transformação do negócio."
+          - "Atuar não apenas para descrever o que aconteceu, mas para explicar comportamentos, antecipar cenários e identificar oportunidades."
+          - "Contribuir para redução de riscos, aprimoramento de processos e suporte a decisões melhores."
+          - "Construir soluções que combinem rigor estatístico, dados, tecnologia e visão de negócio."
+          - "Atuar com análises, suporte a decisões estratégicas e geração de vantagem competitiva."
+
   - title: "Analista de Business Intelligence II"
     company: "Sicredi Agroempresarial PR/SP"
     location: "Mandaguari/PR"
     start: "2024-02"
     end: "2026-08"
     bullets:
-      - Desenvolveu estudos analíticos e análises de dados para áreas contábil e financeira, abrangendo custos, demonstrativos contábeis, balanço patrimonial e custos rateados.
-      - Realizou extração, transformação, manipulação e análise de dados utilizando Python, R e ferramentas analíticas para suporte à tomada de decisão.
-      - Desenvolveu dashboards, relatórios gerenciais, visualizações e indicadores em Microsoft Power BI, apoiando o acompanhamento de resultados financeiros e contábeis.
-      - Desenvolveu automações de processos com Python e UiPath, direcionadas à redução de esforço operacional, custos e melhoria de eficiência.
-      - Estruturou pipeline de dados para extração, transformação e ingestão em PostgreSQL, utilizando Luigi em Python para orquestração das tarefas.
-      - Otimizou a aquisição diária de informações por meio de rotinas estruturadas de dados, reduzindo dependências manuais e aumentando a confiabilidade dos processos analíticos.
-      - Desenvolveu plataforma web para venda de ativos imobilizados a colaboradores, utilizando R, Shiny e PostgreSQL, integrando aplicação, dados e processo de negócio.
+      - text: "Desenvolveu soluções de Engenharia de Dados para automatização, integração e disponibilização de dados corporativos, estruturando pipelines para extração, transformação, padronização, validação e ingestão de informações, com foco em confiabilidade, governança, escalabilidade e suporte aos processos de Business Intelligence e Analytics."
+        subbullets:
+          - text: "Automação do Pipeline Corporativo Denodo → PostgreSQL: Este projeto demonstrou como uma arquitetura de Engenharia de Dados orientada por metadados pode transformar um processo manual e descentralizado de consumo de informações em uma infraestrutura automatizada, parametrizada, orquestrada e escalável. Por meio de Python, Luigi, SQL e PostgreSQL, foi estruturado um pipeline para automatizar a extração de dados do Denodo, executar transformações e padronizações, aplicar validações de qualidade, controlar dependências entre tarefas, registrar logs de execução e disponibilizar dados estruturados para consumo analítico."
+            subbullets:
+            - "Impacto: Redução de dependências manuais, retrabalho e riscos operacionais associados à extração, tratamento e atualização de dados, com aumento da confiabilidade, padronização e rastreabilidade das informações e maior agilidade na disponibilização de dados para dashboards, relatórios, indicadores e análises corporativas."
+            - "Competências: Python · Luigi · PostgreSQL · SQL · Engenharia de Dados · ETL / ELT · Pipelines de Dados · Orquestração de Pipelines de Dados · Arquitetura Orientada por Metadados · Integração de Dados · Transformação de Dados · Qualidade de Dados · Governança de Dados · Processamento em Lote · Registro de Execuções · Monitoramento · Automação de Processos · Arquitetura Escalável"
+          
+      - text: "Desenvolveu estudos analíticos, análises de dados, relatórios gerenciais e dashboards para as áreas Contábil e Financeira, utilizando Business Intelligence e Analytics para transformar dados financeiros e contábeis em informações para gestão, monitoramento de desempenho e tomada de decisão."
+        subbullets:
+          - text: "Gestão Analítica de Custos Rateados: Este projeto demonstrou como uma estrutura de Business Intelligence aplicada ao contexto financeiro e contábil pode transformar dados operacionais em inteligência gerencial. Por meio do Microsoft Power BI, Power Query, Linguagem M, DAX e modelagem dimensional, foi construída uma solução capaz de consolidar informações, estruturar indicadores, disponibilizar análises históricas e permitir investigação multidimensional dos custos."
+            subbullets: 
+            - "Impacto: Maior capacidade de gestão dos custos rateados por meio da transformação de dados financeiros em visibilidade analítica, permitindo identificar concentrações, tendências, oscilações e pontos de atenção, direcionando investigações, decisões gerenciais e oportunidades de otimização de despesas."
+            - "Competências: Microsoft Power BI · DAX · Power Query / Linguagem M · Modelagem de dados ·  Análise Financeira · Controle de Custos · Otimização de Custos · Suporte à Tomada de Decisão · Gestão Baseada em Dados"
 
+          - text: "Balanço Patrimonial: Desenvolveu dashboard para acompanhamento do Balanço Patrimonial da Cooperativa e de suas Agências, disponibilizando análises em nível de contas contábeis e perspectivas gerenciais. A solução permitiu explorar a evolução e composição de ativos e passivos por meio de análises horizontais e verticais, apoiando a interpretação da estrutura patrimonial e o acompanhamento da posição econômico-financeira."
+            subbullets: 
+            - "Impacto: Proporcionou maior visibilidade sobre a composição e evolução dos ativos e passivos, apoiando análises patrimoniais, identificação de variações relevantes e tomada de decisão gerencial."
+            - "Competências: Microsoft Power BI · DAX · Análise Financeira · Contabilidade Gerencial · Data Visualization · Indicadores Gerenciais · Gestão Baseada em Dados"
+ 
+          - text: "Demonstrativo de Sobras e Perdas: Desenvolveu dashboard para acompanhamento do Demonstrativo de Sobras e Perdas da Cooperativa e de suas Agências, permitindo análise em diferentes níveis de granularidade, desde contas contábeis até visões gerenciais. A solução incorporou análises de oscilações, indicadores de análise vertical e horizontal e perspectivas de eficiência operacional, proporcionando aos stakeholders uma visão estruturada da performance econômico-financeira."
+            subbullets: 
+            - "Impacto: Ampliou a capacidade de acompanhamento da performance financeira e da eficiência operacional, facilitando a identificação de oscilações, tendências e pontos de atenção para suporte à gestão."
+            - "Competências: Microsoft Power BI · DAX · Análise Financeira · Contabilidade Gerencial · Performance Management · Indicadores Gerenciais · Gestão Baseada em Dados"
+        
 
-  - title: "Cientista de Dados Pleno"
+      - text: "Desenvolveu automações de processos utilizando Python e UiPath, aplicando análise de dados, regras de negócio e Robotic Process Automation (RPA) para transformar atividades operacionais manuais e repetitivas em fluxos automatizados, escaláveis e controlados, com foco em produtividade, redução de custos, qualidade operacional e eficiência."
+        subbullets:
+        - text: "Automação de Identificação e Exclusão de Associados Inativos: Projeto desenvolvido para automatizar a identificação, validação, processamento e exclusão de mais de 5.000 associados inativos e sem reciprocidade em uma instituição financeira cooperativa. Por meio de Python, foram realizadas a extração, preparação, tratamento, consolidação e validação dos dados, aplicação dos critérios de elegibilidade e geração das listas de processamento. O UiPath foi utilizado para automatizar a execução operacional das atividades, incorporando controles, tratamento de exceções, registros de execução e mecanismos de rastreabilidade."
+          subbullets:
+            - "Impacto: Redução significativa do esforço operacional manual, aumento da capacidade de processamento e produtividade das equipes, maior padronização e qualidade da execução, redução da exposição a erros humanos e potencial redução de custo fixo mensal estimada em aproximadamente R$ 14.000, considerando o processamento de mais de 5.000 associados a um custo médio de R$ 2,80 por associado."
+            - "Competências: Python · UiPath · RPA · Automação de Processos · Processamento de Dados · Validação de Dados · Análise de Dados · Automação de Regras de Negócio · Automação de Fluxos de Trabalho · Tratamento de Exceções · Registro de Logs · Monitoramento · Analytics Operacional · Otimização de Processos · Eficiência Operacional · Redução de Custos · Redução de Riscos"
+        
+        - text: "Automação de Atendimento para Resgate de Sobras: Este projeto demonstrou como a integração entre Robotic Process Automation (RPA), atendimento digital e regras de negócio pode transformar um processo operacional de alta demanda em uma operação escalável e padronizada. Por meio do UiPath integrado ao WhatsApp Enterprise, foi construída uma solução capaz de automatizar a recepção, validação, processamento e acompanhamento das solicitações de resgate, processando mais de 12 mil atendimentos e apoiando aproximadamente 63% dos resgates realizados sobre o montante total de sobras distribuídas em 2024."
+          subbullets:
+          - "Impacto: Ampliação significativa da capacidade operacional das mais de 40 agências envolvidas, com redução do esforço manual, maior velocidade e padronização do processamento, melhoria da experiência dos associados e liberação das equipes para atividades de maior valor agregado."
+          - "Competências: UiPath · Robotic Process Automation (RPA) · WhatsApp Enterprise · Process Automation · Workflow Automation · Systems Integration · Business Rules Automation · Exception Handling · Process Monitoring · Logging · Automation Governance · Operational Efficiency · Process Optimization · Productivity Improvement · Digital Transformation · Member Experience · Organizational Scalability · Business Process Improvement · Service Automation"
+          
+        - text: "Desenvolveu soluções de Sistemas Corporativos e Automação de Processos para digitalização, integração e gestão de fluxos operacionais, estruturando uma plataforma web em R Shiny e PostgreSQL para centralizar dados, regras de negócio, automação documental e acompanhamento de transações, com foco em governança, rastreabilidade, padronização e eficiência operacional."
+          subbullets:
+            - text: "Plataforma Web para Gestão e Comercialização de Ativos Imobilizados: Este projeto transformou um processo descentralizado, dependente de planilhas, controles manuais e comunicação entre áreas, em um workflow digital integrado para gestão e comercialização de ativos destinados a colaboradores. Por meio de R Shiny e PostgreSQL, foi desenvolvida uma aplicação corporativa com autenticação de usuários, catálogo de ativos, galeria de imagens, controle de disponibilidade, reservas, registro de vendas, integração com bases corporativas de colaboradores e associados, geração automatizada de contratos, acompanhamento de assinaturas, gestão de status e suporte às atividades administrativas de separação e entrega das unidades. O fluxo foi estruturado como Disponível → Reservado (Vendido) → Contrato Gerado → Contrato Assinado → Entregue, centralizando dados, regras de negócio, documentos e etapas operacionais em uma única solução."
+              subbullets:
+              - "Impacto: Digitalização e padronização do processo de comercialização, com apoio à venda de mais de 60 unidades, redução de controles manuais, retrabalho e atividades administrativas repetitivas, maior rastreabilidade das operações, melhoria da governança e transparência entre as áreas envolvidas e maior eficiência no acompanhamento das etapas de reserva, formalização, aprovação, separação e entrega dos ativos."
+              - "Competências: R · Shiny · PostgreSQL · Web Application Development · Application Architecture · Data Modeling · Process Automation · Workflow Management · Systems Integration · Business Systems Development"
+            
+  - title: "Cientista de Dados Junior"
     company: "Crefaz — Financiamentos e Investimentos"
     location: "Maringá/PR"
     start: "2023-01"
     end: "2024-02"
     bullets:
-      - Desenvolveu estudos analíticos de dados de crédito a partir do motor Crivo, apoiando o monitoramento de políticas de concessão e a análise da jornada de propostas.
-      - Avaliou, validou e apoiou a implantação de políticas de crédito, fornecendo análises para decisões relacionadas à aprovação, recusa, retenção e eficiência operacional da esteira.
-      - Utilizou R, Python e Power BI na construção de análises, relatórios, dashboards e indicadores de crédito.
-      - Desenvolveu dashboard analítico em Power BI para monitoramento da originação de propostas, desde a digitação até a aprovação para a mesa de análise.
-      - Monitorou regras de decisão parametrizadas no motor Crivo, analisando o impacto individual das políticas sobre o funil de aprovação, recusa e retenção.
-      - Desenvolveu visões analíticas por produto, matriz, hierarquia, modalidade, UF, companhia elétrica, vendedor, período e faixa horária.
-      - Criou indicadores de propostas digitadas, recusadas e aprovadas em P1, variação mês contra mês, acumulado por regra e impacto individual das políticas.
-      - Desenvolveu análises waterfall para identificar regras com maior influência sobre redução, retenção, recusa e aprovação de propostas.
-      - Atuou em conjunto com áreas de Crédito, Risco, Operações e Negócios, apoiando identificação de gargalos, governança das políticas e tomada de decisão baseada em dados.
-
+      - text: Desenvolveu estudos analíticos de dados de crédito a partir do motor Crivo, apoiando o monitoramento de políticas de concessão e a análise da jornada de propostas.
+      - text: Avaliou, validou e apoiou a implantação de políticas de crédito, fornecendo análises para decisões relacionadas à aprovação, recusa, retenção e eficiência operacional da esteira.
+      - text: Utilizou R, Python e Power BI na construção de análises, relatórios, dashboards e indicadores de crédito.
+      - text: "Desenvolveu soluções de Credit Analytics, Risk Analytics e Business Intelligence para monitoramento da originação de crédito, estruturando indicadores, análises multidimensionais e mecanismos de acompanhamento das políticas de decisão parametrizadas no motor Crivo, com foco em governança de crédito, performance operacional, identificação de gargalos e suporte à tomada de decisão baseada em dados."
+        subbullets:
+          - text: "Dashboard de Originação e Monitoramento de Políticas de Crédito: Este projeto demonstrou como o Microsoft Power BI, combinado à modelagem analítica, métricas DAX e visualizações avançadas, transformou dados de uma operação de aproximadamente 1,6 milhão de propostas mensais em uma camada integrada de monitoramento da esteira de crédito. A solução acompanhava a jornada das propostas desde a digitação até a aprovação para mesa, monitorando 1.664.003 propostas digitadas, 936.051 recusadas e 691.855 aprovadas em P1, além de retenções, taxas de conversão e impacto individual das políticas parametrizadas no motor Crivo. Foram implementadas análises por produto, modalidade, matriz, hierarquia comercial, UF, companhia elétrica, vendedor, período e faixa horária, incluindo análises waterfall para decomposição da influência das regras sobre aprovação, recusa e retenção."
+            subbullets:
+            - "Impacto: Aumento da visibilidade sobre uma operação de alto volume, fortalecimento da governança das políticas de crédito e maior capacidade de monitoramento da esteira decisória. A solução permitiu identificar padrões de comportamento, concentração de impacto das regras, gargalos operacionais e oportunidades de otimização das políticas, apoiando Crédito, Risco, Operações e Negócios na tomada de decisões baseada em evidências. A análise histórica também evidenciou crescimento de 30,3% nas propostas digitadas, 36,8% nas recusas e 17,4% nas aprovações P1 entre os períodos analisados."
+            - "Competências: Credit Analytics · Risk Analytics · Microsoft Power BI · Credit Policy Monitoring · Credit Policy Governance · Data Modeling · DAX · Dashboard Development · Decision Engine Analysis · Waterfall Analysis"
+      - text: "Desenvolveu estudo para análise de risco, inadimplência, perda esperada e rentabilidade, análise exploratória para segmentação de clientes e estudos de risco-retorno, com foco em precificação diferenciada, otimização da concessão, gestão de portfólio e geração de valor ajustado ao risco."
+        subbullets:
+        - text: "Matriz de Risco: Este projeto demonstrou como uma abordagem analítica orientada a risco pode transformar dados de crédito e comportamento em inteligência para decisão, permitindo identificar grupos homogêneos de risco, avaliar a relação entre inadimplência, perda esperada e retorno, analisar diferenças de rentabilidade entre segmentos e construir uma Matriz de Risco capaz de associar perfis de clientes a estratégias de pricing, concessão e gestão de portfólio."
+          subbullets:
+          - "Impacto: Maior granularidade na avaliação de risco e rentabilidade, possibilitando identificar oportunidades de precificação diferenciada, segmentos com melhor relação risco-retorno, concentrações de risco e grupos com necessidade de revisão de políticas ou condições comerciais, contribuindo para maior alinhamento entre risco, preço e retorno, otimização da carteira, melhoria das decisões de crédito e alocação mais eficiente de capital."
+          - "Competências: Credit Analytics · Risk Analytics · Credit Risk Modeling · Expected Loss · Statistical Modeling · Quantitative Analysis · Portfolio Analytics · Risk-Adjusted Return · Pricing Strategy · Excel"
 
   - title: "Analista de Dados"
     company: "Crefaz — Financiamentos e Investimentos"
@@ -87,14 +150,22 @@ experience:
     start: "2021-05"
     end: "2022-12"
     bullets:
-      - Desenvolveu dashboards e painéis analíticos para acompanhamento de produção, propostas, mesa de análise, pagamentos e indicadores operacionais da esteira de crédito.
-      - Realizou extração, tratamento, consolidação e análise de dados para relatórios gerenciais, estudos analíticos e suporte às áreas de negócio.
-      - Desenvolveu rotina automatizada em Python, PySpark e Pandas para integração de relatórios entre os sistemas RBM e CODE durante processo de transição sistêmica.
-      - Estruturou regras de de-para e padronização de dados, contemplando status, produtos, etapas, decisões, datas, códigos de propostas, canais, subcanais e hierarquias comerciais.
-      - Realizou tratamento de duplicidades, conversão de tipos, padronização de datas e consolidação das bases para alimentação de relatórios e painéis de BI.
-      - Desenvolveu pipeline automatizado de indicadores de performance para envio diário às lojas via WhatsApp Enterprise, utilizando dados do Bitrix, R/RMarkdown e integração de API em Python.
-      - Estruturou indicadores relacionados a leads, contatos, conversão e performance comercial, ampliando a disponibilidade das informações para acompanhamento das áreas de negócio.
+      - text: Desenvolveu dashboards e painéis analíticos para acompanhamento de produção, propostas, mesa de análise, pagamentos e indicadores operacionais da esteira de crédito.
+      - text: Realizou extração, tratamento, consolidação e análise de dados para relatórios gerenciais, estudos analíticos e suporte às áreas de negócio.
+      - text: "Desenvolveu soluções de Engenharia de Dados para integração, harmonização e consolidação de dados corporativos durante a transição sistêmica entre RBM e CODE, estruturando pipelines para extração, transformação, padronização, validação e disponibilização de informações, com foco em continuidade analítica, qualidade, governança, rastreabilidade e suporte aos processos de Business Intelligence e Analytics."
+        subbullets:
+        - text: "Integração de Dados RBM → CODE: Desenvolveu pipeline de Engenharia de Dados utilizando Python, PySpark e Pandas para integrar dados provenientes dos sistemas RBM e CODE durante o rollout gradual de produtos, automatizando processos de extração, transformação, padronização, validação, tratamento de duplicidades e consolidação das bases. Implementou regras de de-para para harmonização de campos, status operacionais, produtos, decisões, etapas do processo, datas, códigos de propostas, canais, subcanais e hierarquias comerciais, criando uma camada de integração capaz de abstrair diferenças estruturais e semânticas entre os sistemas e disponibilizar uma visão única dos dados para BI, Analytics e áreas de negócio."
+          subbullets:
+          - "Impacto: Garantia da continuidade analítica durante a migração gradual dos produtos entre RBM e CODE, preservando relatórios, dashboards e indicadores corporativos, com redução de inconsistências, tratamentos manuais e riscos de interpretação divergente, além de maior padronização, confiabilidade, rastreabilidade e eficiência no consumo das informações."
+          - "Competências: Python · PySpark · Pandas · Data Engineering · Data Integration · ETL / ELT · Data Harmonization · Data Mapping · Data Quality · Systems Integration"
+      - text: "Desenvolveu soluções de Data Analytics, Business Intelligence e Automação de Processos para geração, atualização e distribuição de indicadores de performance comercial, estruturando pipelines para extração, transformação, consolidação, análise e disponibilização automatizada de informações, com foco em escalabilidade, padronização, democratização dos dados e suporte à tomada de decisão."
+        subbullets:
+          - text: "Automação do Pipeline de Analytics Comercial Bitrix → R/RMarkdown → Python → WhatsApp Enterprise: Desenvolveu pipeline automatizado de Analytics e Business Intelligence para extração diária de dados do CRM Bitrix, processamento e consolidação das informações em R, cálculo de indicadores de performance, geração automatizada de relatórios com RMarkdown e integração via Python com APIs para distribuição dos resultados por meio do WhatsApp Enterprise, atendendo mais de 100 lojas."
+            subbullets:
 
+              - "Impacto: Aumento da disponibilidade e frequência dos indicadores comerciais, redução da dependência de processos manuais e solicitações recorrentes à equipe de BI, maior agilidade na distribuição das informações, padronização dos relatórios e democratização do acesso aos dados, fortalecendo o acompanhamento diário da performance, a produtividade operacional, a gestão comercial e a tomada de decisão orientada por dados."
+
+              - "Competências: R · RMarkdown · Python · Bitrix · WhatsApp Enterprise · Data Analytics · Business Intelligence · ETL / ELT · Data Processing · Data Transformation · KPI Development · Performance Analytics · Commercial Analytics · Reporting Automation · Automated Reporting · API Integration · Pipeline Development · Process Automation · Workflow Automation · Information Distribution · Operational Analytics · Data Democratization · Sales Performance Management · Lead Management · Conversion Analysis · Data-Driven Decision Making"
 
 education:
   - degree: "MBA - Gestão Empresarial com ênfase em Finanças, Controladoria e Auditoria"
@@ -124,67 +195,124 @@ certifications:
   - name: "Fundamentos de Engenharia de Dados"
     issuer: "Data Science Academy"
     year: 2026
+  - name: "SQL"
+    issuer: "Universidade Corporativa"
+    year: 2025
+  - name: "Git/GitLab"
+    issuer: "Universidade Corporativa"
+    year: 2024
+
 
 projects:
   - id: analytics-shiny-dashboard
-    title: "Análise de Crédito e Políticas de Aprovação — Motor Crivo"
-    short_description: "Desenvolvimento de dashboard analítico para monitoramento de políticas de crédito, acompanhando propostas desde a digitação até a aprovação para mesa de análise. O painel permitiu analisar volume de propostas, recusas, aprovações P1, variação mensal, acumulado por regra e impacto individual das políticas, incluindo análise waterfall.
-      Competências: Credit Analytics, Risk Analytics, Decision Science, Power BI, KPI Monitoring, Data Visualization e Policy Monitoring."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
-    featured: true
+    title: "Gestão Analítica de Custos Rateados — Área Contábil e Financeira de Cooperativa de Crédito"
+    short_description: "O projeto nasceu de uma dor recorrente na gestão dos Custos Rateados recebidos da Central Administrativa: embora os dados financeiros estivessem disponíveis, o acompanhamento apresentava baixa visibilidade gerencial sobre quanto e onde os gastos estavam alocados, como evoluíam ao longo do tempo, quais componentes provocavam oscilações e onde estavam concentradas as principais despesas. A dependência de consolidações e análises manuais também dificultava a investigação de desvios e a identificação tempestiva de oportunidades de otimização.
+      A solução utilizou o Microsoft Power BI como plataforma de Business Intelligence, combinando Power Query e Linguagem M para extração, tratamento e consolidação dos dados, modelagem dimensional para estruturar o modelo analítico e DAX para construção de métricas e indicadores gerenciais. O dashboard integrou as frentes de Licenças e Softwares, Serviços Centralizados e Sustentação e Utilização de Produtos e Serviços, disponibilizando visão histórica, análise de composição, concentração, variações e comportamentos que demandavam investigação.
+      O principal impacto foi transformar dados financeiros em visibilidade analítica para gestão e decisão. A solução fortaleceu a capacidade de responder, de forma rápida e estruturada, quanto e onde os gastos estavam alocados, como estavam evoluindo, quais componentes explicavam suas oscilações, onde estavam as maiores concentrações e quais pontos mereciam investigação e ação. Com isso, a área passou a contar com uma base mais consistente para priorizar análises, revisar despesas, direcionar iniciativas de racionalização e acompanhar oportunidades de otimização, reduzindo esforço manual, aumentando a transparência e fortalecendo a gestão financeira baseada em dados.
+      
+      Competências: Microsoft Power BI | DAX | Power Query / Linguagem M | Modelagem de dados | Controle de Custos | Otimização de Custos | Suporte à Tomada de Decisão | Gestão Baseada em Dados"
+    demo: "assets/www/cases/Case-Executivo-de-Business-Intelligence-Analytics-Custos-Rateados.html"
+
   - id: analytics-shiny-dashboard
-    title: "Integração de Relatórios entre Sistemas Legado e Novo Sistema"
-    short_description: " Desenvolvimento de pipeline em Python, PySpark e Pandas para integração de relatórios entre os sistemas RBM e CODE durante período de transição sistêmica. A solução realizou de-para de campos, status, produtos, etapas, canais, subcanais e hierarquias, além de tratamento de duplicidades, padronização de datas e consolidação das bases.
-      Competências: ETL, Data Integration, PySpark, Pandas, Python, Data Transformation e BI."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    title: "Dashboard de Originação e Monitoramento de Políticas de Crédito"
+    short_description: "Desenvolvimento de dashboard analítico em Power BI para monitoramento da jornada de aproximadamente 1,6 milhão de propostas de crédito por mês, acompanhando todo o funil de originação desde a digitação inicial até a aprovação para mesa de análise. A solução permitiu o acompanhamento operacional e estratégico de indicadores críticos de crédito, suportando áreas de Negócios, Crédito, Risco e Operações. Com base nos dados apresentados, o painel monitorava volumes superiores a 1.664.003 propostas digitadas, 936.051 propostas recusadas e 691.855 propostas aprovadas em P1, permitindo análises detalhadas da performance da esteira de crédito. 
+      Foram implementadas análises para monitoramento das regras parametrizadas no motor de crédito Crivo, possibilitando avaliar o impacto individual de cada política sobre os resultados de aprovação, recusa e retenção de propostas. O dashboard disponibilizava visões multidimensionais por produto, modalidade, matriz, hierarquia comercial, UF, companhia elétrica, vendedor, período e faixa horária, ampliando significativamente a capacidade analítica das áreas de negócio.
+      A solução também incorporou indicadores de evolução mensal, apresentando crescimento de 30,3% no volume de propostas digitadas, 36,8% no volume de recusas e 17,4% nas aprovações P1 entre períodos analisados, além de análises waterfall para identificação das regras com maior impacto na conversão das propostas ao longo da esteira de crédito. O projeto contribuiu para fortalecer a governança das políticas de crédito, identificar gargalos operacionais e apoiar decisões estratégicas baseadas em dados. 
+
+      Competências: Credit Analytics, Risk Analytics, Business Intelligence, Power BI, Data Analytics, KPI Monitoring, Dashboard Development, Data Visualization, Decision Support, Business Analysis e Monitoramento de Políticas de Crédito." 
+      
     demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
     featured: true
+  
   - id: analytics-shiny-dashboard
-    title: "Integração de API para Envio de Indicadores via WhatsApp Enterprise"
-    short_description: "Desenvolvimento de pipeline automatizado para envio diário de indicadores de performance às lojas, contemplando métricas de atendimento de leads, volume de contatos, conversão e desempenho operacional. Utilização de Bitrix, R/RMarkdown, HTML/PNG e API integrada com Python para geração e distribuição automatizada dos indicadores.
-      Competências: Data Pipelines, API Integration, Python, R, RMarkdown, KPI Monitoring e Business Analytics."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    title: "Proposição de Estudo: Correlação entre Risco de Crédito e Perda Esperada para Otimização da Precificação"
+    short_description: "O projeto de Credit Analytics, Risk Analytics e Modelagem de Risco foi desenvolvido para analisar quantitativamente a relação entre risco de crédito, inadimplência, perda esperada e rentabilidade da carteira, criando uma estrutura analítica para apoiar decisões de pricing, concessão e gestão de portfólio. O principal desafio era compreender a heterogeneidade dos clientes e avaliar se as condições de crédito praticadas estavam adequadamente alinhadas ao risco assumido e ao retorno econômico esperado.
+      A solução combinou análise exploratória de dados, segmentação de clientes, análise de correlação do score em relação a perda esperada. A partir dessas análises, foram identificados diferentes padrões de comportamento entre segmentos, produtos, faixas de score e perfis de risco, permitindo avaliar a distribuição da exposição, concentração, inadimplência, perdas e rentabilidade.
+      Como principal resultado, foi estruturada uma Matriz de Risco capaz de relacionar níveis de risco, perda esperada e retorno ajustado ao risco, criando subsídios para uma estratégia de precificação mais granular. A abordagem permitiu identificar segmentos com melhor relação risco-retorno, oportunidades de pricing diferenciado e grupos que demandavam revisão de políticas ou exposição.
+      Competências: Credit Analytics · Risk Analytics · Credit Risk Modeling · Expected Loss · Statistical Modeling · Quantitative Analysis · Portfolio Analytics · Risk-Adjusted Return · Pricing Strategy · Excel"
     featured: true
+  
   - id: analytics-shiny-dashboard
-    title: "Automação de Atendimento via WhatsApp Enterprise"
-    short_description: "Desenvolvimento de solução automatizada para solicitações de resgate de sobras por associados, utilizando UiPath integrado ao fluxo de atendimento via WhatsApp Enterprise. A solução automatizou mais de 12 mil atendimentos e apoiou aproximadamente 63% dos resgates sobre o montante total de sobras distribuídas em 2024.
-      Competências: Automação, UiPath, Process Optimization, Data Operations e Business Efficiency."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    title: "Engenharia de Dados, Integração de Sistemas e Business Intelligence na Transição Sistêmica RBM → CODE"
+    short_description: "Durante a transição sistêmica entre RBM e CODE, a organização enfrentava o desafio de manter a continuidade dos processos de Business Intelligence e Analytics enquanto os produtos eram migrados gradualmente entre uma plataforma legada e uma nova plataforma operacional. A coexistência dos dois ambientes gerava diferenças estruturais e semânticas nas bases, incluindo nomenclaturas, status, produtos, decisões, etapas, datas, códigos de propostas, canais, subcanais e hierarquias comerciais. Esse cenário aumentava o risco de inconsistências nos indicadores, duplicidades, tratamentos manuais e interpretações divergentes dos dados corporativos.
+      Para solucionar o problema, foi desenvolvido um pipeline de Engenharia de Dados utilizando Python, PySpark e Pandas, responsável pela extração, transformação, padronização, validação e consolidação das informações provenientes dos dois sistemas. A solução implementou regras de de-para e harmonização para estabelecer correspondências entre os diferentes modelos de dados, além de realizar conversão de tipos, normalização de datas, tratamento de duplicidades, validações de consistência e aplicação de regras de negócio. Dessa forma, foi criada uma camada de integração capaz de abstrair as diferenças entre RBM e CODE e disponibilizar uma representação única e consistente para BI, Analytics e áreas de negócio.
+      
+      Como impacto, o projeto garantiu a continuidade analítica durante o rollout dos produtos, preservando relatórios, dashboards e indicadores corporativos existentes. A centralização das regras reduziu inconsistências e dependências de tratamentos manuais, aumentando a confiabilidade, padronização e rastreabilidade das informações. A solução também permitiu que a organização avançasse na transformação tecnológica sem transferir a complexidade da migração para os consumidores dos dados, fortalecendo a governança da informação e o suporte à tomada de decisão baseada em dados.
+
+      Competências: Python · PySpark · Pandas · Data Engineering · Data Integration · ETL / ELT · Data Harmonization · Data Mapping · Data Quality · Systems Integration"
     demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
     featured: true
+  
   - id: analytics-shiny-dashboard
-    title: "Automação de Processos com Python e UiPath"
-    short_description: "Desenvolvimento de automação corporativa com Python e UiPath para exclusão de mais de 5.000 associados inativos e sem reciprocidade, reduzindo a execução manual e contribuindo para diminuição de custos operacionais recorrentes. A iniciativa apresentou potencial de redução de custo fixo mensal estimado em aproximadamente R$ 14 mil, considerando custo médio de R$ 2,80 por associado.
-      Competências: Process Automation, Python, UiPath, Data Operations e Eficiência Operacional."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
+    title: "Case Corporativo — Analytics Operacional, Business Intelligence e Automação da Distribuição de Indicadores Comerciais"
+    short_description: "O projeto surgiu a partir da necessidade de ampliar a velocidade e a disponibilidade dos indicadores de performance comercial para uma operação com mais de 100 lojas. Antes da implementação, a obtenção das informações dependia de consultas manuais, consolidações recorrentes, geração de relatórios e solicitações à equipe de Business Intelligence. Esse modelo aumentava o esforço operacional, limitava a frequência de atualização e dificultava que gestores e equipes comerciais tivessem acesso tempestivo aos dados necessários para acompanhar resultados, identificar desvios e tomar decisões.
+      Como solução, foi desenvolvido um pipeline automatizado de Analytics e Business Intelligence integrado ao CRM Bitrix. O processo passou a realizar diariamente a extração dos dados comerciais, tratamento, transformação, padronização e consolidação das informações, permitindo calcular indicadores relacionados a leads, atendimentos, contatos, conversões, produtividade, performance e evolução dos resultados. O processamento analítico foi desenvolvido em R, enquanto o RMarkdown foi utilizado para geração automatizada e padronizada dos relatórios. Na etapa de distribuição, Python e integração via API possibilitaram o envio automatizado das informações por meio do WhatsApp Enterprise para as lojas e equipes envolvidas.
+
+      O impacto foi a transformação de um processo manual e reativo em uma estrutura automatizada, recorrente e escalável. A solução aumentou a disponibilidade e a velocidade de acesso aos indicadores, reduziu atividades repetitivas e a dependência de solicitações à equipe de BI, além de ampliar a padronização e rastreabilidade das informações. A distribuição diária democratizou o acesso aos dados e fortaleceu a gestão comercial, permitindo acompanhar tendências, comparar unidades, identificar oportunidades e direcionar ações com maior agilidade. O projeto consolidou o Analytics como parte da rotina operacional e fortaleceu uma cultura de decisão orientada por dados."
     demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
     featured: true
+  
   - id: analytics-shiny-dashboard
-    title: "Pipeline de Dados ETL com Python, Luigi e PostgreSQL"
-    short_description: "Desenvolvimento de processo estruturado para extração, transformação, orquestração e ingestão de dados em PostgreSQL, utilizando Python e Luigi. Solução aplicada à otimização da aquisição diária de informações e atualização de dashboards em Power BI.
-      Competências: ETL/ELT, Data Engineering, Data Pipelines, Python, Luigi, PostgreSQL e Power BI."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    title: "Automação de Atendimento para Resgate de Sobras"
+    short_description: "Projeto de transformação digital desenvolvido para ampliar a capacidade operacional no atendimento e processamento de solicitações de resgate de sobras em uma instituição financeira cooperativa. O processo anterior apresentava elevado volume de demandas distribuídas entre mais de 40 agências, exigindo atuação manual dos colaboradores para identificação dos associados, validação de informações, consultas em sistemas corporativos, aplicação de regras de negócio, execução de procedimentos, registros, encaminhamentos e acompanhamento das solicitações. Esse modelo consumia capacidade operacional significativa, aumentava a dependência das equipes e limitava a escalabilidade do atendimento em períodos de alta demanda.
+      A solução desenvolvida integrou UiPath, utilizando Robotic Process Automation (RPA), ao fluxo de atendimento via WhatsApp Enterprise, estruturando uma operação digital capaz de receber solicitações, identificar e validar associados, aplicar critérios de elegibilidade e regras de negócio, executar atividades operacionais nos sistemas corporativos, tratar exceções, registrar logs e comunicar automaticamente os resultados. A automação transferiu para uma camada tecnológica atividades repetitivas, previsíveis e orientadas por regras, permitindo maior padronização, rastreabilidade e controle do processo.
+      
+      A iniciativa gerou impacto relevante em escala, produtividade e eficiência operacional, processando mais de 12.000 atendimentos e apoiando aproximadamente 63% dos resgates realizados sobre o montante total de sobras distribuídas em 2024. O projeto reduziu significativamente o esforço manual das mais de 40 agências participantes, ampliou a capacidade de atendimento, contribuiu para maior velocidade e padronização do processamento e melhorou a experiência dos associados. Estratégicamente, demonstrou a aplicação de RPA e atendimento digital como mecanismos de escalabilidade operacional, excelência de processos e transformação digital orientada à geração de valor.
+      
+      Competências: UiPath · Robotic Process Automation (RPA) · WhatsApp Enterprise · Process Automation · Workflow Automation · Systems Integration · Business Rules Automation · Exception Handling · Process Monitoring · Logging · Automation Governance · Operational Efficiency · Process Optimization · Productivity Improvement · Digital Transformation · Member Experience · Organizational Scalability · Business Process Improvement · Service Automation"
+    demo: "assets/www/cases/"
     featured: true
+  
   - id: analytics-shiny-dashboard
-    title: "Painel Interativo para Monitoramento da 15ª Regional de Saúde — COVID-19"
-    short_description: "Projeto de pesquisa e extensão em parceria com a Universidade Estadual de Maringá (UEM) e a 15ª Regional de Saúde do Paraná, com o objetivo de desenvolver um painel interativo em Shiny/R para monitoramento da COVID-19 nos municípios da região. O painel permitiu acompanhar a incidência de casos, evolução temporal e distribuição dos registros por município, apoiando a análise dos indicadores epidemiológicos. 
-      Competências: Data Analytics, Data Visualization, Shiny, R, Indicadores e Decision Support."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    title: "Automação de Processos para Identificação e Exclusão de Associados Inativos e sem Reciprocidade"
+    short_description: "O projeto surgiu a partir de uma dor operacional relacionada à manutenção de mais de 5.000 associados inativos e sem reciprocidade em uma instituição financeira cooperativa. O processo de identificação e exclusão era predominantemente manual, exigindo levantamento de informações em diferentes bases, consolidação de dados, aplicação de critérios de elegibilidade, validações e execução individual das exclusões. Esse modelo consumia capacidade operacional significativa, apresentava baixa escalabilidade e dependia diretamente da intervenção das equipes, além de aumentar a exposição a erros, inconsistências, retrabalho e atrasos. A manutenção desses registros também representava uma oportunidade de otimização de custos, diante da existência de associados sem atividade ou reciprocidade.
+      
+      A solução combinou Python e UiPath para transformar o fluxo manual em um processo automatizado e controlado. O Python foi utilizado para extração, tratamento, transformação, consolidação e validação dos dados, além da aplicação dos critérios de elegibilidade e geração das listas de processamento. O UiPath automatizou a execução operacional dos registros elegíveis, incorporando controles, tratamento de exceções, logs e rastreabilidade. Dessa forma, a solução estabeleceu um fluxo estruturado de dados, regras de negócio, validação, execução e monitoramento, reduzindo a dependência de atividades manuais.
+      
+      O principal impacto foi a automação da identificação, processamento e exclusão de mais de 5.000 associados, com redução significativa do esforço manual, aumento da produtividade e maior padronização e rastreabilidade da execução. A solução também reduziu a exposição a erros operacionais, inconsistências e retrabalho. Considerando o custo médio estimado de R$ 2,80 por associado, o projeto representa uma oportunidade de redução de custo fixo mensal de aproximadamente R$ 14.000, equivalente a cerca de R$ 168.000 anualizados sob a mesma premissa. O resultado demonstra a capacidade de transformar uma atividade operacional recorrente em um processo escalável, orientado por dados e automatizado, combinando eficiência operacional, controle e geração mensurável de valor para o negócio.
+      
+      Competências: Python · UiPath · RPA · Automação de Processos · Processamento de Dados · Validação de Dados · Análise de Dados · Automação de Regras de Negócio · Automação de Fluxos de Trabalho · Tratamento de Exceções · Registro de Logs · Monitoramento · Analytics Operacional · Otimização de Processos · Eficiência Operacional · Redução de Custos · Redução de Riscos"
+    demo: "assets/www/cases/Automação-de-Processos-para-Identificação-e-Exclusão-de-Associados-Inativos-e-sem-Reciprocidade"
     featured: true
+  
+  - id: analytics-shiny-dashboard
+    title: "Engenharia de Dados e Modernização Analítica"
+    short_description: "O projeto surgiu a partir de um processo AS-IS altamente manual, descentralizado e dependente do conhecimento individual dos usuários para obtenção e disponibilização de dados corporativos. A necessidade de uma análise iniciava com o acesso à plataforma Denodo, identificação manual de tabelas, views e consultas, seguida por extrações recorrentes para CSV ou Excel. Os arquivos eram armazenados em computadores pessoais, pastas compartilhadas ou repositórios locais e posteriormente tratados, consolidados e utilizados na construção de relatórios, dashboards e indicadores. Esse fluxo gerava retrabalho, duplicidade de esforços, riscos operacionais, inconsistências entre áreas, baixa rastreabilidade e dificuldades para garantir atualizações recorrentes e padronizadas.
+      
+      A solução TO-BE transformou esse modelo em uma arquitetura corporativa de dados automatizada, parametrizada e orientada por metadados. Foi desenvolvido um pipeline utilizando Python, Luigi, SQL e PostgreSQL, responsável pela extração automatizada de dados do Denodo, execução de transformações e padronizações, validações de qualidade, controle de dependências, registro de logs, tratamento de falhas e execução de cargas completas ou incrementais. A parametrização por metadados permitiu definir tabelas, consultas, periodicidades, regras de atualização, destinos e dependências sem necessidade de alterações estruturais no código principal, tornando a solução reutilizável e escalável.
+      
+      Como resultado, o processo evoluiu de uma operação manual para uma infraestrutura estruturada de Engenharia de Dados, aumentando a confiabilidade, padronização e rastreabilidade das informações. A centralização dos dados em PostgreSQL reduziu dependências operacionais, retrabalho e riscos de inconsistência, além de acelerar a disponibilização das informações para Business Intelligence, dashboards, relatórios, indicadores e análises corporativas, fortalecendo a governança e a capacidade analítica da organização.
+      
+      Competências: Python · Luigi · PostgreSQL · SQL · Engenharia de Dados · ETL / ELT · Pipelines de Dados · Orquestração de Pipelines de Dados · Arquitetura Orientada por Metadados · Integração de Dados · Transformação de Dados · Qualidade de Dados · Governança de Dados · Processamento em Lote · Registro de Execuções · Monitoramento · Automação de Processos · Arquitetura Escalável"
+    demo: "assets/www/cases/Engenharia-de-Dados-e-Modernização-Analítica.html"
+    featured: true
+  
+  - id: analytics-shiny-dashboard
+    title: "Plataforma Web para Gestão e Comercialização de Ativos Imobilizados"
+    short_description: "O projeto consistiu no desenvolvimento de uma plataforma web corporativa para digitalizar, centralizar e automatizar o processo de gestão e comercialização de ativos imobilizados destinados a colaboradores de uma instituição financeira cooperativa. Antes da solução, o processo era descentralizado e dependente de planilhas, controles manuais, comunicação entre áreas e acompanhamento individual das etapas, gerando elevado esforço administrativo, retrabalho, baixa rastreabilidade e dificuldade para identificar o estágio de cada venda.
+      A solução foi desenvolvida em R Shiny e PostgreSQL, integrando aplicação, dados, regras de negócio, automação documental e workflow operacional em uma única plataforma. O sistema incorporou autenticação de usuários, catálogo de ativos, galeria de imagens, consulta de disponibilidade, seleção e reserva de unidades, registro das vendas, integração com bases corporativas de colaboradores e associados, geração automatizada de contratos, acompanhamento de assinaturas e controle das etapas de entrega.
+
+      O fluxo foi estruturado de forma padronizada, acompanhando o ciclo Disponível → Reservado (Vendido) → Contrato Gerado → Contrato Assinado → Entregue. Essa abordagem transformou um conjunto de atividades administrativas fragmentadas em um processo digital orientado por estados, regras e dados estruturados, permitindo maior controle sobre cada transação.
+
+      A plataforma apoiou a comercialização de mais de 60 unidades, contribuindo para reduzir controles manuais e atividades repetitivas, aumentar a eficiência operacional, melhorar a governança e a transparência entre as áreas envolvidas e proporcionar maior rastreabilidade sobre reservas, contratos, aprovações, separação e entrega dos ativos. O projeto demonstrou a aplicação de R, Shiny e PostgreSQL na construção de sistemas corporativos voltados à transformação digital e otimização de processos.
+      
+      Competências: R · Shiny · PostgreSQL · Web Application Development · Application Architecture · Data Modeling · Process Automation · Workflow Management · Systems Integration · Business Systems Development"
+    demo: "https://mlealserver.shinyapps.io/covid19_15RS/"
+    featured: true
+  
+
+  - id: analytics-shiny-dashboard
+    title: "Painel de Acompanhamento de Incidência de Casos — 15ª Regional de Saúde"
+    short_description: "O projeto foi desenvolvido em parceria com a Universidade Estadual de Maringá (UEM) e a 15ª Regional de Saúde do Paraná, com o objetivo de transformar dados epidemiológicos da COVID-19 em informações acessíveis para acompanhamento e apoio à tomada de decisão. A necessidade surgiu diante do grande volume de dados gerados durante a pandemia e da importância de acompanhar a evolução dos casos de forma regionalizada, permitindo identificar diferentes padrões de incidência entre os municípios.
+      Como solução, foi desenvolvido um painel interativo utilizando **R e Shiny**, estruturado para consolidar, analisar e apresentar indicadores epidemiológicos de maneira dinâmica. A aplicação possibilitou explorar a incidência de casos, acompanhar a evolução temporal da doença e analisar a distribuição dos registros entre os municípios da 15ª Regional de Saúde. A abordagem de **Data Analytics e Data Visualization** permitiu transformar dados epidemiológicos em informações visuais mais intuitivas, facilitando a interpretação dos indicadores e a comparação entre diferentes períodos e localidades.
+      O painel contribuiu para ampliar a capacidade de monitoramento epidemiológico, oferecendo uma ferramenta de **Decision Support** para profissionais e gestores de saúde. Ao centralizar indicadores e disponibilizar análises de forma interativa, a solução apoiou a identificação de tendências, a avaliação da evolução da pandemia e o direcionamento de ações de acompanhamento. O projeto demonstrou, na prática, como tecnologias de análise de dados e aplicações web em R podem ser utilizadas para apoiar decisões estratégicas em saúde pública."
+    demo: "https://mlealserver.shinyapps.io/covid19_15RS/"
+    featured: true
+  
   - id: analytics-shiny-dashboard
     title: "Modelagem Estatística e Métodos Não Paramétricos — TCC"
     short_description: "Trabalho acadêmico voltado à avaliação de métodos não paramétricos aplicados à predição em modelos aditivos, comparando Kernel Smoothing, LOESS e Splines de Regressão linear e cúbica. Aplicação de validação cruzada Leave-One-Out, seleção de hiperparâmetros, simulações estatísticas, análise de viés e variância e avaliação de desempenho preditivo. 
+      
       Competências: Estatística Aplicada, Modelagem Estatística, Modelagem Preditiva, Validação Cruzada, Simulação e Avaliação de Modelos."
-    repo: "https://github.com/marcoleal/analytics-shiny-dashboard"
     demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
-    featured: true
-  - id: analytics-dashboard
-    title: "Analytics Dashboard"
-    short_description: "Painel interativo com métricas e visualizações para datasets de produção."
-    repo: "https://github.com/marcoleal/analytics-dashboard"
-    demo: "https://marcoleal.shinyapps.io/analytics-dashboard"
     featured: true

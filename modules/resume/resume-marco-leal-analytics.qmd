@@ -1,0 +1,758 @@
+---
+title: "Currículo | Marco Leal Analytics"
+author: "Marco Aurélio Valles Leal"
+description: "Currículo profissional de Marco Aurélio Valles Leal."
+page-layout: article
+format:
+  html:
+    theme: none
+    toc: true
+    toc-depth: 2
+    toc-location: right
+    smooth-scroll: true
+    anchor-sections: true
+    code-fold: false
+    embed-resources: true
+    css: ../../assets/css/app.css
+execute:
+  echo: false
+  warning: false
+  error: false
+  freeze: auto
+---
+
+```{r}
+#| label: setup-resume
+#| include: false
+
+library(yaml)
+library(knitr)
+
+resume_file <- "../../data/resume_full.yml"
+
+if (!file.exists(resume_file)) {
+  stop(
+    paste0(
+      "Arquivo obrigatório não encontrado: ", resume_file,
+      ". O currículo depende exclusivamente deste arquivo como fonte de dados."
+    )
+  )
+}
+
+resume <- yaml::read_yaml(resume_file)
+
+`%||%` <- function(x, y = "") {
+  if (is.null(x) || length(x) == 0 || (length(x) == 1 && is.na(x))) y else x
+}
+
+scalar <- function(x, default = "") {
+  if (is.null(x) || length(x) == 0) return(default)
+  if (is.atomic(x) && length(x) == 1) return(as.character(x))
+  if (is.list(x) && length(x) == 1 && is.atomic(x[[1]])) return(as.character(x[[1]]))
+  default
+}
+
+first_of <- function(...) {
+  values <- list(...)
+  for (x in values) {
+    if (!is.null(x) && length(x) > 0 && !all(is.na(x))) {
+      return(x)
+    }
+  }
+  NULL
+}
+
+field <- function(x, ...) {
+  keys <- c(...)
+  for (key in keys) {
+    if (!is.null(x[[key]])) return(x[[key]])
+  }
+  NULL
+}
+
+html_escape <- function(x) {
+  x <- scalar(x)
+  x <- gsub("&", "&amp;", x, fixed = TRUE)
+  x <- gsub("<", "&lt;", x, fixed = TRUE)
+  x <- gsub(">", "&gt;", x, fixed = TRUE)
+  x <- gsub('"', "&quot;", x, fixed = TRUE)
+  x
+}
+
+items <- function(x) {
+  if (is.null(x) || length(x) == 0) return(character())
+  if (is.character(x)) return(x)
+  if (is.atomic(x)) return(as.character(x))
+  if (is.list(x)) {
+    return(vapply(
+      x,
+      function(i) {
+        if (is.character(i) && length(i) == 1) return(i)
+        if (is.list(i)) {
+          val <- first_of(i$name, i$title, i$value, i$skill, i$technology, i$item)
+          return(scalar(val))
+        }
+        scalar(i)
+      },
+      character(1)
+    ))
+  }
+  character()
+}
+
+render_pipe_items <- function(x) {
+  vals <- items(x)
+  vals <- vals[nzchar(vals)]
+  if (!length(vals)) return("—")
+  paste(vapply(vals, html_escape, character(1)), collapse = " | ")
+}
+
+render_list <- function(x, class = "") {
+  vals <- items(x)
+  vals <- vals[nzchar(vals)]
+  if (!length(vals)) return("")
+  cls <- if (nzchar(class)) paste0(' class="', class, '"') else ""
+  paste0(
+    '<ul', cls, '>',
+    paste0("<li>", vapply(vals, html_escape, character(1)), "</li>", collapse = ""),
+    "</ul>"
+  )
+}
+
+render_links <- function(contact) {
+  links <- first_of(contact$links, contact)
+  if (is.null(links)) return("")
+  preferred <- c("github", "linkedin", "portfolio", "site", "website")
+  out <- character()
+
+  for (key in preferred) {
+    value <- links[[key]]
+    if (!is.null(value) && nzchar(scalar(value))) {
+      label <- switch(
+        key,
+        github = "GitHub",
+        linkedin = "LinkedIn",
+        portfolio = "Portfólio",
+        site = "Website",
+        website = "Website",
+        key
+      )
+      out <- c(
+        out,
+        paste0(
+          '<div class="link-row"><a href="', html_escape(value),
+          '" target="_blank" rel="noopener noreferrer">',
+          html_escape(label), " →</a></div>"
+        )
+      )
+    }
+  }
+
+  if (is.list(links) && length(links)) {
+    known <- preferred
+    for (key in setdiff(names(links), known)) {
+      value <- links[[key]]
+      if (!is.null(value) && nzchar(scalar(value))) {
+        out <- c(
+          out,
+          paste0(
+            '<div class="link-row"><a href="', html_escape(value),
+            '" target="_blank" rel="noopener noreferrer">',
+            html_escape(key), " →</a></div>"
+          )
+        )
+      }
+    }
+  }
+
+  paste(out, collapse = "")
+}
+
+render_contact <- function(contact) {
+  if (is.null(contact)) return("")
+  values <- list(
+    email = first_of(contact$email, contact$e_mail),
+    phone = first_of(contact$phone, contact$telephone, contact$telefone),
+    location = first_of(contact$location, contact$city, contact$localization)
+  )
+
+  labels <- c(email = "Email", phone = "Telefone", location = "Localização")
+  rows <- character()
+
+  for (key in names(values)) {
+    value <- scalar(values[[key]])
+    if (!nzchar(value)) next
+
+    if (key == "email") {
+      body <- paste0(
+        '<a href="mailto:', html_escape(value), '">',
+        html_escape(value), "</a>"
+      )
+    } else if (key == "phone") {
+      body <- html_escape(value)
+    } else {
+      body <- html_escape(value)
+    }
+
+    rows <- c(
+      rows,
+      paste0(
+        '<div class="contact-row"><strong>',
+        labels[[key]],
+        '</strong><span>', body, "</span></div>"
+      )
+    )
+  }
+
+  paste(rows, collapse = "")
+}
+
+render_education <- function(education) {
+  if (is.null(education) || !length(education)) return("")
+  out <- character()
+
+  for (item in education) {
+    period <- scalar(first_of(item$period, item$date, item$dates, item$year))
+    title <- scalar(first_of(item$title, item$degree, item$course, item$name))
+    institution <- scalar(first_of(item$institution, item$school, item$university))
+    status <- scalar(first_of(item$status, item$situation))
+
+    subtitle <- paste(
+      c(institution, status),
+      collapse = " · "
+    )
+    subtitle <- gsub("^ · | · $", "", subtitle)
+
+    out <- c(
+      out,
+      paste0(
+        '<div class="timeline-item">',
+        '<div class="timeline-date">', html_escape(period), '</div>',
+        '<div class="timeline-content">',
+        '<h3>', html_escape(title), '</h3>',
+        if (nzchar(subtitle))
+          paste0("<p><strong>", html_escape(subtitle), "</strong></p>"),
+        "</div></div>"
+      )
+    )
+  }
+
+  paste(out, collapse = "")
+}
+
+render_experience <- function(experience) {
+  if (is.null(experience) || !length(experience)) return("")
+  out <- character()
+
+  for (item in experience) {
+    period <- scalar(first_of(item$period, item$date, item$dates))
+    role <- scalar(first_of(item$role, item$title, item$position, item$job_title, item$name))
+    company <- scalar(first_of(item$company, item$organization, item$employer))
+    location <- scalar(first_of(item$location, item$city))
+    description <- scalar(first_of(item$summary, item$description, item$overview))
+    bullets <- first_of(item$bullets, item$responsibilities, item$deliveries, item$achievements, item$activities)
+
+    company_line <- paste(
+      c(company, location),
+      collapse = " · "
+    )
+    company_line <- gsub("^ · | · $", "", company_line)
+
+    bullet_html <- render_list(bullets)
+
+    out <- c(
+      out,
+      paste0(
+        '<div class="timeline-item">',
+        '<div class="timeline-date">', html_escape(period), '</div>',
+        '<div class="timeline-content">',
+        '<h3>', html_escape(role), '</h3>',
+        if (nzchar(company_line))
+          paste0("<p><strong>", html_escape(company_line), "</strong></p>"),
+        if (nzchar(description))
+          paste0("<p>", html_escape(description), "</p>"),
+        bullet_html,
+        "</div></div>"
+      )
+    )
+  }
+
+  paste(out, collapse = "")
+}
+
+render_competencies <- function(competencies) {
+  if (is.null(competencies) || !length(competencies)) return("")
+  out <- character()
+
+  if (is.list(competencies) && !is.null(names(competencies))) {
+    for (key in names(competencies)) {
+      vals <- items(competencies[[key]])
+      vals <- vals[nzchar(vals)]
+      if (!length(vals)) next
+      out <- c(
+        out,
+        paste0(
+          "<li><strong>", html_escape(key), "</strong>",
+          "<ul>",
+          paste0("<li>", vapply(vals, html_escape, character(1)), "</li>", collapse = ""),
+          "</ul></li>"
+        )
+      )
+    }
+  } else {
+    vals <- items(competencies)
+    out <- paste0("<li>", vapply(vals, html_escape, character(1)), "</li>")
+  }
+
+  paste0('<ul class="competencies-list">', paste(out, collapse = ""), "</ul>")
+}
+
+render_tech_stack <- function(stack) {
+  if (is.null(stack) || !length(stack)) return("")
+  out <- character()
+
+  if (is.list(stack) && !is.null(names(stack))) {
+    for (key in names(stack)) {
+      out <- c(
+        out,
+        paste0(
+          '<li><strong>', html_escape(key), '</strong><span>',
+          render_pipe_items(stack[[key]]),
+          "</span></li>"
+        )
+      )
+    }
+  } else {
+    out <- paste0(
+      '<li><strong>Tech Stack</strong><span>',
+      render_pipe_items(stack),
+      "</span></li>"
+    )
+  }
+
+  paste0('<ul class="tech-stack-list">', paste(out, collapse = ""), "</ul>")
+}
+
+render_certifications <- function(certifications) {
+  if (is.null(certifications) || !length(certifications)) return("")
+  out <- character()
+
+  for (item in certifications) {
+    if (is.character(item) && length(item) == 1) {
+      out <- c(out, paste0("<li>", html_escape(item), "</li>"))
+      next
+    }
+
+    name <- scalar(first_of(item$name, item$title, item$course, item$certification))
+    institution <- scalar(first_of(item$institution, item$provider, item$issuer, item$organization))
+    year <- scalar(first_of(item$year, item$date))
+
+    meta <- paste(c(institution, year), collapse = " · ")
+    meta <- gsub("^ · | · $", "", meta)
+
+    out <- c(
+      out,
+      paste0(
+        "<li><strong>", html_escape(name), "</strong>",
+        if (nzchar(meta)) paste0("<span>", html_escape(meta), "</span>"),
+        "</li>"
+      )
+    )
+  }
+
+  paste0('<ul class="certifications-list">', paste(out, collapse = ""), "</ul>")
+}
+
+render_languages <- function(languages) {
+  if (is.null(languages) || !length(languages)) return("")
+  out <- character()
+
+  for (item in languages) {
+    if (is.character(item) && length(item) == 1) {
+      out <- c(out, paste0("<li>", html_escape(item), "</li>"))
+      next
+    }
+
+    language <- scalar(first_of(item$language, item$name, item$idioma))
+    level <- scalar(first_of(item$level, item$proficiency, item$nivel))
+
+    out <- c(
+      out,
+      paste0(
+        "<li><strong>", html_escape(language), "</strong>",
+        if (nzchar(level)) paste0("<span>", html_escape(level), "</span>"),
+        "</li>"
+      )
+    )
+  }
+
+  paste0('<ul class="languages-list">', paste(out, collapse = ""), "</ul>")
+}
+
+render_projects <- function(projects) {
+  if (is.null(projects) || !length(projects)) return("")
+  out <- character()
+
+  for (item in projects) {
+    title <- scalar(first_of(item$title, item$name, item$project))
+    summary <- scalar(first_of(item$summary, item$description, item$resume, item$overview))
+    skills <- first_of(item$competencies, item$skills, item$technologies, item$tech_stack)
+    github <- scalar(item$github)
+    demo <- scalar(first_of(item$demo, item$demo_url, item$application, item$url))
+
+    links <- character()
+    if (nzchar(github)) {
+      links <- c(
+        links,
+        paste0(
+          '<a href="', html_escape(github),
+          '" target="_blank" rel="noopener noreferrer">GitHub →</a>'
+        )
+      )
+    }
+    if (nzchar(demo)) {
+      links <- c(
+        links,
+        paste0(
+          '<a href="', html_escape(demo),
+          '" target="_blank" rel="noopener noreferrer">Demo →</a>'
+        )
+      )
+    }
+
+    skills_html <- render_pipe_items(skills)
+
+    out <- c(
+      out,
+      paste0(
+        '<article class="repo-card">',
+        "<h3>", html_escape(title), "</h3>",
+        if (nzchar(summary)) paste0("<p>", html_escape(summary), "</p>"),
+        '<p><strong>Competências</strong><br>',
+        skills_html,
+        "</p>",
+        if (length(links))
+          paste0('<p class="sidebar-links">', paste(links, collapse = " · "), "</p>"),
+        "</article>"
+      )
+    )
+  }
+
+  paste(out, collapse = "")
+}
+
+render_keywords <- function(keywords) {
+  preferred <- c(
+    "Data Science", "Analytics", "Business Intelligence", "Statistics",
+    "Data Engineering", "ETL", "Machine Learning", "Python", "SQL", "R",
+    "Power BI", "Credit Analytics", "Risk Analytics", "Decision Support"
+  )
+
+  vals <- items(keywords)
+  vals <- vals[nzchar(vals)]
+
+  # Prioriza os termos definidos no YAML; os termos abaixo só entram
+  # quando já existirem na fonte de dados.
+  ordered <- unique(c(
+    preferred[preferred %in% vals],
+    vals[!vals %in% preferred]
+  ))
+
+  if (!length(ordered)) return("")
+  paste0(
+    '<div class="tag-row">',
+    paste0(
+      '<span class="mla-tag">',
+      vapply(ordered, html_escape, character(1)),
+      "</span>",
+      collapse = ""
+    ),
+    "</div>"
+  )
+}
+
+contact <- resume$contact %||% list()
+photo <- scalar(first_of(
+  resume$photo,
+  contact$photo,
+  contact$image,
+  contact$avatar
+))
+
+name <- scalar(resume$name, "Marco Aurélio Valles Leal")
+headline <- scalar(
+  resume$headline,
+  "Data & Analytics | Data Science | Business Intelligence | Estatística Aplicada"
+)
+summary <- scalar(resume$summary)
+```
+
+<div class="mla-hero">
+
+<div class="hero-copy">
+
+<span class="eyebrow">MARCO LEAL · CURRÍCULO</span>
+
+# Formação, experiência e trajetória profissional
+
+<p class="hero-summary">Apresentação executiva da trajetória em Estatística, Ciência de Dados, Analytics, Business Intelligence e Engenharia de Dados.</p>
+
+<div class="tag-row">
+<span class="mla-tag accent">Statistics</span>
+<span class="mla-tag">Data Science</span>
+<span class="mla-tag">Data Analytics</span>
+<span class="mla-tag">Business Intelligence</span>
+<span class="mla-tag">Data Engineering</span>
+</div>
+
+</div>
+
+<div class="hero-visual">
+
+```{r}
+#| results: asis
+
+if (nzchar(photo)) {
+  cat(
+    '<img src="', html_escape(photo),
+    '" alt="Foto profissional de ', html_escape(name), '">'
+  )
+} else {
+  cat('<div aria-hidden="true"></div>')
+}
+```
+
+</div>
+
+</div>
+
+<div class="resume-wrapper">
+
+<aside class="resume-sidebar">
+
+<div class="sidebar-section">
+
+```{r}
+#| results: asis
+
+if (nzchar(photo)) {
+  cat(
+    '<img class="resume-photo" src="', html_escape(photo),
+    '" alt="Foto profissional de ', html_escape(name), '">'
+  )
+}
+
+cat(
+  '<h2>', html_escape(name), '</h2>',
+  '<p>', html_escape(headline), '</p>'
+)
+```
+
+</div>
+
+<div class="sidebar-section">
+
+### Contato
+
+```{r}
+#| results: asis
+
+cat(render_contact(contact))
+```
+
+</div>
+
+<div class="sidebar-section">
+
+### Links profissionais
+
+<div class="sidebar-links">
+
+```{r}
+#| results: asis
+
+cat(render_links(contact))
+```
+
+</div>
+
+</div>
+
+<div class="sidebar-section">
+
+### Resumo
+
+```{r}
+#| results: asis
+
+if (nzchar(summary)) {
+  cat('<p>', html_escape(summary), '</p>')
+}
+```
+
+</div>
+
+<nav class="sticky-side-nav" aria-label="Navegação do currículo">
+
+- [Formação](#formacao)
+- [Experiência](#experiencia)
+- [Competências](#competencias)
+- [Certificações](#certificacoes)
+- [Idiomas](#idiomas)
+- [Projetos](#projetos)
+
+</nav>
+
+</aside>
+
+<main class="resume-main">
+
+<header class="resume-header">
+
+<h1 class="resume-name">`r name`</h1>
+
+<p class="resume-title">`r headline`</p>
+
+</header>
+
+## Formação
+
+<section id="formacao">
+
+```{r}
+#| results: asis
+
+cat('<div class="timeline">')
+cat(render_education(resume$education))
+cat('</div>')
+```
+
+</section>
+
+## Experiência
+
+<section id="experiencia">
+
+```{r}
+#| results: asis
+
+cat('<div class="timeline">')
+cat(render_experience(resume$experience))
+cat('</div>')
+```
+
+</section>
+
+## Competências
+
+<section id="competencias">
+
+<div class="two-col-row">
+
+<div class="two-col-item">
+
+### Tech Stack
+
+```{r}
+#| results: asis
+
+cat(render_tech_stack(resume$tech_stack))
+```
+
+</div>
+
+<div class="two-col-item">
+
+### Competências e Especialidades
+
+```{r}
+#| results: asis
+
+cat(render_competencies(resume$competencies))
+```
+
+</div>
+
+</div>
+
+</section>
+
+## Certificações
+
+<section id="certificacoes">
+
+```{r}
+#| results: asis
+
+cat(render_certifications(resume$certifications))
+```
+
+</section>
+
+## Idiomas
+
+<section id="idiomas">
+
+```{r}
+#| results: asis
+
+cat(render_languages(resume$languages))
+```
+
+</section>
+
+## Projetos relevantes
+
+<section id="projetos">
+
+<div class="repo-grid">
+
+```{r}
+#| results: asis
+
+cat(render_projects(resume$projects))
+```
+
+</div>
+
+</section>
+
+## Posicionamento profissional
+
+<div class="callout-success">
+
+**Formação quantitativa → Desenvolvimento técnico → Experiência corporativa → Competências → Projetos → Especialização → Posicionamento profissional**
+
+</div>
+
+<p>
+A trajetória apresentada neste currículo conecta formação estatística, desenvolvimento técnico,
+experiência corporativa e aplicação prática de dados para apoiar decisões e gerar valor.
+</p>
+
+## Palavras-chave
+
+<section id="keywords">
+
+<div class="keywords-footer section-small">
+
+```{r}
+#| results: asis
+
+cat(render_keywords(resume$keywords))
+```
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<div class="brand-footer">
+
+**MARCO LEAL ANALYTICS**  
+Dados • Estatística • Inteligência • Resultados
+
+</div>

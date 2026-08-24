@@ -22,45 +22,21 @@ mod_contact_ui <- function(id) {
           tags$p(
             class = "hero-summary",
             "Converse sobre analytics, automação, estatística aplicada e produtos de dados."
+          ),
+          tags$div(
+            class = "tag-row",
+            tags$span(class = "mla-tag accent", "Statistics"),
+            tags$span(class = "mla-tag accent", "Data Science"),
+            tags$span(class = "mla-tag accent", "Data Analytics"),
+            tags$span(class = "mla-tag accent", "Business Intelligence"),
+            tags$span(class = "mla-tag accent", "Data Engineering")
           )
         ),
 
         tags$div(
           class = "hero-visual hero-mark",
           tags$span("CONNECT")
-        )
-      ),
-
-      tags$div(
-        class = "contact-layout",
-
-        div(
-  class = "contact-card",
-
-  h2("Contato"),
-  p("Envie uma mensagem"),
-
-  textInput(
-    ns("name"),
-    "Nome"
-  ),
-
-  textInput(
-    ns("email"),
-    "E-mail"
-  ),
-
-  textAreaInput(
-    ns("message"),
-    "Mensagem",
-    rows = 6
-  ),
-
-  actionButton(
-    ns("send"),
-    "Enviar mensagem"
-  )
-),
+        ),
 
         div(
           class = "contact-panel",
@@ -70,23 +46,23 @@ mod_contact_ui <- function(id) {
           tags$ul(
             class = "social-links",
 
-            tags$li(
+      
               tags$a(
-                href = "https://github.com/marcoleal",
+                href = "https://github.com/marco-leal-analytics",
                 target = "_blank",
                 icon("github"),
                 " GitHub"
               )
-            ),
+            ,
 
-            tags$li(
+        
               tags$a(
-                href = "https://linkedin.com/in/seu-linkedin",
+                href = "https://www.linkedin.com/in/marco-a-v-leal/",
                 target = "_blank",
                 icon("linkedin"),
                 " LinkedIn"
               )
-            )
+            
           )
         )
       )

@@ -20,11 +20,11 @@ css: ../../assets/css/app.css
 # Analytics para decidir.
 
 <div class="tag-row">
-<span class="mla-tag accent">Statistcs</span>
+<span class="mla-tag accent">Statistics</span>
 <span class="mla-tag accent">Data Science</span>
-<span class="mla-tag accent">Analytics</span>
+<span class="mla-tag accent">Data Analytics</span>
 <span class="mla-tag accent">Business Intelligence</span>
-<span class="mla-tag">Data Engineering</span>
+<span class="mla-tag accent">Data Engineering</span>
 </div>
 
 </div>
@@ -323,9 +323,9 @@ Ela está na combinação:
 
 **Estatística + Dados + Tecnologia + Negócio + Comunicação**
 
-Essa combinação aparece tanto na experiência com estudos de crédito e políticas de aprovação quanto no desenvolvimento de dashboards, pipelines, automações e aplicações analíticas. fileciteturn4file0L97-L187
+Essa combinação aparece tanto na experiência com estudos de crédito e políticas de aprovação quanto no desenvolvimento de dashboards, pipelines, automações e aplicações analíticas.
 
-Também existe uma dimensão importante de engenharia na minha trajetória. O currículo registra experiência com ETL/ELT, pipelines, Luigi, PySpark, modelagem dimensional, integração e transformação de dados. fileciteturn4file0L66-L77
+Também existe uma dimensão importante de engenharia na minha trajetória. O currículo registra experiência com ETL/ELT, pipelines, Luigi, PySpark, modelagem dimensional, integração e transformação de dados.
 
 ---
 
@@ -381,7 +381,7 @@ Uso combinado de dados, estatística, indicadores e contexto de negócio para ap
 :::
 :::
 
-Essas áreas estão diretamente relacionadas às competências e experiências descritas no currículo, incluindo análise de dados, modelagem estatística, dashboards, automação, ETL, crédito, risco e suporte à decisão. fileciteturn4file0L41-L55
+Essas áreas estão diretamente relacionadas às competências e experiências descritas no currículo, incluindo análise de dados, modelagem estatística, dashboards, automação, ETL, crédito, risco e suporte à decisão.
 
 ---
 
@@ -406,7 +406,7 @@ Essas áreas estão diretamente relacionadas às competências e experiências d
 - Luigi
 - Git/GitLab
 
-A stack registrada no currículo também inclui SAS, DAX, Linguagem M, C, Selenium, Excel, PyCharm, Jupyter Notebook e Visual Studio Code. fileciteturn4file0L56-L77
+A stack registrada no currículo também inclui SAS, DAX, Linguagem M, C, Selenium, Excel, PyCharm, Jupyter Notebook e Visual Studio Code.
 
 ### Analíticas
 
@@ -452,15 +452,15 @@ Meu interesse profissional está concentrado na evolução de soluções que apr
 ::: {.tag-row}
 <span class="mla-tag accent">Data Science</span>
 <span class="mla-tag accent">Machine Learning</span>
-<span class="mla-tag">Estatística</span>
-<span class="mla-tag">Advanced Analytics</span>
-<span class="mla-tag">Data Engineering</span>
-<span class="mla-tag">Business Intelligence</span>
-<span class="mla-tag">Artificial Intelligence</span>
-<span class="mla-tag">Credit Analytics</span>
+<span class="mla-tag accent">Estatística</span>
+<span class="mla-tag accent">Advanced Analytics</span>
+<span class="mla-tag accent">Data Engineering</span>
+<span class="mla-tag accent">Business Intelligence</span>
+<span class="mla-tag accent">Artificial Intelligence</span>
+<span class="mla-tag accent accent">Credit Analytics</span>
 <span class="mla-tag">Risk Analytics</span>
-<span class="mla-tag">Financial Analytics</span>
-<span class="mla-tag">Decision Science</span>
+<span class="mla-tag accent">Financial Analytics</span>
+<span class="mla-tag accent">Decision Science</span>
 :::
 
 A base para essa direção já aparece na trajetória profissional, especialmente em Ciência de Dados aplicada a crédito, modelagem estatística, pipelines, BI e automação. fileciteturn4file0L97-L187
@@ -569,7 +569,7 @@ Ciência de Dados começa com tecnologia, **mas termina em decisão.**
 
 ### O que você encontrará neste perfil
 
-Sou um profissional de dados com formação em Estatística e experiência multidisciplinar em **Analytics, Ciência de Dados, Business Intelligence, automação e engenharia de dados**. Minha trajetória inclui atuação como Cientista de Dados Pleno e Analista de Dados, além de experiência em BI e ambientes corporativos. fileciteturn4file0L78-L124
+Sou um profissional de dados com formação em Estatística e experiência multidisciplinar em **Analytics, Ciência de Dados, Business Intelligence, automação e engenharia de dados**. Minha trajetória inclui atuação como Cientista de Dados Pleno e Analista de Dados, além de experiência em BI e ambientes corporativos.
 
 ### Principais competências
 
@@ -594,9 +594,9 @@ Tenho especial interesse em desafios relacionados a **Data Science, Data Analyti
 
 Posso contribuir desde a preparação e estruturação dos dados até a análise, modelagem, visualização e automação do processo analítico — sempre buscando conectar a solução técnica à decisão que precisa ser tomada.
 
-Minha experiência inclui projetos que automatizaram mais de **5 mil exclusões de associados**, com potencial estimado de redução de custo fixo mensal de aproximadamente **R$ 14 mil**, além de uma solução de atendimento automatizado que processou mais de **12 mil atendimentos**. fileciteturn4file0L158-L167
+Minha experiência inclui projetos que automatizaram mais de **5 mil exclusões de associados**, com potencial estimado de redução de custo fixo mensal de aproximadamente **R$ 14 mil**, além de uma solução de atendimento automatizado que processou mais de **12 mil atendimentos**. 
 
-Também desenvolvi soluções de integração de dados, pipelines e envio automatizado de indicadores, ampliando a disponibilidade das informações para as áreas de negócio. fileciteturn4file0L168-L180
+Também desenvolvi soluções de integração de dados, pipelines e envio automatizado de indicadores, ampliando a disponibilidade das informações para as áreas de negócio.
 
 ::: {.callout-success}
 ### Em uma frase
@@ -612,19 +612,19 @@ Também desenvolvi soluções de integração de dados, pipelines e envio automa
 
 **2017–2022 · Formação em Estatística**
 
-Bacharelado em Estatística pela Universidade Estadual de Maringá, com aprofundamento em modelagem, métodos estatísticos, simulação e avaliação de modelos. fileciteturn4file0L188-L195
+Bacharelado em Estatística pela Universidade Estadual de Maringá, com aprofundamento em modelagem, métodos estatísticos, simulação e avaliação de modelos.
 
 **2021–2022 · Data Analytics**
 
-Atuação como Analista de Dados na Crefaz, com dashboards, extração, tratamento, consolidação e automação de dados. fileciteturn4file0L122-L140
+Atuação como Analista de Dados na Crefaz, com dashboards, extração, tratamento, consolidação e automação de dados.
 
 **2023–2024 · Data Science**
 
-Atuação como Cientista de Dados Pleno, com foco em crédito, políticas de aprovação, estudos analíticos, indicadores e apoio à tomada de decisão. fileciteturn4file0L97-L121
+Atuação como Cientista de Dados Pleno, com foco em crédito, políticas de aprovação, estudos analíticos, indicadores e apoio à tomada de decisão.
 
 **2024–2026 · BI + Analytics + Engenharia de Dados**
 
-Atuação no Sicredi com análise financeira e contábil, Power BI, automação, pipelines em Python/Luigi/Postgres e desenvolvimento de aplicação web em R/Shiny. fileciteturn4file0L78-L95
+Atuação no Sicredi com análise financeira e contábil, Power BI, automação, pipelines em Python/Luigi/Postgres e desenvolvimento de aplicação web em R/Shiny.
 
 **2026 · Próximo ciclo**
 
@@ -662,18 +662,17 @@ Se você está construindo uma equipe de **Data Science, Analytics, Business Int
 
 <div class="contact-panel">
 
-### Marco Leal Analytics
+### Marco Aurélio Valles Leal
 
-**Marco Aurélio Valles Leal**
 
-Cientista de Dados · Analytics · Estatística Aplicada · Business Intelligence
+Estatístico · Cientista de Dados · Analista de Dados e Business Intelligence
 
 [Conectar no LinkedIn]({{< meta linkedin >}}) · [Ver GitHub]({{< meta github >}}) · [Conhecer o portfólio]({{< meta portfolio >}})
 
 </div>
 
 ::: {.brand-footer}
-**MARCO LEAL ANALYTICS**
+**MARCO LEAL**
 
-Dados • Estatística • Inteligência • Resultados
+Statistics • Data Science • Data Analytics • Business Intelligence • Data Engineering 
 :::
