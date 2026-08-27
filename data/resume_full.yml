@@ -8,38 +8,64 @@ contact:
     - portfolio: "https://marco-leal-analytics.shinyapps.io/marco-leal-portfolio/"
 
 summary: |
-  Sou profissional de Dados com formação em Estatística pela Universidade Estadual de Maringá (UEM) e aproximadamente 5 anos de experiência construindo soluções na interseção entre Estatística, Data Science, Data Analytics, Business Intelligence e Data Engineering.
-  Minha trajetória começou na análise de dados e evoluiu para Ciência de Dados e Business Intelligence, passando por diferentes contextos corporativos e problemas de negócio.
+  Profissional de Dados com formação em Estatística pela Universidade Estadual de Maringá (UEM) e aproximadamente 5 anos de experiência na construção de soluções de Análise de Dados,
+  Ciência de Dados, Inteligência de Negócios e Engenharia de Dados. Atuação com Python, SQL, R, Power BI, PySpark e PostgreSQL, aplicados à análise exploratória, visualização de dados, 
+  integração e transformação de informações, construção de pipelines e automação de processos. Experiência na criação de painéis e indicadores para monitoramento de operações de crédito, 
+  risco, desempenho financeiro e comercial, transformando grandes volumes de dados em informações para identificação de padrões, gargalos, tendências e oportunidades de melhoria.
 
-  Na Crefaz, atuei como Analista de Dados e posteriormente como Cientista de Dados Pleno, trabalhando com crédito, risco, políticas de aprovação, indicadores, dashboards e estudos analíticos.
-  No Sicredi, ampliei minha experiência em Business Intelligence, indicadores financeiros e contábeis, automação e processos estruturados de dados.
-  Ao longo dessa trajetória, também desenvolvi soluções relacionadas à integração, tratamento, padronização e disponibilização de dados para análises e indicadores.
-  Minha formação em Estatística é a base da minha maneira de trabalhar: compreender a variabilidade, avaliar evidências, lidar com incertezas e transformar análises quantitativas em suporte à decisão.
+  Experiência em Análise de Crédito e Risco, incluindo análise da originação, monitoramento de políticas de crédito, indicadores, inadimplência, perda esperada, rentabilidade e suporte
+  à decisão. Atuação também em Inteligência de Negócios aplicada às áreas financeira e contábil, desenvolvimento de painéis e indicadores, engenharia e integração de dados, automação e
+  disponibilização estruturada de informações para diferentes áreas do negócio. Na Engenharia de Dados, desenvolvi pipelines automatizados para extração, transformação, padronização, 
+  validação e disponibilização de dados, incluindo integração entre sistemas e orquestração de processos. Em Automação, desenvolvi soluções com Python e UiPath para substituir atividades 
+  manuais e repetitivas por fluxos controlados, rastreáveis e escaláveis.
 
-  Tenho experiência com Python, SQL, R, Power BI, PySpark, Pandas, PostgreSQL, Luigi, UiPath e Git/GitLab. Minha atuação envolve Statistical Modeling, análise exploratória, modelagem preditiva, ETL, Data Pipelines, automação, Data Visualization e Dashboard Development. 
-  Mais do que produzir análises, busco entender o problema que está por trás do dado e construir soluções que sejam realmente úteis para quem precisa tomar decisões.
-  Acredito na conexão entre dados, tecnologia e negócio como caminho para transformar informação em inteligência aplicada.
-  
-  Meu propósito é reduzir incertezas, apoiar decisões melhores e transformar dados em conhecimento acionável.
-  Minha missão é utilizar estatística, tecnologia e visão de negócio para desenvolver soluções analíticas que apoiem decisões melhores e gerem valor mensurável.
-  Busco continuar evoluindo em Analytics avançado, Estatística Aplicada, Ciência de Dados orientada a problemas reais e engenharia de soluções analíticas.
-  Meu objetivo de carreira é combinar excelência técnica, aprendizado contínuo e comunicação clara para transformar problemas complexos em soluções de dados capazes de gerar impacto real.
+  Combino Estatística Aplicada, análise de dados, visualização, engenharia de dados, automação e visão de negócio para transformar dados em informações acionáveis e soluções que apoiam 
+  decisões, explicam comportamentos, identificam oportunidades, reduzem riscos e geram valor. Entre os resultados da minha atuação estão o monitoramento analítico de uma operação de 
+  aproximadamente 1,6 milhão de propostas de crédito por mês, a automação de pipelines corporativos e processos operacionais, o processamento de mais de 12 mil atendimentos automatizados
+  e a integração de dados durante a transição entre sistemas, garantindo continuidade, qualidade e confiabilidade das informações.
+
+short_summary: "Analista de Dados com aproximadamente 5 anos de experiência em Python, SQL, R, Power BI e PySpark, atuando na construção de soluções de Data Analytics, Business Intelligence, Data Science e Data Engineering. Formação em Estatística pela UEM, com experiência em análise exploratória, modelagem estatística e preditiva, ETL, Data Pipelines, Data Visualization e automação de processos.
+
+Experiência em Crédito e Risco, incluindo análise de originação, monitoramento de políticas de crédito, indicadores, risco, perda esperada e suporte à decisão. Atuação também em Business Intelligence financeiro e contábil, desenvolvimento de dashboards, engenharia e integração de dados, automação e disponibilização de informações para diferentes áreas de negócio.
+
+Combino Estatística Aplicada, tecnologia e visão de negócio para transformar dados em análises, indicadores e soluções que apoiam decisões, reduzem incertezas e geram valor para a organização."
+
+skills:
+  - Python para análise de dados, ETL, engenharia de dados, automação de processos e integração de APIs.
+  - R para análise estatística, Data Analytics, modelagem, geração de relatórios e desenvolvimento de aplicações analíticas.
+  - SQL avançado para extração, transformação, validação e disponibilização de dados em processos analíticos e pipelines.
+  - Power BI para desenvolvimento de dashboards, monitoramento de KPIs, análises multidimensionais e suporte à decisão.
+  - DAX e Power Query (Linguagem M) para construção de métricas, transformação de dados e modelos analíticos em Business Intelligence.
+  - Postgres para armazenamento, integração e disponibilização de dados estruturados para BI e Analytics.
+  - PySpark e Pandas para processamento, transformação, harmonização e integração de grandes volumes de dados.
+  - Luigi para orquestração e automação de pipelines ETL orientados por metadados.
+  - Scikit-learn para modelagem preditiva, validação e avaliação de modelos analíticos.
+  - Estatística Aplicada para análise exploratória, modelagem estatística, segmentação, avaliação de risco e suporte à decisão.
+  - Modelagem Estatística para regressão, modelos lineares generalizados, análise multivariada, métodos não paramétricos e modelagem preditiva.
+  - Credit Analytics e Risk Analytics para análise de originação, risco, inadimplência, perda esperada, rentabilidade e suporte à decisão de crédito.
+  - Monitoramento de Políticas de Crédito para avaliação de regras de decisão, aprovação, recusa, retenção, gargalos e performance da esteira de crédito.
+  - Business Intelligence e Data Analytics para transformação de dados operacionais, financeiros e comerciais em indicadores e inteligência gerencial.
+  - Data Engineering e ETL/ELT para construção de pipelines de extração, transformação, padronização, validação e integração de dados.
+  - Data Visualization para construção de dashboards e visualizações orientadas ao monitoramento de indicadores e identificação de padrões.
+  - Automação de Processos e RPA com Python e UiPath para automatização de atividades operacionais, aplicação de regras de negócio e tratamento de exceções.
+  - Integração de Sistemas e APIs para conectar fontes de dados, sistemas corporativos e canais de distribuição de informações.
+  - R/Shiny para desenvolvimento de aplicações web analíticas, sistemas corporativos e workflows orientados por dados.
+  - Git e GitLab para versionamento e gerenciamento do desenvolvimento de soluções analíticas e de dados.
 
 competencies:
-  - Data Analytics e Data Science
-  - Business Intelligence e Advanced Analytics
+  - Data Analytics 
+  - Data Science
+  - Business Intelligence 
   - Análise Exploratória de Dados
-  - Modelagem Estatística e Preditiva
   - Estatística Aplicada
-  - Data Visualization e Dashboards
-  - ETL/ELT e Data Pipelines
-  - Business Analysis e Decision Support
-  - Credit Analytics e Risk Analytics
-  - KPI Monitoring e Indicadores de Performance
+  - Visualização de dados e Dashboards
+  - Pipeline de dados, ETL
+  - Suporte a decisão do negócio
+  - Análise de Créidto e Risco
+  - Monitoramento de Indicadores (KPI)
   - Automação de Processos
-  - Data Integration e Data Transformation
+  - Integração e Transformação de dados
   - Análise Financeira e Contábil
-  - Model Validation
   - Governança e Monitoramento de Políticas de Crédito.
 
 tech_stack:
@@ -49,9 +75,9 @@ tech_stack:
   Estatística: [Estatística Aplicada, Regressão, Modelos Lineares Generalizados, Análise de Sobrevivência, Análise Multivariada, Métodos Não Paramétricos, Modelos Estatísticos, Simulação Estatística, Viés e Variância, Modelos Aditivos, K-Fold, Leave-One-Out-Cross-Validation]
   Business Intelligence e Visualização: [Microsoft Power BI, DAX, Linguagem M, Dashboards, Data Visualization, Indicadores de Performance, KPI Monitoring, Relatórios Gerenciais]
   Bancos de Dados: [PostgreSQL, SQLite]
-  Engenharia de Dados: [ETL/ELT, Data Pipelines, Data Integration, Data Transformation, Modelagem Dimensional, Star Schema, Luigi, PySpark]
+  Engenharia de Dados: [ETL/ELT, Pipeline de dados, Integração de dados, Transformação de dados, Modelagem Dimensional, Esquema Estrela, Luigi, PySpark]
   Bibliotecas e Frameworks: [Pandas, NumPy, PySpark, Scikit-learn, Dplyr, Shiny, RMarkdown, Selenium]
-  Automação e Integração: [Python Automation, UiPath, API Integration, Process Automation]
+  Automação e Integração: [Python, Selenium, UiPath, Integração de API]
   Ferramentas e Ambientes: [Jupyter Notebook, PyCharm, Visual Studio Code, Excel, SAS]
   Versionamento: [Git, GitLab]
 
@@ -78,49 +104,77 @@ experience:
     start: "2024-02"
     end: "2026-08"
     bullets:
-      - text: "Desenvolveu soluções de Engenharia de Dados para automatização, integração e disponibilização de dados corporativos, estruturando pipelines para extração, transformação, padronização, validação e ingestão de informações, com foco em confiabilidade, governança, escalabilidade e suporte aos processos de Business Intelligence e Analytics."
+      - text: "Desenvolvimento soluções de Engenharia de Dados para automatização, integração e disponibilização de dados corporativos, estruturando pipelines para extração, 
+      transformação, padronização, validação e ingestão de informações, com foco em confiabilidade, governança, escalabilidade e suporte aos processos de Business Intelligence e Analytics."
         subbullets:
-          - text: "Automação do Pipeline Corporativo Denodo → PostgreSQL: Este projeto demonstrou como uma arquitetura de Engenharia de Dados orientada por metadados pode transformar um processo manual e descentralizado de consumo de informações em uma infraestrutura automatizada, parametrizada, orquestrada e escalável. Por meio de Python, Luigi, SQL e PostgreSQL, foi estruturado um pipeline para automatizar a extração de dados do Denodo, executar transformações e padronizações, aplicar validações de qualidade, controlar dependências entre tarefas, registrar logs de execução e disponibilizar dados estruturados para consumo analítico."
+          - text: "Automação do Pipeline Corporativo Denodo → Postgres: Por meio de um orquestrador construído com Luigi, biblioteca para gerenciar workflows em Python, SQL avançado e Banco de dados Postgres, foi estruturado um pipeline ETL para automatizar a extração de dados do Denodo, executar transformações e padronizações,
+          aplicar validações de qualidade, controlar dependências entre tarefas, registrar logs de execução e disponibilizar dados estruturados para consumo analítico. Este projeto demonstrou como uma arquitetura de Engenharia de Dados orientada por metadados 
+          pode transformar um processo manual e descentralizado de consumo de informações em uma infraestrutura automatizada, parametrizada, orquestrada e escalável.
+          "
             subbullets:
-            - "Impacto: Redução de dependências manuais, retrabalho e riscos operacionais associados à extração, tratamento e atualização de dados, com aumento da confiabilidade, padronização e rastreabilidade das informações e maior agilidade na disponibilização de dados para dashboards, relatórios, indicadores e análises corporativas."
-            - "Competências: Python · Luigi · PostgreSQL · SQL · Engenharia de Dados · ETL / ELT · Pipelines de Dados · Orquestração de Pipelines de Dados · Arquitetura Orientada por Metadados · Integração de Dados · Transformação de Dados · Qualidade de Dados · Governança de Dados · Processamento em Lote · Registro de Execuções · Monitoramento · Automação de Processos · Arquitetura Escalável"
+            - "Impacto: Redução de dependências manuais, retrabalho e riscos operacionais associados à extração, tratamento e atualização de dados, com aumento da confiabilidade,
+            padronização e rastreabilidade das informações e maior agilidade na disponibilização de dados para dashboards, relatórios, indicadores e análises corporativas."
+            - "Competências: Python · Luigi · Postgres · SQL Avançado · Engenharia de Dados · ETL · Pipelines de Dados · Orquestração de Pipelines de Dados · 
+            Arquitetura Orientada por Metadados · Integração de Dados · Transformação de Dados · Qualidade de Dados · Governança de Dados · Processamento em Lote · 
+            Registro de Execuções · Monitoramento · Automação de Processos · Arquitetura Escalável"
           
-      - text: "Desenvolveu estudos analíticos, análises de dados, relatórios gerenciais e dashboards para as áreas Contábil e Financeira, utilizando Business Intelligence e Analytics para transformar dados financeiros e contábeis em informações para gestão, monitoramento de desempenho e tomada de decisão."
+      - text: "Desenvolvimento estudos analíticos, análises de dados, relatórios gerenciais e dashboards para as áreas Contábil e Financeira, utilizando Business Intelligence e Analytics
+      para transformar dados financeiros e contábeis em informações para gestão, monitoramento de desempenho e tomada de decisão."
         subbullets:
-          - text: "Gestão Analítica de Custos Rateados: Este projeto demonstrou como uma estrutura de Business Intelligence aplicada ao contexto financeiro e contábil pode transformar dados operacionais em inteligência gerencial. Por meio do Microsoft Power BI, Power Query, Linguagem M, DAX e modelagem dimensional, foi construída uma solução capaz de consolidar informações, estruturar indicadores, disponibilizar análises históricas e permitir investigação multidimensional dos custos."
+          - text: "Gestão Analítica de Custos Rateados: Desenvolvimento de dashboard em Microsoft Power BI utilizando conexão direta com bando de dados Postgres (Direct Query),
+          Power Query, Linguagem M, DAX e modelagem dimensional, foi construída uma solução de visualização de dados capaz de consolidar informações, estruturar indicadores, 
+          disponibilizar análises históricas e permitir investigação multidimensional dos custos. Este projeto demonstrou como uma estrutura de Business Intelligence aplicada ao contexto financeiro e contábil
+          pode transformar dados operacionais em inteligência gerencial."
             subbullets: 
             - "Impacto: Maior capacidade de gestão dos custos rateados por meio da transformação de dados financeiros em visibilidade analítica, permitindo identificar concentrações, tendências, oscilações e pontos de atenção, direcionando investigações, decisões gerenciais e oportunidades de otimização de despesas."
-            - "Competências: Microsoft Power BI · DAX · Power Query / Linguagem M · Modelagem de dados ·  Análise Financeira · Controle de Custos · Otimização de Custos · Suporte à Tomada de Decisão · Gestão Baseada em Dados"
+            - "Competências: Visualização de dados · Microsoft Power BI · DAX · Power Query / Linguagem M · Direct Query · Modelagem de dados · Esquema Estrela · Análise Financeira · Controle de Custos · Otimização de Custos · Suporte à Tomada de Decisão · Gestão Baseada em Dados"
 
-          - text: "Balanço Patrimonial: Desenvolveu dashboard para acompanhamento do Balanço Patrimonial da Cooperativa e de suas Agências, disponibilizando análises em nível de contas contábeis e perspectivas gerenciais. A solução permitiu explorar a evolução e composição de ativos e passivos por meio de análises horizontais e verticais, apoiando a interpretação da estrutura patrimonial e o acompanhamento da posição econômico-financeira."
+          - text: "Balanço Patrimonial: Desenvolvimento de dashboard em Microsoft Power BI utilizando conexão direta com bando de dados Postgres (Direct Query),
+          Power Query, Linguagem M, DAX e modelagem dimensional(dimensão gerencial e contas - Cosif) para acompanhamento do Balanço Patrimonial da Cooperativa e de suas Agências,
+          disponibilizando análises em nível de contas contábeis e perspectivas gerenciais. A solução permitiu explorar a evolução e composição de ativos e 
+          passivos por meio de análises horizontais e verticais, apoiando a interpretação da estrutura patrimonial e o acompanhamento da posição econômico-financeira histórica."
             subbullets: 
             - "Impacto: Proporcionou maior visibilidade sobre a composição e evolução dos ativos e passivos, apoiando análises patrimoniais, identificação de variações relevantes e tomada de decisão gerencial."
-            - "Competências: Microsoft Power BI · DAX · Análise Financeira · Contabilidade Gerencial · Data Visualization · Indicadores Gerenciais · Gestão Baseada em Dados"
+            - "Competências: Visualização de dados · Microsoft Power BI · DAX · Power Query / Linguagem M · Direct Query · Modelagem de dados · Esquema Estrela · 
+            Análise Financeira · Contabilidade Gerencial · Indicadores Gerenciais · Gestão Baseada em Dados"
  
-          - text: "Demonstrativo de Sobras e Perdas: Desenvolveu dashboard para acompanhamento do Demonstrativo de Sobras e Perdas da Cooperativa e de suas Agências, permitindo análise em diferentes níveis de granularidade, desde contas contábeis até visões gerenciais. A solução incorporou análises de oscilações, indicadores de análise vertical e horizontal e perspectivas de eficiência operacional, proporcionando aos stakeholders uma visão estruturada da performance econômico-financeira."
+          - text: "Demonstrativo de Sobras e Perdas: Desenvolvimento de dashboard em Microsoft Power BI utilizando conexão direta com bando de dados Postgres (Direct Query),
+          Power Query, Linguagem M, DAX e modelagem dimensional(dimensão gerencial e contas - Cosif) para acompanhamento do Demonstrativo de Sobras e Perdas da Cooperativa e de suas Agências, 
+          permitindo análise em diferentes níveis de granularidade, desde contas contábeis até visões gerenciais. A solução incorporou análises de oscilações, indicadores de análise vertical e 
+          horizontal e perspectivas de eficiência operacional, proporcionando aos stakeholders uma visão estruturada da performance econômico-financeira."
             subbullets: 
             - "Impacto: Ampliou a capacidade de acompanhamento da performance financeira e da eficiência operacional, facilitando a identificação de oscilações, tendências e pontos de atenção para suporte à gestão."
-            - "Competências: Microsoft Power BI · DAX · Análise Financeira · Contabilidade Gerencial · Performance Management · Indicadores Gerenciais · Gestão Baseada em Dados"
-        
+            - "Competências: Visualização de dados · Microsoft Power BI · DAX · Power Query / Linguagem M · Direct Query · Modelagem de dados · Esquema Estrela · 
+            Análise Financeira · Contabilidade Gerencial · Indicadores Gerenciais · Gestão Baseada em Dados"
 
-      - text: "Desenvolveu automações de processos utilizando Python e UiPath, aplicando análise de dados, regras de negócio e Robotic Process Automation (RPA) para transformar atividades operacionais manuais e repetitivas em fluxos automatizados, escaláveis e controlados, com foco em produtividade, redução de custos, qualidade operacional e eficiência."
+      - text: "Desenvolvimento de automações de processos utilizando Python e UiPath, aplicando análise de dados, regras de negócio e Robotic Process Automation (RPA) para transformar 
+      atividades operacionais manuais e repetitivas em fluxos automatizados, escaláveis e controlados, com foco em produtividade, redução de custos, qualidade operacional e eficiência."
         subbullets:
-        - text: "Automação de Identificação e Exclusão de Associados Inativos: Projeto desenvolvido para automatizar a identificação, validação, processamento e exclusão de mais de 5.000 associados inativos e sem reciprocidade em uma instituição financeira cooperativa. Por meio de Python, foram realizadas a extração, preparação, tratamento, consolidação e validação dos dados, aplicação dos critérios de elegibilidade e geração das listas de processamento. O UiPath foi utilizado para automatizar a execução operacional das atividades, incorporando controles, tratamento de exceções, registros de execução e mecanismos de rastreabilidade."
+        - text: "Automação de Identificação e Exclusão de Associados Inativos: Projeto desenvolvido para automatizar a identificação, validação, processamento e exclusão de mais de 5.000 associados 
+        inativos e sem reciprocidade em uma instituição financeira cooperativa. Por meio de Python, foram realizadas a extração, preparação, tratamento, consolidação e validação dos dados, 
+        aplicação dos critérios de elegibilidade e geração das listas de processamento. O UiPath foi utilizado para automatizar a execução operacional das atividades, incorporando controles, 
+        tratamento de exceções, registros de execução e mecanismos de rastreabilidade."
           subbullets:
             - "Impacto: Redução significativa do esforço operacional manual, aumento da capacidade de processamento e produtividade das equipes, maior padronização e qualidade da execução, redução da exposição a erros humanos e potencial redução de custo fixo mensal estimada em aproximadamente R$ 14.000, considerando o processamento de mais de 5.000 associados a um custo médio de R$ 2,80 por associado."
-            - "Competências: Python · UiPath · RPA · Automação de Processos · Processamento de Dados · Validação de Dados · Análise de Dados · Automação de Regras de Negócio · Automação de Fluxos de Trabalho · Tratamento de Exceções · Registro de Logs · Monitoramento · Analytics Operacional · Otimização de Processos · Eficiência Operacional · Redução de Custos · Redução de Riscos"
+            - "Competências: Python · UiPath · RPA · Automação de Processos · Processamento de Dados · Validação de Dados · Análise de Dados · Automação de Regras de Negócio · 
+            Automação de Fluxos de Trabalho · Tratamento de Exceções · Registro de Logs · Monitoramento · Otimização de Processos · Eficiência Operacional ·
+            Redução de Custos · Redução de Riscos"
         
-        - text: "Automação de Atendimento para Resgate de Sobras: Este projeto demonstrou como a integração entre Robotic Process Automation (RPA), atendimento digital e regras de negócio pode transformar um processo operacional de alta demanda em uma operação escalável e padronizada. Por meio do UiPath integrado ao WhatsApp Enterprise, foi construída uma solução capaz de automatizar a recepção, validação, processamento e acompanhamento das solicitações de resgate, processando mais de 12 mil atendimentos e apoiando aproximadamente 63% dos resgates realizados sobre o montante total de sobras distribuídas em 2024."
+        - text: "Automação de Atendimento para Resgate de Sobras: Este projeto demonstrou como a integração entre Robotic Process Automation (RPA), atendimento digital e regras de negócio pode 
+        transformar um processo operacional de alta demanda em uma operação escalável e padronizada. Por meio do UiPath integrado ao WhatsApp Enterprise, foi construída uma solução capaz 
+        de automatizar a recepção, validação, processamento e acompanhamento das solicitações de resgate, processando mais de 12 mil atendimentos e apoiando aproximadamente 63% dos resgates
+        realizados sobre o montante total de sobras distribuídas em 2024."
           subbullets:
           - "Impacto: Ampliação significativa da capacidade operacional das mais de 40 agências envolvidas, com redução do esforço manual, maior velocidade e padronização do processamento, melhoria da experiência dos associados e liberação das equipes para atividades de maior valor agregado."
-          - "Competências: UiPath · Robotic Process Automation (RPA) · WhatsApp Enterprise · Process Automation · Workflow Automation · Systems Integration · Business Rules Automation · Exception Handling · Process Monitoring · Logging · Automation Governance · Operational Efficiency · Process Optimization · Productivity Improvement · Digital Transformation · Member Experience · Organizational Scalability · Business Process Improvement · Service Automation"
+          - "Competências: UiPath · Robotic Process Automation (RPA) · WhatsApp Enterprise ·Automação de Processos · Automação de Fluxo de Tarefas · Integração de Sistemas · Tratamento de Exceções 
+          · Monitoramento de Processo · Logging · Governança · Eficiência Operacional · Otimização de Processo · Transformação Digital"
           
-        - text: "Desenvolveu soluções de Sistemas Corporativos e Automação de Processos para digitalização, integração e gestão de fluxos operacionais, estruturando uma plataforma web em R Shiny e PostgreSQL para centralizar dados, regras de negócio, automação documental e acompanhamento de transações, com foco em governança, rastreabilidade, padronização e eficiência operacional."
+        - text: "Desenvolvimento soluções de Sistemas Corporativos e Automação de Processos para digitalização, integração e gestão de fluxos operacionais, estruturando uma plataforma web em R Shiny e PostgreSQL para centralizar dados, regras de negócio, automação documental e acompanhamento de transações, com foco em governança, rastreabilidade, padronização e eficiência operacional."
           subbullets:
             - text: "Plataforma Web para Gestão e Comercialização de Ativos Imobilizados: Este projeto transformou um processo descentralizado, dependente de planilhas, controles manuais e comunicação entre áreas, em um workflow digital integrado para gestão e comercialização de ativos destinados a colaboradores. Por meio de R Shiny e PostgreSQL, foi desenvolvida uma aplicação corporativa com autenticação de usuários, catálogo de ativos, galeria de imagens, controle de disponibilidade, reservas, registro de vendas, integração com bases corporativas de colaboradores e associados, geração automatizada de contratos, acompanhamento de assinaturas, gestão de status e suporte às atividades administrativas de separação e entrega das unidades. O fluxo foi estruturado como Disponível → Reservado (Vendido) → Contrato Gerado → Contrato Assinado → Entregue, centralizando dados, regras de negócio, documentos e etapas operacionais em uma única solução."
               subbullets:
               - "Impacto: Digitalização e padronização do processo de comercialização, com apoio à venda de mais de 60 unidades, redução de controles manuais, retrabalho e atividades administrativas repetitivas, maior rastreabilidade das operações, melhoria da governança e transparência entre as áreas envolvidas e maior eficiência no acompanhamento das etapas de reserva, formalização, aprovação, separação e entrega dos ativos."
-              - "Competências: R · Shiny · PostgreSQL · Web Application Development · Application Architecture · Data Modeling · Process Automation · Workflow Management · Systems Integration · Business Systems Development"
+              - "Competências: R · Shiny · Postgres · Desenvolvimento Aplicação Web · Modelagem de dados"
             
   - title: "Cientista de Dados Junior"
     company: "Crefaz — Financiamentos e Investimentos"
@@ -128,21 +182,33 @@ experience:
     start: "2023-01"
     end: "2024-02"
     bullets:
-      - text: Desenvolveu estudos analíticos de dados de crédito a partir do motor Crivo, apoiando o monitoramento de políticas de concessão e a análise da jornada de propostas.
-      - text: Avaliou, validou e apoiou a implantação de políticas de crédito, fornecendo análises para decisões relacionadas à aprovação, recusa, retenção e eficiência operacional da esteira.
-      - text: Utilizou R, Python e Power BI na construção de análises, relatórios, dashboards e indicadores de crédito.
-      - text: "Desenvolveu soluções de Credit Analytics, Risk Analytics e Business Intelligence para monitoramento da originação de crédito, estruturando indicadores, análises multidimensionais e mecanismos de acompanhamento das políticas de decisão parametrizadas no motor Crivo, com foco em governança de crédito, performance operacional, identificação de gargalos e suporte à tomada de decisão baseada em dados."
+      - text: "Utilizei R, Python, Power BI e Excel para desenvolver, avaliar e validar políticas de crédito, transformando dados da originação e da 
+      jornada de propostas em indicadores e análises para apoiar decisões de concessão, aprovação, recusa, retenção e eficiência operacional. 
+      Além de realizar SQL avançado para consultas, extração, transformação e análise de dados de crédito."
+
+      - text: "Atuei com Python e Microsoft Power BI para estruturar uma solução de Credit Analytics e Risk Analytics, realizando a extração recorrente de dados da plataforma Crivo a cada 15 minutos, transformação dos dados, criação de atributos analíticos e preparação em formato Parquet para consumo no Power BI, permitindo o monitoramento da originação de crédito e das políticas de decisão."
         subbullets:
-          - text: "Dashboard de Originação e Monitoramento de Políticas de Crédito: Este projeto demonstrou como o Microsoft Power BI, combinado à modelagem analítica, métricas DAX e visualizações avançadas, transformou dados de uma operação de aproximadamente 1,6 milhão de propostas mensais em uma camada integrada de monitoramento da esteira de crédito. A solução acompanhava a jornada das propostas desde a digitação até a aprovação para mesa, monitorando 1.664.003 propostas digitadas, 936.051 recusadas e 691.855 aprovadas em P1, além de retenções, taxas de conversão e impacto individual das políticas parametrizadas no motor Crivo. Foram implementadas análises por produto, modalidade, matriz, hierarquia comercial, UF, companhia elétrica, vendedor, período e faixa horária, incluindo análises waterfall para decomposição da influência das regras sobre aprovação, recusa e retenção."
-            subbullets:
-            - "Impacto: Aumento da visibilidade sobre uma operação de alto volume, fortalecimento da governança das políticas de crédito e maior capacidade de monitoramento da esteira decisória. A solução permitiu identificar padrões de comportamento, concentração de impacto das regras, gargalos operacionais e oportunidades de otimização das políticas, apoiando Crédito, Risco, Operações e Negócios na tomada de decisões baseada em evidências. A análise histórica também evidenciou crescimento de 30,3% nas propostas digitadas, 36,8% nas recusas e 17,4% nas aprovações P1 entre os períodos analisados."
-            - "Competências: Credit Analytics · Risk Analytics · Microsoft Power BI · Credit Policy Monitoring · Credit Policy Governance · Data Modeling · DAX · Dashboard Development · Decision Engine Analysis · Waterfall Analysis"
-      - text: "Desenvolveu estudo para análise de risco, inadimplência, perda esperada e rentabilidade, análise exploratória para segmentação de clientes e estudos de risco-retorno, com foco em precificação diferenciada, otimização da concessão, gestão de portfólio e geração de valor ajustado ao risco."
-        subbullets:
-        - text: "Matriz de Risco: Este projeto demonstrou como uma abordagem analítica orientada a risco pode transformar dados de crédito e comportamento em inteligência para decisão, permitindo identificar grupos homogêneos de risco, avaliar a relação entre inadimplência, perda esperada e retorno, analisar diferenças de rentabilidade entre segmentos e construir uma Matriz de Risco capaz de associar perfis de clientes a estratégias de pricing, concessão e gestão de portfólio."
+        - text: "Dashboard de Originação e Monitoramento de Políticas de Crédito: Utilizou Microsoft Power BI, modelagem analítica, DAX e visualizações avançadas para transformar dados de uma operação de aproximadamente 1,6 milhão de propostas mensais em uma camada integrada de monitoramento da esteira de crédito, acompanhando a jornada das propostas desde a digitação até a aprovação para mesa e analisando aprovação, recusa, retenção, conversão e impacto das políticas parametrizadas no motor Crivo."
           subbullets:
-          - "Impacto: Maior granularidade na avaliação de risco e rentabilidade, possibilitando identificar oportunidades de precificação diferenciada, segmentos com melhor relação risco-retorno, concentrações de risco e grupos com necessidade de revisão de políticas ou condições comerciais, contribuindo para maior alinhamento entre risco, preço e retorno, otimização da carteira, melhoria das decisões de crédito e alocação mais eficiente de capital."
-          - "Competências: Credit Analytics · Risk Analytics · Credit Risk Modeling · Expected Loss · Statistical Modeling · Quantitative Analysis · Portfolio Analytics · Risk-Adjusted Return · Pricing Strategy · Excel"
+            - "Impacto: Ampliou a visibilidade sobre uma operação de alto volume, fortaleceu a governança das políticas de crédito e aumentou a capacidade de identificar padrões, gargalos operacionais, concentração de impacto das regras e oportunidades de otimização, apoiando as áreas de Crédito, Risco, Operações e Negócios na tomada de decisão baseada em evidências."
+            - "Competências: Python · Microsoft Power BI · Credit Analytics · Risk Analytics · Business Intelligence · Data Engineering · ETL · Data Transformation · Parquet · Data Modeling · DAX · Credit Policy Monitoring · Credit Policy Governance · Decision Engine Analysis · Waterfall Analysis · Dashboard Development · KPI Monitoring"
+       
+      - text: "Desenvolvimento de um estudo utilizando excel avançado para análise de risco, inadimplência, perda esperada e rentabilidade,
+      análise exploratória para segmentação de clientes e estudos de risco-retorno, com foco em precificação diferenciada, otimização da 
+      concessão, gestão de portfólio e geração de valor ajustado ao risco."
+        subbullets:
+        - text: "Modelagem de Risco, Segmentação e Análise Preditiva: Utilizou Estatística Aplicada, análise descritiva e análise exploratória com 
+        Excel Avançado para desenvolver estudos de inadimplência, perda esperada, rentabilidade, segmentação de clientes e risco-retorno. 
+        A partir da identificação de perfis homogêneos de risco e das relações entre risco, perda esperada e retorno, estruturou uma Matriz de Risco
+        para apoiar estratégias de precificação (pricing), concessão de crédito e gestão de portfólio. Como evolução da análise, propôs a aplicação de 
+        modelagem preditiva baseada em Árvores de Decisão, utilizando variáveis de perfil e comportamento para segmentar clientes por níveis de risco
+        e apoiar a definição de estratégias de precificação diferenciada e concessão de crédito."
+          subbullets:
+          - "Impacto: Aumentou a granularidade da avaliação de risco de crédito e rentabilidade, identificando oportunidades de precificação diferenciada,
+          concentrações de risco e segmentos com melhor relação risco-retorno. A abordagem proposta com Árvores de Decisão amplia o potencial analítico ao
+          permitir identificar combinações de características associadas a diferentes níveis de risco, apoiando uma segmentação mais precisa e estratégias de 
+          precificação, concessão e gestão de portfólio orientadas por dados."
+          - "Competências: Análise de Crédito · Risco · Perda Esperada · Análise exploratória · Precificação · Excel avançado  · Python · Pipeline de dados · Microsoft Power BI · Monitoramento de Políticas · Modelagem de dados · DAX · Desenvolvimento de Dashboards · ETL · Transformação de Dados"
 
   - title: "Analista de Dados"
     company: "Crefaz — Financiamentos e Investimentos"
@@ -150,9 +216,9 @@ experience:
     start: "2021-05"
     end: "2022-12"
     bullets:
-      - text: Desenvolveu dashboards e painéis analíticos para acompanhamento de produção, propostas, mesa de análise, pagamentos e indicadores operacionais da esteira de crédito.
-      - text: Realizou extração, tratamento, consolidação e análise de dados para relatórios gerenciais, estudos analíticos e suporte às áreas de negócio.
-      - text: "Desenvolveu soluções de Engenharia de Dados para integração, harmonização e consolidação de dados corporativos durante a transição sistêmica entre RBM e CODE, estruturando pipelines para extração, transformação, padronização, validação e disponibilização de informações, com foco em continuidade analítica, qualidade, governança, rastreabilidade e suporte aos processos de Business Intelligence e Analytics."
+      - text: Desenvolvimento dashboards e painéis analíticos para acompanhamento de produção, propostas, mesa de análise, pagamentos e indicadores operacionais da esteira de crédito.
+      - text: Realizei extração, tratamento, consolidação e análise de dados para relatórios gerenciais, estudos analíticos e suporte às áreas de negócio.
+      - text: "Desenvolvimento soluções de Engenharia de Dados para integração, harmonização e consolidação de dados corporativos durante a transição sistêmica entre RBM e CODE, estruturando pipelines para extração, transformação, padronização, validação e disponibilização de informações, com foco em continuidade analítica, qualidade, governança, rastreabilidade e suporte aos processos de Business Intelligence e Analytics."
         subbullets:
         - text: "Integração de Dados RBM → CODE: Desenvolveu pipeline de Engenharia de Dados utilizando Python, PySpark e Pandas para integrar dados provenientes dos sistemas RBM e CODE durante o rollout gradual de produtos, automatizando processos de extração, transformação, padronização, validação, tratamento de duplicidades e consolidação das bases. Implementou regras de de-para para harmonização de campos, status operacionais, produtos, decisões, etapas do processo, datas, códigos de propostas, canais, subcanais e hierarquias comerciais, criando uma camada de integração capaz de abstrair diferenças estruturais e semânticas entre os sistemas e disponibilizar uma visão única dos dados para BI, Analytics e áreas de negócio."
           subbullets:
@@ -297,7 +363,7 @@ projects:
       A plataforma apoiou a comercialização de mais de 60 unidades, contribuindo para reduzir controles manuais e atividades repetitivas, aumentar a eficiência operacional, melhorar a governança e a transparência entre as áreas envolvidas e proporcionar maior rastreabilidade sobre reservas, contratos, aprovações, separação e entrega dos ativos. O projeto demonstrou a aplicação de R, Shiny e PostgreSQL na construção de sistemas corporativos voltados à transformação digital e otimização de processos.
       
       Competências: R · Shiny · PostgreSQL · Web Application Development · Application Architecture · Data Modeling · Process Automation · Workflow Management · Systems Integration · Business Systems Development"
-    demo: "https://mlealserver.shinyapps.io/covid19_15RS/"
+    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
     featured: true
   
 

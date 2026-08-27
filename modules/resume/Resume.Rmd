@@ -59,7 +59,7 @@ foto_perfil <- "assets/www/foto_perfil.jpg"
 {\Huge\textbf{Marco Aurélio Valles Leal}} 
 \vspace{0.15cm}
 
-{\large Data Scientist \textbar{} Data Analyst \textbar{} Data \& Analytics \textbar{} Business Intelligence \textbar{} Statistics } \vspace{0.15cm} Python \textbar{} SQL \textbar{} R \textbar{} Power BI \textbar{} PySpark \textbar{} PostgreSQL 
+{\large Estatístico \textbar{} Analista de Dados e Business Intelligence \textbar{} Cientista de Dados \textbar{}  Python \textbar{} SQL \textbar{} R \textbar{} Power BI \textbar{}  \textbar{} Postgres }
 
 \vspace{0.25cm}
 
@@ -93,43 +93,29 @@ foto_perfil <- "assets/www/foto_perfil.jpg"
 \end{multicols}
 \hrule 
 
-# Principais Competências
-
-\begin{multicols}{2}
-
-\begin{itemize}
-```{r echo=FALSE, results='asis'}
-cat(paste0(
-  "\\item ", unlist(cv$competencies),
-  collapse = "\n"
-))
-```
-\end{itemize}
-\end{multicols}
-
-\hrule 
-
-# Stack Tecnológica
 
 
-\begin{multicols}{2}
+<!-- # Stack Tecnológica -->
 
-\begin{itemize}
-```{r echo=FALSE, results='asis'}
-for(cat_name in names(cv$tech_stack)){
 
-  cat("\n\n \\item \\textbf{", cat_name, ":} \n")
+<!-- \begin{multicols}{2} -->
 
-  items <- paste(unlist(cv$tech_stack[[cat_name]]),
-                 collapse = " \\textbar{} ")
+<!-- \begin{itemize} -->
+<!-- ```{r echo=FALSE, results='asis'} -->
+<!-- for(cat_name in names(cv$tech_stack)){ -->
 
-  cat(items, "\n")
-}
-```
-\end{itemize}
-\end{multicols}
+<!--   cat("\n\n \\item \\textbf{", cat_name, ":} \n") -->
 
-\hrule 
+<!--   items <- paste(unlist(cv$tech_stack[[cat_name]]), -->
+<!--                  collapse = " \\textbar{} ") -->
+
+<!--   cat(items, "\n") -->
+<!-- } -->
+<!-- ``` -->
+<!-- \end{itemize} -->
+<!-- \end{multicols} -->
+
+<!-- \hrule  -->
 
 
 ```{r echo=FALSE, results='asis', include=FALSE}
@@ -260,6 +246,22 @@ for (exp in cv$experience) {
 
 ```
 
+
+\hrule 
+
+# Habilidades
+
+\begin{multicols}{2}
+
+\begin{itemize}
+```{r echo=FALSE, results='asis'}
+cat(paste0(
+  "\\item ", unlist(cv$skills),
+  collapse = "\n"
+))
+```
+\end{itemize}
+\end{multicols}
 
 
 \hrule 

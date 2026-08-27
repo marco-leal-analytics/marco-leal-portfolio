@@ -5,7 +5,7 @@ account: marco-leal-analytics
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17721494
-bundleId: 12445603
+bundleId: 12470799
 url: https://marco-leal-analytics.shinyapps.io/marco-leal-portfolio/
 version: 1
 asMultiple: FALSE

@@ -43,7 +43,8 @@ mod_resume_server <- function(id) {
         # fallback constructed from known resume fields
         summary_text <- paste(
           "Cientista de Dados com formação em Estatística (UEM) e experiência prática em análise de dados, modelagem estatística,",
-          "business intelligence, automação e engenharia de dados. Atuação em ambientes corporativos focados em crédito, finanças e tomada de decisão baseada em dados."
+          "business intelligence, automação e engenharia de dados. Atuação em ambientes corporativos focados em crédito, finanças e tomada de decisão
+          baseada em dados."
         )
       }
       tagList(
@@ -342,6 +343,14 @@ mod_resume_server <- function(id) {
   tagList(items)
 
 })
+  
+  ## Competencies as bullet list (for two-column layout)
+  output$skills_text <- renderUI({
+    rd <- resume_data()
+    comps <- rd$skills
+    if (is.null(comps)) return(tags$p("Habilidades não disponíveis."))
+    tags$ul(class = "competencies-list", lapply(comps, function(x) tags$li(class = "section-small", style = "margin:4px 0;", x)))
+  })
 
     ## Competencies as bullet list (for two-column layout)
     output$competencies_text <- renderUI({

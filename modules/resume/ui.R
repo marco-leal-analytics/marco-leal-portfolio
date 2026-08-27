@@ -112,10 +112,7 @@ mod_resume_ui <- function(id) {
                    ),
      
 
-                   tags$div(class = "section", id = ns("education"),
-                            tags$div(class = "section-title", "Formação Acadêmica"),
-                            tags$div(class = "timeline", uiOutput(ns("education_timeline")))
-                   ),
+                 
 
                    tags$div(class = "section", id = ns("experience"),
                             tags$div(class = "section-title", "Experiência Profissional"),
@@ -124,36 +121,44 @@ mod_resume_ui <- function(id) {
 
                    tags$div(
                               class = "section",
-                              id = ns("tech"),
+                              id = ns("skills"),
 
                               tags$div(
                                 class = "section-title",
-                                "Competências e Tecnologias"
+                                "Habilidades"
                               ),
-
-                              tags$div(
-                                class = "two-col-row",
-
-                                tags$div(
-                                  class = "two-col-item",
-                                  tags$div(
-                                    class = "section-subtitle",
-                                    "Tech Stack"
-                                  ),
-                                  uiOutput(ns("tech_stack"))
-                                ),
-
-                                tags$div(
-                                  class = "two-col-item",
-                                  tags$div(
-                                    class = "section-subtitle",
-                                    "Competências e Especialidades"
-                                  ),
-                                  uiOutput(ns("competencies_text"))
-                                )
-                              )
+                              tags$div(uiOutput(ns("skills_text")))
+                              # tags$div(
+                              #   class = "two-col-row",
+                              # 
+                              #   tags$div(
+                              #     class = "two-col-item",
+                              #     tags$div(
+                              #       class = "section-subtitle",
+                              #       "Tech Stack"
+                              #     ),
+                              #     uiOutput(ns("tech_stack"))
+                              #   ),
+                              # 
+                              #   tags$div(
+                              #     class = "two-col-item",
+                              #     tags$div(
+                              #       class = "section-subtitle",
+                              #       "Competências e Especialidades"
+                              #     ),
+                              #     uiOutput(ns("competencies_text"))
+                              #   )
+                              # )
                             ),
-
+                   
+                   tags$div(class = "section", id = ns("projects"),
+                            tags$div(class = "section-title", "Projetos Relevantes"),
+                            uiOutput(ns("highlight_projects"))
+                   ),
+                   tags$div(class = "section", id = ns("education"),
+                            tags$div(class = "section-title", "Formação Acadêmica"),
+                            tags$div(class = "timeline", uiOutput(ns("education_timeline")))
+                   ),
                    tags$div(class = "section", id = ns("certifications"),
                             tags$div(class = "section-title", "Certificações"),
                             uiOutput(ns("certifications_list"))
@@ -164,11 +169,6 @@ mod_resume_ui <- function(id) {
                             uiOutput(ns("languages"))
                    ),
 
-                   tags$div(class = "section", id = ns("projects"),
-                            tags$div(class = "section-title", "Projetos Relevantes"),
-                            uiOutput(ns("highlight_projects"))
-                   ),
-
                    tags$div(class = "section", id = ns("footer"),
                             uiOutput(ns("footer_keywords"))
                    )
@@ -176,12 +176,14 @@ mod_resume_ui <- function(id) {
     ),
 
     tags$nav(class = "sticky-side-nav",
-             tags$a(href = paste0("#", ns("education")), "Formação"),
+   
              tags$a(href = paste0("#", ns("experience")), "Experiência"),
-             tags$a(href = paste0("#", ns("tech")), "Competências"),
+             tags$a(href = paste0("#", ns("skills")), "Habilidades"),
+             tags$a(href = paste0("#", ns("projects")), "Projetos"),
+             tags$a(href = paste0("#", ns("education")), "Formação"),
              tags$a(href = paste0("#", ns("certifications")), "Certificações"),
-             tags$a(href = paste0("#", ns("languages")), "Idiomas"),
-             tags$a(href = paste0("#", ns("projects")), "Projetos")
+             tags$a(href = paste0("#", ns("languages")), "Idiomas")
+            
     )
   )
 }
