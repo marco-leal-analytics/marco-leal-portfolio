@@ -58,7 +58,7 @@ flowchart TD
 - **YAML como fonte de conteúdo**: separa dados profissionais da apresentação. Alterações no currículo não exigem mudanças na estrutura da aplicação.
 - **Serviços isolados**: leitura de projetos e integração com a API do GitHub ficam fora dos módulos visuais, reduzindo acoplamento e centralizando tratamento de erros.
 - **Componentes reutilizáveis**: cards, badges, KPIs e tokens de tema são definidos em `utils/`, evitando cópia de marcação e mantendo consistência visual.
-- **Quarto para Perfil e Sobre**: permite apresentações editoriais ricas e pré-renderizadas, enquanto o Shiny permanece responsável pela navegação e pelas áreas interativas.
+- **Quarto para Perfil e Sobre**: permite apresentações editoriais ricas e pré-renderizadas, enquanto o Shiny permanece responsável pela incorporação, navegação e pelas áreas interativas.
 - **Embeds sob demanda**: as demonstrações são exibidas abaixo dos projetos, mas só são carregadas quando a aba correspondente é selecionada. Isso reduz requisições externas e evita a abertura automática de páginas.
 - **Assets estáticos servidos pelo Shiny**: imagens, PDFs, CSS e cases HTML permanecem versionados no projeto e são expostos por caminhos previsíveis.
 
@@ -85,7 +85,7 @@ flowchart TD
 ### Dados e conteúdo
 
 - **YAML**: fonte principal dos dados do currículo e dos projetos;
-- **Quarto**: geração da página inicial pré-renderizada;
+- **Quarto**: geração pré-renderizada das páginas Perfil e Sobre;
 - **R Markdown/knitr/Pandoc/LaTeX**: suporte aos materiais e à geração opcional do currículo em PDF.
 
 ### Integrações e suporte
@@ -147,8 +147,8 @@ O projeto utiliza princípios de visualização e comunicação de dados para or
 ├── global.R                      # Bibliotecas, tema, cache, dados e módulos
 ├── data/                         # Dados do currículo e catálogos em YAML
 ├── modules/
-│   ├── home/                     # Perfil profissional e artefatos renderizados
-│   ├── about/                    # Página Quarto sobre a plataforma
+│   ├── home/                     # Perfil, fonte QMD e HTML renderizado
+│   ├── about/                    # Sobre a plataforma, fonte QMD e HTML renderizado
 │   ├── resume/                   # Currículo interativo e documentos de apoio
 │   ├── projects/                 # Catálogo, filtros e embeds de projetos
 │   ├── blog/                     # Estrutura futura de publicações
@@ -241,6 +241,20 @@ O Shiny informará no console o endereço local, normalmente semelhante a `http:
 4. Para alterar a estrutura visual, edite o módulo correspondente em `modules/`.
 5. Para alterar o tema global, edite `assets/css/app.css` e os tokens em `utils/theme.R`.
 
+As páginas editoriais são mantidas em arquivos Quarto independentes:
+
+- `modules/home/home-marco-leal-analytics.qmd`: conteúdo da aba Perfil;
+- `modules/about/about-marco-leal-platform.qmd`: conteúdo da aba Sobre.
+
+Após editar qualquer um desses arquivos, regenere o HTML correspondente antes de executar ou publicar a aplicação:
+
+```bash
+quarto render modules/home/home-marco-leal-analytics.qmd
+quarto render modules/about/about-marco-leal-platform.qmd
+```
+
+O Shiny incorpora os HTMLs renderizados pelos módulos `modules/home/ui.R` e `modules/about/ui.R`. Esses módulos não contêm o conteúdo editorial das páginas.
+
 O conteúdo do `summary` usa blocos YAML dobrados (`summary: >`), permitindo organizar o texto em várias linhas no arquivo sem criar quebras artificiais na tela. A separação visual entre parágrafos é feita pelo renderer e pelo CSS.
 
 ## Segurança e configuração
@@ -273,6 +287,9 @@ Durante a evolução do projeto foram implementadas as seguintes melhorias:
 - documentação dos scripts R, UI, server, serviços e utilitários em português do Brasil;
 - melhoria da responsividade para telas menores;
 - inclusão de navegação por âncoras e botão voltar ao topo.
+- transformação da antiga página inicial em Perfil, com conteúdo Quarto focado em posicionamento profissional;
+- criação da aba Sobre, dedicada à plataforma, sua arquitetura, tecnologias e competências demonstradas;
+- incorporação independente das páginas Perfil e Sobre por iframes Quarto com versionamento de cache.
 
 ## Estado atual e próximos passos
 
