@@ -170,6 +170,8 @@ body.fullcontent { width: 100%; min-width: 0; margin: 0; padding: 0; }
 .section-title { margin: var(--mla-space-2) 0 var(--mla-space-5); padding-bottom: var(--mla-space-3); border-bottom: 1px solid var(--mla-border-soft); color: var(--mla-text); font-size: var(--mla-text-lg); font-weight: 700; }
 .sidebar-section { margin-top: var(--mla-space-2); }
 .sidebar-section h4 { margin: 0 0 var(--mla-space-2); color: var(--mla-muted); font-size: var(--mla-text-xs); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.about-summary { display: flex; flex-direction: column; gap: 1em; }
+.about-summary p { margin: 0; }
 .sidebar-links a { display: block; margin-bottom: var(--mla-space-2); color: var(--mla-accent); }
 .sidebar-contact, .sidebar-section p, .resume-sidebar li { color: var(--mla-muted); }
 .resume-sidebar p, .resume-sidebar li { white-space: pre-wrap; word-break: break-word; hyphens: auto; line-height: 1.55; text-align: justify; }

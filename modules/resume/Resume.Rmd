@@ -61,7 +61,7 @@ foto_perfil <- "assets/www/foto_perfil.jpg"
 
 {\large Estatístico \textbar{} Analista de Dados e Business Intelligence \textbar{} Cientista de Dados \textbar{}  Python \textbar{} SQL \textbar{} R \textbar{} Power BI \textbar{}  \textbar{} Postgres }
 
-\vspace{0.25cm}
+\vspace{0.10cm}
 
 \begin{minipage}[c]{0.45\textwidth}
 
@@ -81,18 +81,42 @@ foto_perfil <- "assets/www/foto_perfil.jpg"
 
 \end{minipage} 
 \end{center} 
-\vspace{0.25cm} 
+\vspace{0.10cm} 
 \hrule 
 \vspace{0.40cm}
 
 # Resumo Profissional
 
-\begin{multicols}{2}
-`r cv$summary`
+```{r echo=FALSE, results='asis'}
 
-\end{multicols}
+paragrafos <- stringr::str_split(cv$summary,"\n")
+
+
+
+for(p in paragrafos[[1]]){
+  
+  
+  cat(p, "\\newline \n")
+}
+
+  # if(!is.null(cv$summary)){
+  #   cat("", gsub("<br>", "\\newline", cv$summary), "\\newline")
+  # }
+  # 
+  # 
+  # cat("\n")
+
+  
+  
+  
+```
+
+
+\vspace{0.10cm}
+
 \hrule 
 
+\vspace{0.10cm}
 
 
 <!-- # Stack Tecnológica -->
@@ -246,12 +270,15 @@ for (exp in cv$experience) {
 
 ```
 
+\vspace{0.10cm}
 
 \hrule 
 
+\vspace{0.10cm}
+
 # Habilidades
 
-\begin{multicols}{2}
+
 
 \begin{itemize}
 ```{r echo=FALSE, results='asis'}
@@ -261,10 +288,15 @@ cat(paste0(
 ))
 ```
 \end{itemize}
-\end{multicols}
 
+
+\vspace{0.10cm}
 
 \hrule 
+
+\vspace{0.10cm}
+
+
 # Projetos Relevantes
 
 ```{r echo=FALSE, results='asis'}
@@ -288,7 +320,11 @@ for(project in cv$projects){
 }
 ```
 
+\vspace{0.10cm}
+
 \hrule 
+
+\vspace{0.10cm}
 
 # Formação Acadêmica
 
@@ -311,7 +347,11 @@ for(ed in cv$education){
 }
 ```
 
+\vspace{0.10cm}
+
 \hrule 
+
+\vspace{0.10cm}
 
 # Certificações
 
@@ -330,13 +370,21 @@ for(cert in cv$certifications){
 }
 ```
 
+\vspace{0.10cm}
+
 \hrule 
+
+\vspace{0.10cm}
 
 # Idiomas
 
 - Inglês — Intermediário
 
+\vspace{0.10cm}
+
 \hrule 
+
+\vspace{0.10cm}
 
 # Competências-Chave
 

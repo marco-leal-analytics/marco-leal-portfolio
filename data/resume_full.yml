@@ -7,28 +7,34 @@ contact:
     - linkedin: "https://www.linkedin.com/in/marco-a-v-leal/"
     - portfolio: "https://marco-leal-analytics.shinyapps.io/marco-leal-portfolio/"
 
-summary: |
-  Profissional de Dados com formação em Estatística pela Universidade Estadual de Maringá (UEM) e aproximadamente 5 anos de experiência na construção de soluções de Análise de Dados,
-  Ciência de Dados, Inteligência de Negócios e Engenharia de Dados. Atuação com Python, SQL, R, Power BI, PySpark e PostgreSQL, aplicados à análise exploratória, visualização de dados, 
-  integração e transformação de informações, construção de pipelines e automação de processos. Experiência na criação de painéis e indicadores para monitoramento de operações de crédito, 
-  risco, desempenho financeiro e comercial, transformando grandes volumes de dados em informações para identificação de padrões, gargalos, tendências e oportunidades de melhoria.
+summary: >
+  Profissional de Dados e Estatístico, com aproximadamente 5 anos de experiência na construção de soluções de Data Analytics, 
+  Business Intelligence, Ciência de Dados e Engenharia de Dados. Formação em Estatística pela Universidade Estadual de Maringá (UEM)
+  e atuação com Python, SQL, R, Power BI, PySpark e PostgreSQL, aplicados à análise e transformação de dados, desenvolvimento de 
+  pipelines, modelagem analítica, visualização, automação de processos e suporte à tomada de decisão. Combina conhecimento 
+  estatístico, capacidade analítica e domínio técnico para transformar problemas de negócio em soluções orientadas a dados.
+  
+  A trajetória reúne experiências em contextos de Crédito, Risco, Finanças, Contabilidade, Operações e Negócios, com resultados 
+  concretos na integração e disponibilização de dados, construção de indicadores e automação de processos. Entre os principais 
+  projetos, estão a estruturação de um pipeline de Engenharia de Dados orientado por metadados para automatizar o fluxo Denodo → 
+  PostgreSQL; a criação de soluções de Business Intelligence para gestão financeira e contábil; e a construção de uma solução de 
+  Credit Analytics e Risk Analytics para monitoramento de aproximadamente 1,6 milhão de propostas de crédito por mês. Também foram 
+  estruturadas automações com Python e UiPath para processamento de mais de 5.000 associados e mais de 12.000 atendimentos, 
+  ampliando a eficiência, padronização, rastreabilidade e escalabilidade dos processos.
+  
+  Para o próximo ciclo profissional, busca aprofundar a atuação na interseção entre Estatística Aplicada, Data Science, 
+  Data Analytics e Engenharia de Dados, contribuindo em desafios nos quais dados sejam utilizados para explicar comportamentos,
+  antecipar cenários, identificar oportunidades, reduzir riscos e otimizar processos. O objetivo é transformar dados em inteligência
+  e problemas de negócio em soluções analíticas robustas, escaláveis e orientadas à geração de valor.
 
-  Experiência em Análise de Crédito e Risco, incluindo análise da originação, monitoramento de políticas de crédito, indicadores, inadimplência, perda esperada, rentabilidade e suporte
-  à decisão. Atuação também em Inteligência de Negócios aplicada às áreas financeira e contábil, desenvolvimento de painéis e indicadores, engenharia e integração de dados, automação e
-  disponibilização estruturada de informações para diferentes áreas do negócio. Na Engenharia de Dados, desenvolvi pipelines automatizados para extração, transformação, padronização, 
-  validação e disponibilização de dados, incluindo integração entre sistemas e orquestração de processos. Em Automação, desenvolvi soluções com Python e UiPath para substituir atividades 
-  manuais e repetitivas por fluxos controlados, rastreáveis e escaláveis.
+short_summary: >
+  Estatístico e Profissional de Dados, com aproximadamente 5 anos de experiência em Data Analytics, 
+  Business Intelligence, Ciência de Dados e Engenharia de Dados. Experiência com Python, SQL, R, Power BI, PySpark e PostgreSQL, 
+  aplicados à construção de pipelines, análises, dashboards, modelos e automações. Atuação em Crédito, Risco, Finanças e Operações,
+   incluindo monitoramento de aproximadamente 1,6 milhão de propostas de crédito por mês e automações que processaram mais de 
+   12.000 atendimentos. Busca atuar na interseção entre Estatística Aplicada, Analytics e Engenharia de Dados, transformando 
+   dados em inteligência, eficiência e suporte à tomada de decisão.
 
-  Combino Estatística Aplicada, análise de dados, visualização, engenharia de dados, automação e visão de negócio para transformar dados em informações acionáveis e soluções que apoiam 
-  decisões, explicam comportamentos, identificam oportunidades, reduzem riscos e geram valor. Entre os resultados da minha atuação estão o monitoramento analítico de uma operação de 
-  aproximadamente 1,6 milhão de propostas de crédito por mês, a automação de pipelines corporativos e processos operacionais, o processamento de mais de 12 mil atendimentos automatizados
-  e a integração de dados durante a transição entre sistemas, garantindo continuidade, qualidade e confiabilidade das informações.
-
-short_summary: "Analista de Dados com aproximadamente 5 anos de experiência em Python, SQL, R, Power BI e PySpark, atuando na construção de soluções de Data Analytics, Business Intelligence, Data Science e Data Engineering. Formação em Estatística pela UEM, com experiência em análise exploratória, modelagem estatística e preditiva, ETL, Data Pipelines, Data Visualization e automação de processos.
-
-Experiência em Crédito e Risco, incluindo análise de originação, monitoramento de políticas de crédito, indicadores, risco, perda esperada e suporte à decisão. Atuação também em Business Intelligence financeiro e contábil, desenvolvimento de dashboards, engenharia e integração de dados, automação e disponibilização de informações para diferentes áreas de negócio.
-
-Combino Estatística Aplicada, tecnologia e visão de negócio para transformar dados em análises, indicadores e soluções que apoiam decisões, reduzem incertezas e geram valor para a organização."
 
 skills:
   - Python para análise de dados, ETL, engenharia de dados, automação de processos e integração de APIs.
@@ -286,8 +292,6 @@ projects:
       A solução também incorporou indicadores de evolução mensal, apresentando crescimento de 30,3% no volume de propostas digitadas, 36,8% no volume de recusas e 17,4% nas aprovações P1 entre períodos analisados, além de análises waterfall para identificação das regras com maior impacto na conversão das propostas ao longo da esteira de crédito. O projeto contribuiu para fortalecer a governança das políticas de crédito, identificar gargalos operacionais e apoiar decisões estratégicas baseadas em dados. 
 
       Competências: Credit Analytics, Risk Analytics, Business Intelligence, Power BI, Data Analytics, KPI Monitoring, Dashboard Development, Data Visualization, Decision Support, Business Analysis e Monitoramento de Políticas de Crédito." 
-      
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
     featured: true
   
   - id: analytics-shiny-dashboard
@@ -306,7 +310,7 @@ projects:
       Como impacto, o projeto garantiu a continuidade analítica durante o rollout dos produtos, preservando relatórios, dashboards e indicadores corporativos existentes. A centralização das regras reduziu inconsistências e dependências de tratamentos manuais, aumentando a confiabilidade, padronização e rastreabilidade das informações. A solução também permitiu que a organização avançasse na transformação tecnológica sem transferir a complexidade da migração para os consumidores dos dados, fortalecendo a governança da informação e o suporte à tomada de decisão baseada em dados.
 
       Competências: Python · PySpark · Pandas · Data Engineering · Data Integration · ETL / ELT · Data Harmonization · Data Mapping · Data Quality · Systems Integration"
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    
     featured: true
   
   - id: analytics-shiny-dashboard
@@ -315,7 +319,7 @@ projects:
       Como solução, foi desenvolvido um pipeline automatizado de Analytics e Business Intelligence integrado ao CRM Bitrix. O processo passou a realizar diariamente a extração dos dados comerciais, tratamento, transformação, padronização e consolidação das informações, permitindo calcular indicadores relacionados a leads, atendimentos, contatos, conversões, produtividade, performance e evolução dos resultados. O processamento analítico foi desenvolvido em R, enquanto o RMarkdown foi utilizado para geração automatizada e padronizada dos relatórios. Na etapa de distribuição, Python e integração via API possibilitaram o envio automatizado das informações por meio do WhatsApp Enterprise para as lojas e equipes envolvidas.
 
       O impacto foi a transformação de um processo manual e reativo em uma estrutura automatizada, recorrente e escalável. A solução aumentou a disponibilidade e a velocidade de acesso aos indicadores, reduziu atividades repetitivas e a dependência de solicitações à equipe de BI, além de ampliar a padronização e rastreabilidade das informações. A distribuição diária democratizou o acesso aos dados e fortaleceu a gestão comercial, permitindo acompanhar tendências, comparar unidades, identificar oportunidades e direcionar ações com maior agilidade. O projeto consolidou o Analytics como parte da rotina operacional e fortaleceu uma cultura de decisão orientada por dados."
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    
     featured: true
   
   - id: analytics-shiny-dashboard
@@ -326,7 +330,6 @@ projects:
       A iniciativa gerou impacto relevante em escala, produtividade e eficiência operacional, processando mais de 12.000 atendimentos e apoiando aproximadamente 63% dos resgates realizados sobre o montante total de sobras distribuídas em 2024. O projeto reduziu significativamente o esforço manual das mais de 40 agências participantes, ampliou a capacidade de atendimento, contribuiu para maior velocidade e padronização do processamento e melhorou a experiência dos associados. Estratégicamente, demonstrou a aplicação de RPA e atendimento digital como mecanismos de escalabilidade operacional, excelência de processos e transformação digital orientada à geração de valor.
       
       Competências: UiPath · Robotic Process Automation (RPA) · WhatsApp Enterprise · Process Automation · Workflow Automation · Systems Integration · Business Rules Automation · Exception Handling · Process Monitoring · Logging · Automation Governance · Operational Efficiency · Process Optimization · Productivity Improvement · Digital Transformation · Member Experience · Organizational Scalability · Business Process Improvement · Service Automation"
-    demo: "assets/www/cases/"
     featured: true
   
   - id: analytics-shiny-dashboard
@@ -380,5 +383,5 @@ projects:
     short_description: "Trabalho acadêmico voltado à avaliação de métodos não paramétricos aplicados à predição em modelos aditivos, comparando Kernel Smoothing, LOESS e Splines de Regressão linear e cúbica. Aplicação de validação cruzada Leave-One-Out, seleção de hiperparâmetros, simulações estatísticas, análise de viés e variância e avaliação de desempenho preditivo. 
       
       Competências: Estatística Aplicada, Modelagem Estatística, Modelagem Preditiva, Validação Cruzada, Simulação e Avaliação de Modelos."
-    demo: "https://marcoleal.shinyapps.io/analytics-shiny-dashboard"
+    demo: "assets/www/cases/TCC.pdf"
     featured: true

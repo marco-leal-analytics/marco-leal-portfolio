@@ -59,7 +59,7 @@ mod_projects_server <- function(id) {
                           tags$p(p$short_description),
                           tags$div(class = "project-links",
                                    if (!is.null(p$repo)) tags$a(href = p$repo, "GitHub", target = "_blank", class = "link") else NULL,
-                                   if (!is.null(p$demo)) tagList(tags$span(" \u2022 "), tags$a(href = p$demo, "Demo", target = "_blank", class = "link")) else NULL
+                                   if (!is.null(p$demo)) tagList(tags$span(" \u2022 "), tags$a(href = p$demo, "Abrir em outra página", target = "_blank", class = "link")) else NULL
                           )
                  ),
                  tags$div(class = "project-embed", embed_ui)

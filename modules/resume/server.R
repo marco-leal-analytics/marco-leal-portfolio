@@ -121,7 +121,7 @@ mod_resume_server <- function(id) {
                  tags$p(style = "margin:4px 0;", p$short_description %||% ""),
                  tags$small(
                    if (!is.null(p$repo)) tags$a(href = p$repo, "GitHub", target = "_blank"), " ",
-                   if (!is.null(p$demo)) tags$a(href = p$demo, "Demo", target = "_blank")
+                   if (!is.null(p$demo)) tags$a(href = p$demo, "Abrir em outra página", target = "_blank")
                  )
         )
       }))
@@ -377,7 +377,15 @@ mod_resume_server <- function(id) {
     output$about_text_short <- renderUI({
       rd <- resume_data()
       if (is.null(rd$summary)) return(tags$p("Sobre não disponível."))
-      tags$p(class = "section-small", style = "line-height:1.4;", substr(rd$summary, 1, 3000))
+
+      paragraphs <- unlist(strsplit(trimws(as.character(rd$summary)), "\\n\\s*\\n|\\n"))
+
+      tags$div(
+        class = "about-summary",
+        lapply(paragraphs, function(paragraph) {
+          tags$p(class = "section-small", paragraph)
+        })
+      )
     })
 
     output$sidebar_contact <- renderUI({
