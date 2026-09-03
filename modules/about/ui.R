@@ -12,8 +12,16 @@ mod_about_ui <- function(id) {
         class = "qmd-document-frame",
         src = paste0("about-document/about-marco-leal-platform.html?v=", document_version),
         title = "Sobre a plataforma Marco Leal Portfolio",
-        scrolling = "no",
-        onload = "this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+        scrolling = "auto",
+        onload = paste0(
+          "var frame=this;",
+          "var resize=function(){var doc=frame.contentWindow.document;",
+          "frame.style.height=Math.max(doc.documentElement.scrollHeight,doc.body.scrollHeight)+'px';};",
+          "resize();",
+          "if(frame.contentWindow.ResizeObserver){",
+          "new frame.contentWindow.ResizeObserver(resize).observe(frame.contentWindow.document.documentElement);",
+          "} else {setTimeout(resize,100);setTimeout(resize,500);}"
+        )
       )
     )
   )
