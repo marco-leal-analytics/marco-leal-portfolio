@@ -2,7 +2,7 @@
 
 Portfólio profissional desenvolvido em **R, Shiny, HTML e CSS** para apresentar a trajetória de Marco Aurélio Valles Leal em Estatística, Data Analytics, Business Intelligence, Data Science e Data Engineering.
 
-O projeto foi estruturado como uma aplicação web recruiter-first: o visitante consegue consultar rapidamente o perfil, a experiência profissional, as competências, os projetos, as certificações, os materiais de apoio e os canais profissionais de contato.
+O projeto foi estruturado como uma aplicação web orientada a recrutadores: o visitante consegue consultar rapidamente o perfil, a experiência profissional, as competências, os projetos, as certificações, os materiais de apoio e os canais profissionais de contato.
 
 ## Objetivo do projeto
 
@@ -25,31 +25,72 @@ A aplicação principal é composta pelas seguintes áreas:
 - **Projetos**: catálogo com pesquisa, navegação por abas e demos incorporadas abaixo dos detalhes de cada projeto.
 - **Contato**: links para GitHub e LinkedIn. O antigo fluxo de envio de e-mail foi removido por não possuir formulário ativo.
 
-Os demos dos projetos são carregados sob demanda. O iframe recebe a URL somente quando o projeto é selecionado, evitando que várias páginas externas sejam abertas ou carregadas ao acessar a aba Projetos.
+As demonstrações dos projetos são carregadas sob demanda. O iframe recebe a URL somente quando o projeto é selecionado, evitando que várias páginas externas sejam abertas ou carregadas ao acessar a aba Projetos.
+
+## Architecture
+
+A arquitetura combina uma camada de apresentação em Shiny, uma camada de conteúdo orientada a dados e uma camada de recursos estáticos e integrações. Essa divisão foi escolhida para manter o portfólio fácil de atualizar, reutilizar e publicar.
+
+```mermaid
+flowchart TD
+  A[app.R] --> B[global.R]
+  B --> C[utils]
+  B --> D[services]
+  B --> E[data/*.yml]
+  A --> F[ módulos UI e server ]
+  F --> G[Home / Quarto]
+  F --> H[Currículo / Shiny]
+  F --> I[Projetos / Shiny]
+  F --> J[Contato / links]
+  I --> K[embeds sob demanda]
+  G --> L[HTML pré-renderizado]
+  C --> M[assets/css e assets/www]
+```
+
+### Por que essa arquitetura?
+
+- **`app.R` como ponto de composição**: concentra a entrada da aplicação e a navegação principal, deixando cada área com uma responsabilidade clara.
+- **`global.R` como inicialização compartilhada**: registra assets, carrega bibliotecas, configura o tema, disponibiliza dados em cache e importa os módulos na ordem necessária.
+- **Módulos separados em `ui.R` e `server.R`**: isolam a interface da lógica reativa. Isso facilita manutenção, testes futuros e evolução independente das abas.
+- **YAML como fonte de conteúdo**: separa dados profissionais da apresentação. Alterações no currículo não exigem mudanças na estrutura da aplicação.
+- **Serviços isolados**: leitura de projetos e integração com a API do GitHub ficam fora dos módulos visuais, reduzindo acoplamento e centralizando tratamento de erros.
+- **Componentes reutilizáveis**: cards, badges, KPIs e tokens de tema são definidos em `utils/`, evitando cópia de marcação e mantendo consistência visual.
+- **Quarto para a página inicial**: permite uma apresentação editorial rica e pré-renderizada, enquanto o Shiny permanece responsável pela navegação e pelas áreas interativas.
+- **Embeds sob demanda**: as demonstrações são exibidas abaixo dos projetos, mas só são carregadas quando a aba correspondente é selecionada. Isso reduz requisições externas e evita a abertura automática de páginas.
+- **Assets estáticos servidos pelo Shiny**: imagens, PDFs, CSS e cases HTML permanecem versionados no projeto e são expostos por caminhos previsíveis.
+
+### Fluxo de dados
+
+1. `app.R` chama `global.R` ao iniciar.
+2. `global.R` registra os caminhos públicos, carrega os helpers e lê os dados YAML com cache.
+3. Os módulos recebem o identificador da aba e montam suas interfaces com `NS()`.
+4. Os servidores dos módulos consultam os dados reativos e renderizam apenas os componentes necessários.
+5. A aba Projetos cria os detalhes e os embeds; o JavaScript ativa o `src` apenas para o projeto selecionado.
+6. Links externos, documentos e páginas de cases são abertos somente por ação explícita do visitante.
 
 ## Tecnologias utilizadas
 
 ### Linguagem e framework
 
-- **R**: leitura e transformação de dados, regras de negócio, composição da interface e renderização reativa.
-- **Shiny**: aplicação web reativa, módulos UI/server, navegação, filtros e renderização dinâmica.
-- **bslib**: navbar, tema e integração com o sistema visual do Shiny.
-- **HTML**: estrutura semântica das páginas, links, imagens, iframes, timelines e componentes gerados pelo Shiny.
-- **CSS**: layout responsivo, tokens visuais, tipografia, grids, cards, timelines e estados de interação.
+- **R**: leitura e transformação de dados, regras de negócio, composição da interface e renderização reativa;
+- **Shiny**: aplicação web reativa, módulos UI/server, navegação, filtros e renderização dinâmica;
+- **bslib**: navbar, tema e integração com o sistema visual do Shiny;
+- **HTML**: estrutura semântica das páginas, links, imagens, iframes, timelines e componentes gerados pelo Shiny;
+- **CSS**: layout responsivo, tokens visuais, tipografia, grids, cards, timelines e estados de interação;
 - **JavaScript**: navegação suave, botão voltar ao topo e ativação sob demanda dos embeds de projetos.
 
 ### Dados e conteúdo
 
-- **YAML**: fonte principal dos dados do currículo e dos projetos.
-- **Quarto**: geração da página inicial pré-renderizada.
+- **YAML**: fonte principal dos dados do currículo e dos projetos;
+- **Quarto**: geração da página inicial pré-renderizada;
 - **R Markdown/knitr/Pandoc/LaTeX**: suporte aos materiais e à geração opcional do currículo em PDF.
 
 ### Integrações e suporte
 
-- **GitHub API** com `httr2`, `jsonlite` e cache via `memoise`.
-- **tibble**: criação das tabelas normalizadas de projetos.
-- **Google Fonts** para tipografia da aplicação.
-- **Arquivos HTML, PDF, JPG e PNG** para demos, currículo, foto e identidade visual.
+- **GitHub API** com `httr2`, `jsonlite` e cache via `memoise`;
+- **tibble**: criação das tabelas normalizadas de projetos;
+- **Google Fonts** para tipografia da aplicação;
+- **Arquivos HTML, PDF, JPG e PNG** para demonstrações, currículo, foto e identidade visual.
 
 ## Competências demonstradas
 
@@ -213,7 +254,7 @@ Durante a evolução do projeto foram implementadas as seguintes melhorias:
 
 - criação da aplicação modular em Shiny;
 - definição de tema escuro global e tokens visuais;
-- reorganização das abas e do layout recruiter-first;
+- reorganização das abas e do layout orientado a recrutadores;
 - centralização do currículo em `resume_full.yml`;
 - renderização dinâmica de experiências, formação, competências e certificações;
 - suporte a três parágrafos no resumo profissional;
