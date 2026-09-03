@@ -127,6 +127,7 @@ pre { overflow: auto; border: 1px solid var(--mla-border); border-radius: var(--
 .eyebrow { display: inline-block; margin-bottom: var(--mla-space-4); color: var(--mla-accent-2); font-size: var(--mla-text-xs); font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 .tag-row { display: flex; flex-wrap: wrap; gap: var(--mla-space-2); margin-top: var(--mla-space-5); }
 
+
 .kpi-grid, .metric-grid, .result-grid, .repo-grid, .insight-grid, .projects-grid, .tech-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--mla-grid-gap); margin: var(--mla-space-5) 0 var(--mla-space-8); }
 .kpi-grid > p, .metric-grid > p, .result-grid > p, .repo-grid > p, .insight-grid > p, .tech-grid > p { display: contents; }
 .tech-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }

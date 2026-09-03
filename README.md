@@ -20,14 +20,14 @@ O conteúdo é mantido em arquivos YAML para separar dados e apresentação. Ass
 
 A aplicação principal é composta pelas seguintes áreas:
 
-- **Sobre**: página inicial com apresentação profissional pré-renderizada em Quarto e exibida em um iframe interno.
+- **Perfil**: página inicial com apresentação profissional pré-renderizada em Quarto e exibida em um iframe interno.
 - **Currículo**: timeline de experiências e formação, competências, certificações, contatos e resumo profissional.
 - **Projetos**: catálogo com pesquisa, navegação por abas e demos incorporadas abaixo dos detalhes de cada projeto.
 - **Contato**: links para GitHub e LinkedIn. O antigo fluxo de envio de e-mail foi removido por não possuir formulário ativo.
 
 As demonstrações dos projetos são carregadas sob demanda. O iframe recebe a URL somente quando o projeto é selecionado, evitando que várias páginas externas sejam abertas ou carregadas ao acessar a aba Projetos.
 
-## Architecture
+## Arquitetura
 
 A arquitetura combina uma camada de apresentação em Shiny, uma camada de conteúdo orientada a dados e uma camada de recursos estáticos e integrações. Essa divisão foi escolhida para manter o portfólio fácil de atualizar, reutilizar e publicar.
 
@@ -147,7 +147,6 @@ O projeto utiliza princípios de visualização e comunicação de dados para or
 │   ├── home/                     # Página inicial Quarto e artefatos renderizados
 │   ├── resume/                   # Currículo interativo e documentos de apoio
 │   ├── projects/                 # Catálogo, filtros e embeds de projetos
-│   ├── about/                    # Módulo de apresentação alternativa
 │   ├── blog/                     # Estrutura futura de publicações
 │   └── contact/                  # Links profissionais
 ├── services/                    # Integrações externas e leitura de projetos
@@ -279,7 +278,6 @@ O projeto está funcional como portfólio profissional e currículo web. As áre
 - criar um `renv.lock` para fixar versões dos pacotes R;
 - adicionar pipeline de validação e deploy contínuo;
 - substituir o conteúdo provisório do Blog por uma fonte real de artigos;
-- decidir se o módulo `about` será integrado à navegação ou removido;
 - melhorar a validação visual dos links e demos externas;
 - adicionar uma estratégia formal para publicação das páginas Quarto e dos documentos PDF.
 

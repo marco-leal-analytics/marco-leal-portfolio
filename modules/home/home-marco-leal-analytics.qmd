@@ -13,7 +13,7 @@ css: ../../assets/css/app.css
 
 <div class="hero-copy">
 
-<span class="eyebrow">MARCO LEAL . SOBRE</span>
+<span class="eyebrow">MARCO LEAL . PERFIL</span>
 
 # Dados para entender.  
 # Estatística para explicar.  
