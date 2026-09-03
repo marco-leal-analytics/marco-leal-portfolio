@@ -1,5 +1,6 @@
 library(shiny)
 
+# Aba inicial: incorpora a apresentação Quarto pré-renderizada em largura total.
 mod_home_ui <- function(id) {
   ns <- NS(id)
   tagList(

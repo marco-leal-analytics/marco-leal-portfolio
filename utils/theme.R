@@ -1,7 +1,7 @@
 library(bslib)
 library(htmltools)
 
-# Central design tokens used by bs_theme and for SASS generation
+# Tokens centrais de design compartilhados pelo tema bslib e pela saída SASS opcional.
 design_tokens <- list(
   color_primary = "#3B82F6",
   color_secondary = "#7C3AED",
@@ -45,6 +45,7 @@ app_theme <- function(mode = c("dark", "light")) {
   }
 }
 
+# Adiciona as fontes externas usadas pela folha de estilos da aplicação.
 use_app_fonts <- function() {
   tagList(
     tags$link(rel = "preconnect", href = "https://fonts.googleapis.com" ),
@@ -52,11 +53,10 @@ use_app_fonts <- function() {
   )
 }
 
-# Export tokens for other R code
+# Retorna os tokens para o código que precisa da paleta ou dos espaçamentos.
 get_design_tokens <- function() { design_tokens }
 
-# Optionally write a small SASS partial from R tokens (useful if you want
-# a single source of truth). This writes to `assets/sass/_tokens_from_r.scss`.
+# Opcionalmente escreve um partial SASS pequeno a partir dos tokens atuais do R.
 write_sass_tokens <- function(path = "assets/sass/_tokens_from_r.scss") {
   tokens <- get_design_tokens()
   lines <- c("// Generated from R design tokens",

@@ -1,4 +1,6 @@
 library(shiny)
+
+# A aba Contato atualmente exibe apenas links para redes profissionais.
 mod_contact_ui <- function(id) {
   tagList(
     tags$section(

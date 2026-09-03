@@ -1,5 +1,6 @@
 library(shiny)
 
+# Dados provisórios do blog; substituir esta saída pelo repositório futuro de posts.
 mod_blog_server <- function(id) {
   moduleServer(id, function(input, output, session) {
     output$posts <- renderUI({

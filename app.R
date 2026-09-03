@@ -1,8 +1,10 @@
 library(shiny)
 library(bslib)
 
-# Load globals and modules into the global environment so module functions
-# like `mod_home_ui()` are available when building the UI.
+# Ponto de entrada da aplicação Shiny. Os helpers globais e as funções dos
+# módulos são carregados antes da montagem da barra de navegação.
+# Carrega os globais e módulos no ambiente global para que funções como
+# `mod_home_ui()` estejam disponíveis na construção da interface.
 source("global.R")
 
 ui <- page_navbar(
@@ -14,16 +16,16 @@ ui <- page_navbar(
     use_app_fonts(),
     tags$link(rel = "stylesheet", href = "assets/css/app.css"),
     tags$script(HTML("document.documentElement.setAttribute('data-theme', 'dark')")),
-    # JS handlers: navigation, back-to-top visibility, and scroll-into-view helper
+    # Handlers JS para navegação, visibilidade do botão voltar ao topo e rolagem.
     tags$script(HTML(
 "(function(){
-  // Navigate handler from server
+  // Recebe comandos de navegação enviados pelo servidor.
   if(window.Shiny){
     Shiny.addCustomMessageHandler('navigate', function(data){
       try{ var el = document.getElementById(data.page); if(el) el.scrollIntoView({behavior:'smooth'}); }catch(e){}
     });
   }
-  // Back to top button
+  // Cria e atualiza o botão voltar ao topo.
   function ensureBackToTop(){
     var btn = document.getElementById('back-to-top');
     if(!btn){ btn = document.createElement('button'); btn.id='back-to-top'; btn.innerText='↑'; document.body.appendChild(btn);
@@ -42,6 +44,7 @@ ui <- page_navbar(
   nav_panel("Contato", mod_contact_ui("contact"))
 )
 
+# Inicia um módulo de servidor para cada aba exposta pela interface acima.
 server <- function(input, output, session) {
   mod_home_server("home")
   mod_resume_server("resume")

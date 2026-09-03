@@ -1,9 +1,11 @@
 library(shiny)
 
+# Monta as abas a partir do resume_full.yml e carrega cada demo somente quando selecionado.
 mod_projects_server <- function(id) {
   moduleServer(id, function(input, output, session) {
     resume_data <- reactive({ read_yaml_safe(file.path(DATA_DIR, "resume_full.yml")) })
 
+    # Garante valores únicos para as abas mesmo quando a fonte possui IDs repetidos.
     project_ids <- function(projects) {
       raw_ids <- vapply(seq_along(projects), function(i) {
         project <- projects[[i]]
@@ -12,7 +14,7 @@ mod_projects_server <- function(id) {
       make.unique(raw_ids, sep = "-")
     }
 
-    # build projects df from resume_full.yml if available, else fallback to data/projects.yml
+    # Prioriza o catálogo principal do currículo e mantém o catálogo antigo como fallback.
     projects_df <- reactive({
       rd <- resume_data()
       if (!is.null(rd$projects) && length(rd$projects) > 0) {
@@ -36,7 +38,7 @@ mod_projects_server <- function(id) {
       df[grepl(ql, tolower(df$title)) | grepl(ql, tolower(df$short_description)), , drop = FALSE]
     })
 
-    # Render projects as tabs using titles as tab labels, plus a Custom tab
+    # Renderiza detalhes em abas; os iframes das demos são ativados pelo script da interface.
     output$projects_tabs_ui <- renderUI({
       rd <- resume_data()
       projects <- NULL
@@ -81,15 +83,15 @@ mod_projects_server <- function(id) {
         )
       })
 
-      # extra custom tab for user to insert content later
+      # Mantém uma aba de rascunho para conteúdo temporário informado pelo usuário.
       tabs <- c(tabs, list(tabPanel("Custom", value = "custom", textAreaInput(session$ns("custom_input"), "Conteúdo customizado", value = "", rows = 10, width = "100%"))))
 
-      # render a navlistPanel so the project menu is on the left and content on the right
+      # Posiciona o menu de projetos à esquerda e o conteúdo selecionado à direita.
       nav_args <- c(list(id = session$ns("proj_tabs"), widths = c(3, 9)), tabs)
       do.call(navlistPanel, nav_args)
     })
 
-    # debug: show active tab
+    # Saída de diagnóstico mantida para inspeção durante o desenvolvimento.
     output$debug_selected <- renderText({
       paste0("active_tab: ", as.character(input$proj_tabs))
     })

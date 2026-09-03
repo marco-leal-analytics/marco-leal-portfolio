@@ -1,7 +1,7 @@
 library(shiny)
 library(htmltools)
 
-# Generic UI Card
+# Card de conteúdo compartilhado pelas áreas de currículo, projetos e informações.
 ui_card <- function(title = NULL, subtitle = NULL, image = NULL, footer = NULL, ... ) {
   tagList(
     div(class = "ui-card",
@@ -16,7 +16,7 @@ ui_card <- function(title = NULL, subtitle = NULL, image = NULL, footer = NULL, 
   )
 }
 
-# KPI Card with main metric and optional delta/sparkline
+# Card de KPI para um valor principal com contexto, variação e sparkline opcionais.
 kpi_card <- function(label, value, delta = NULL, sparkline = NULL, subtitle = NULL, width = NULL, id = NULL) {
   style <- if (!is.null(width)) paste0("width:", width, ";") else NULL
   tagList(

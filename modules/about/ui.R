@@ -1,5 +1,6 @@
 library(shiny)
 
+# Aba Sobre: apresenta o posicionamento profissional e uma lista dinâmica de tecnologias.
 mod_about_ui <- function(id) {
   ns <- NS(id)
   tagList(

@@ -2,6 +2,7 @@ library(yaml)
 library(dplyr)
 library(stringr)
 
+# Lê o catálogo alternativo de projetos e normaliza cada entrada em data frame.
 read_projects <- function(path = "data/projects.yml") {
   if (!file.exists(path)) return(tibble::tibble())
   raw <- yaml::read_yaml(path)
@@ -23,6 +24,7 @@ read_projects <- function(path = "data/projects.yml") {
   bind_rows(projects)
 }
 
+# Aplica filtros opcionais de texto, tecnologia e categoria à tabela de projetos.
 filter_projects <- function(projects_df, q = NULL, tech = NULL, category = NULL) {
   df <- projects_df
   if (!is.null(q) && nzchar(q)) {

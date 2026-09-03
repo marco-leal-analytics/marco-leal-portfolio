@@ -1,5 +1,6 @@
 library(shiny)
 
+# Layout da aba Blog. O servidor atual fornece posts provisórios até haver conteúdo.
 mod_blog_ui <- function(id) {
   ns <- NS(id)
   tagList(

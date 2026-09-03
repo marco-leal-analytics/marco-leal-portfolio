@@ -1,5 +1,6 @@
 library(shiny)
 
+# Fornece à aba Sobre os badges de tecnologia obtidos dos metadados dos projetos.
 mod_about_server <- function(id) {
   moduleServer(id, function(input, output, session) {
     # Render skills as badges using PROJECTS_DATA technologies as example

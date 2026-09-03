@@ -1,5 +1,6 @@
 library(shiny)
 
+# Aba Currículo: estrutura estática do CV com seções preenchidas pelo servidor.
 mod_resume_ui <- function(id) {
   ns <- NS(id)
   tagList(

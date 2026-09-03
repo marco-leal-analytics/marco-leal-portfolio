@@ -1,11 +1,12 @@
 library(shiny)
 
+# Servidor do currículo: lê o YAML principal e renderiza as seções sob demanda.
 mod_resume_server <- function(id) {
   moduleServer(id, function(input, output, session) {
     projects_df <- reactive({ read_projects("data/projects.yml") })
     resume_data <- reactive({ read_yaml_safe(file.path(DATA_DIR, "resume_full.yml")) })
 
-    # helper: format date strings to Brazilian format (MM/YYYY or YYYY)
+    # Formata datas no padrão ISO para a exibição brasileira da linha do tempo.
     fmt_br <- function(d) {
       if (is.null(d) || !nzchar(d)) return("")
       # expected formats: YYYY-MM, YYYY-MM-DD, YYYY
@@ -20,6 +21,7 @@ mod_resume_server <- function(id) {
       return(d)
     }
 
+    # Renderiza as contagens gerais usadas nos cards de resumo do currículo.
     output$kpi_row <- renderUI({
       df <- projects_df()
       num_projects <- if (is.data.frame(df)) nrow(df) else 0
@@ -35,6 +37,7 @@ mod_resume_server <- function(id) {
       )
     })
 
+    # Mantém o resumo profissional vindo do resume_full.yml, com um fallback.
     output$professional_summary <- renderUI({
       rd <- resume_data()
       summary_text <- NULL
@@ -54,6 +57,7 @@ mod_resume_server <- function(id) {
       )
     })
 
+    # Renderiza o conjunto fixo de palavras-chave da área de destaque do currículo.
     output$keywords_tags <- renderUI({
       # keywords derived from CV
       kws <- c(
@@ -65,6 +69,7 @@ mod_resume_server <- function(id) {
       tags$div(class = "keywords-wrap", lapply(kws, function(k) tags$span(class = "tag keyword", k)))
     })
 
+    # Apresenta métricas de impacto que resumem resultados mensuráveis dos projetos.
     output$impact_metrics <- renderUI({
       rd <- resume_data()
       # from parsed resume: 12k atendimentos, 5k exclusões, ~R$14k savings

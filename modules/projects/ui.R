@@ -1,5 +1,6 @@
 library(shiny)
 
+# Aba Projetos: pesquisa, navegação entre projetos e embeds de demos sob demanda.
 mod_projects_ui <- function(id) {
   ns <- NS(id)
   tagList(
