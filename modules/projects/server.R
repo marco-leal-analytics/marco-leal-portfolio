@@ -4,12 +4,22 @@ mod_projects_server <- function(id) {
   moduleServer(id, function(input, output, session) {
     resume_data <- reactive({ read_yaml_safe(file.path(DATA_DIR, "resume_full.yml")) })
 
+    project_ids <- function(projects) {
+      raw_ids <- vapply(seq_along(projects), function(i) {
+        project <- projects[[i]]
+        project$id %||% make.names(project$title %||% paste0("project-", i))
+      }, character(1))
+      make.unique(raw_ids, sep = "-")
+    }
+
     # build projects df from resume_full.yml if available, else fallback to data/projects.yml
     projects_df <- reactive({
       rd <- resume_data()
       if (!is.null(rd$projects) && length(rd$projects) > 0) {
-        df <- as.data.frame(do.call(rbind, lapply(rd$projects, function(x) {
-          data.frame(id = x$id %||% NA, title = x$title, short_description = x$short_description %||% "", repo = x$repo %||% "", demo = x$demo %||% "", technologies = I(list(x$technologies %||% character(0))), featured = isTRUE(x$featured), stringsAsFactors = FALSE)
+        ids <- project_ids(rd$projects)
+        df <- as.data.frame(do.call(rbind, lapply(seq_along(rd$projects), function(i) {
+          x <- rd$projects[[i]]
+          data.frame(id = ids[[i]], title = x$title, short_description = x$short_description %||% "", repo = x$repo %||% "", demo = x$demo %||% "", technologies = I(list(x$technologies %||% character(0))), featured = isTRUE(x$featured), stringsAsFactors = FALSE)
         })))
         return(df)
       }
@@ -41,15 +51,20 @@ mod_projects_server <- function(id) {
       }
       if (is.null(projects) || length(projects) == 0) return(tags$p("Nenhum projeto disponível."))
 
+      ids <- project_ids(projects)
       tabs <- lapply(seq_along(projects), function(i) {
         p <- projects[[i]]
-        pid_raw <- if (!is.null(p$id)) p$id else paste0("proj_", i)
+        pid_raw <- ids[[i]]
         title <- p$title %||% paste("Projeto", i)
-
-        embed_src <- p$embed %||% p$demo %||% p$repo %||% NULL
-        embed_ui <- NULL
-        if (!is.null(embed_src) && nzchar(embed_src)) {
-          embed_ui <- tags$iframe(src = embed_src, class = "project-frame", sandbox = NULL)
+        embed_src <- p$demo %||% NULL
+        embed_ui <- if (!is.null(embed_src) && nzchar(embed_src)) {
+          tags$iframe(
+            `data-src` = embed_src,
+            class = "project-frame",
+            title = paste("Demo", title),
+            loading = "lazy",
+            sandbox = NULL
+          )
         }
 
         tabPanel(title,
@@ -62,7 +77,7 @@ mod_projects_server <- function(id) {
                                    if (!is.null(p$demo)) tagList(tags$span(" \u2022 "), tags$a(href = p$demo, "Abrir em outra página", target = "_blank", class = "link")) else NULL
                           )
                  ),
-                 tags$div(class = "project-embed", embed_ui)
+                 if (!is.null(embed_ui)) tags$div(class = "project-embed", embed_ui)
         )
       })
 

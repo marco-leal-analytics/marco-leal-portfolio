@@ -276,7 +276,7 @@ certifications:
 
 
 projects:
-  - id: analytics-shiny-dashboard
+  - id: custos-rateados
     title: "Gestão Analítica de Custos Rateados — Área Contábil e Financeira de Cooperativa de Crédito"
     short_description: "O projeto nasceu de uma dor recorrente na gestão dos Custos Rateados recebidos da Central Administrativa: embora os dados financeiros estivessem disponíveis, o acompanhamento apresentava baixa visibilidade gerencial sobre quanto e onde os gastos estavam alocados, como evoluíam ao longo do tempo, quais componentes provocavam oscilações e onde estavam concentradas as principais despesas. A dependência de consolidações e análises manuais também dificultava a investigação de desvios e a identificação tempestiva de oportunidades de otimização.
       A solução utilizou o Microsoft Power BI como plataforma de Business Intelligence, combinando Power Query e Linguagem M para extração, tratamento e consolidação dos dados, modelagem dimensional para estruturar o modelo analítico e DAX para construção de métricas e indicadores gerenciais. O dashboard integrou as frentes de Licenças e Softwares, Serviços Centralizados e Sustentação e Utilização de Produtos e Serviços, disponibilizando visão histórica, análise de composição, concentração, variações e comportamentos que demandavam investigação.
@@ -285,7 +285,7 @@ projects:
       Competências: Microsoft Power BI | DAX | Power Query / Linguagem M | Modelagem de dados | Controle de Custos | Otimização de Custos | Suporte à Tomada de Decisão | Gestão Baseada em Dados"
     demo: "assets/www/cases/Case-Executivo-de-Business-Intelligence-Analytics-Custos-Rateados.html"
 
-  - id: analytics-shiny-dashboard
+  - id: monitoramento-politicas-credito
     title: "Dashboard de Originação e Monitoramento de Políticas de Crédito"
     short_description: "Desenvolvimento de dashboard analítico em Power BI para monitoramento da jornada de aproximadamente 1,6 milhão de propostas de crédito por mês, acompanhando todo o funil de originação desde a digitação inicial até a aprovação para mesa de análise. A solução permitiu o acompanhamento operacional e estratégico de indicadores críticos de crédito, suportando áreas de Negócios, Crédito, Risco e Operações. Com base nos dados apresentados, o painel monitorava volumes superiores a 1.664.003 propostas digitadas, 936.051 propostas recusadas e 691.855 propostas aprovadas em P1, permitindo análises detalhadas da performance da esteira de crédito. 
       Foram implementadas análises para monitoramento das regras parametrizadas no motor de crédito Crivo, possibilitando avaliar o impacto individual de cada política sobre os resultados de aprovação, recusa e retenção de propostas. O dashboard disponibilizava visões multidimensionais por produto, modalidade, matriz, hierarquia comercial, UF, companhia elétrica, vendedor, período e faixa horária, ampliando significativamente a capacidade analítica das áreas de negócio.
@@ -294,7 +294,7 @@ projects:
       Competências: Credit Analytics, Risk Analytics, Business Intelligence, Power BI, Data Analytics, KPI Monitoring, Dashboard Development, Data Visualization, Decision Support, Business Analysis e Monitoramento de Políticas de Crédito." 
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: estudo-risco-perda-esperada
     title: "Proposição de Estudo: Correlação entre Risco de Crédito e Perda Esperada para Otimização da Precificação"
     short_description: "O projeto de Credit Analytics, Risk Analytics e Modelagem de Risco foi desenvolvido para analisar quantitativamente a relação entre risco de crédito, inadimplência, perda esperada e rentabilidade da carteira, criando uma estrutura analítica para apoiar decisões de pricing, concessão e gestão de portfólio. O principal desafio era compreender a heterogeneidade dos clientes e avaliar se as condições de crédito praticadas estavam adequadamente alinhadas ao risco assumido e ao retorno econômico esperado.
       A solução combinou análise exploratória de dados, segmentação de clientes, análise de correlação do score em relação a perda esperada. A partir dessas análises, foram identificados diferentes padrões de comportamento entre segmentos, produtos, faixas de score e perfis de risco, permitindo avaliar a distribuição da exposição, concentração, inadimplência, perdas e rentabilidade.
@@ -302,7 +302,7 @@ projects:
       Competências: Credit Analytics · Risk Analytics · Credit Risk Modeling · Expected Loss · Statistical Modeling · Quantitative Analysis · Portfolio Analytics · Risk-Adjusted Return · Pricing Strategy · Excel"
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: integracao-rbm-code
     title: "Engenharia de Dados, Integração de Sistemas e Business Intelligence na Transição Sistêmica RBM → CODE"
     short_description: "Durante a transição sistêmica entre RBM e CODE, a organização enfrentava o desafio de manter a continuidade dos processos de Business Intelligence e Analytics enquanto os produtos eram migrados gradualmente entre uma plataforma legada e uma nova plataforma operacional. A coexistência dos dois ambientes gerava diferenças estruturais e semânticas nas bases, incluindo nomenclaturas, status, produtos, decisões, etapas, datas, códigos de propostas, canais, subcanais e hierarquias comerciais. Esse cenário aumentava o risco de inconsistências nos indicadores, duplicidades, tratamentos manuais e interpretações divergentes dos dados corporativos.
       Para solucionar o problema, foi desenvolvido um pipeline de Engenharia de Dados utilizando Python, PySpark e Pandas, responsável pela extração, transformação, padronização, validação e consolidação das informações provenientes dos dois sistemas. A solução implementou regras de de-para e harmonização para estabelecer correspondências entre os diferentes modelos de dados, além de realizar conversão de tipos, normalização de datas, tratamento de duplicidades, validações de consistência e aplicação de regras de negócio. Dessa forma, foi criada uma camada de integração capaz de abstrair as diferenças entre RBM e CODE e disponibilizar uma representação única e consistente para BI, Analytics e áreas de negócio.
@@ -313,7 +313,7 @@ projects:
     
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: analytics-operacional-comercial
     title: "Case Corporativo — Analytics Operacional, Business Intelligence e Automação da Distribuição de Indicadores Comerciais"
     short_description: "O projeto surgiu a partir da necessidade de ampliar a velocidade e a disponibilidade dos indicadores de performance comercial para uma operação com mais de 100 lojas. Antes da implementação, a obtenção das informações dependia de consultas manuais, consolidações recorrentes, geração de relatórios e solicitações à equipe de Business Intelligence. Esse modelo aumentava o esforço operacional, limitava a frequência de atualização e dificultava que gestores e equipes comerciais tivessem acesso tempestivo aos dados necessários para acompanhar resultados, identificar desvios e tomar decisões.
       Como solução, foi desenvolvido um pipeline automatizado de Analytics e Business Intelligence integrado ao CRM Bitrix. O processo passou a realizar diariamente a extração dos dados comerciais, tratamento, transformação, padronização e consolidação das informações, permitindo calcular indicadores relacionados a leads, atendimentos, contatos, conversões, produtividade, performance e evolução dos resultados. O processamento analítico foi desenvolvido em R, enquanto o RMarkdown foi utilizado para geração automatizada e padronizada dos relatórios. Na etapa de distribuição, Python e integração via API possibilitaram o envio automatizado das informações por meio do WhatsApp Enterprise para as lojas e equipes envolvidas.
@@ -322,7 +322,7 @@ projects:
     
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: automacao-resgate-sobras
     title: "Automação de Atendimento para Resgate de Sobras"
     short_description: "Projeto de transformação digital desenvolvido para ampliar a capacidade operacional no atendimento e processamento de solicitações de resgate de sobras em uma instituição financeira cooperativa. O processo anterior apresentava elevado volume de demandas distribuídas entre mais de 40 agências, exigindo atuação manual dos colaboradores para identificação dos associados, validação de informações, consultas em sistemas corporativos, aplicação de regras de negócio, execução de procedimentos, registros, encaminhamentos e acompanhamento das solicitações. Esse modelo consumia capacidade operacional significativa, aumentava a dependência das equipes e limitava a escalabilidade do atendimento em períodos de alta demanda.
       A solução desenvolvida integrou UiPath, utilizando Robotic Process Automation (RPA), ao fluxo de atendimento via WhatsApp Enterprise, estruturando uma operação digital capaz de receber solicitações, identificar e validar associados, aplicar critérios de elegibilidade e regras de negócio, executar atividades operacionais nos sistemas corporativos, tratar exceções, registrar logs e comunicar automaticamente os resultados. A automação transferiu para uma camada tecnológica atividades repetitivas, previsíveis e orientadas por regras, permitindo maior padronização, rastreabilidade e controle do processo.
@@ -332,7 +332,7 @@ projects:
       Competências: UiPath · Robotic Process Automation (RPA) · WhatsApp Enterprise · Process Automation · Workflow Automation · Systems Integration · Business Rules Automation · Exception Handling · Process Monitoring · Logging · Automation Governance · Operational Efficiency · Process Optimization · Productivity Improvement · Digital Transformation · Member Experience · Organizational Scalability · Business Process Improvement · Service Automation"
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: automacao-associados-inativos
     title: "Automação de Processos para Identificação e Exclusão de Associados Inativos e sem Reciprocidade"
     short_description: "O projeto surgiu a partir de uma dor operacional relacionada à manutenção de mais de 5.000 associados inativos e sem reciprocidade em uma instituição financeira cooperativa. O processo de identificação e exclusão era predominantemente manual, exigindo levantamento de informações em diferentes bases, consolidação de dados, aplicação de critérios de elegibilidade, validações e execução individual das exclusões. Esse modelo consumia capacidade operacional significativa, apresentava baixa escalabilidade e dependia diretamente da intervenção das equipes, além de aumentar a exposição a erros, inconsistências, retrabalho e atrasos. A manutenção desses registros também representava uma oportunidade de otimização de custos, diante da existência de associados sem atividade ou reciprocidade.
       
@@ -341,10 +341,10 @@ projects:
       O principal impacto foi a automação da identificação, processamento e exclusão de mais de 5.000 associados, com redução significativa do esforço manual, aumento da produtividade e maior padronização e rastreabilidade da execução. A solução também reduziu a exposição a erros operacionais, inconsistências e retrabalho. Considerando o custo médio estimado de R$ 2,80 por associado, o projeto representa uma oportunidade de redução de custo fixo mensal de aproximadamente R$ 14.000, equivalente a cerca de R$ 168.000 anualizados sob a mesma premissa. O resultado demonstra a capacidade de transformar uma atividade operacional recorrente em um processo escalável, orientado por dados e automatizado, combinando eficiência operacional, controle e geração mensurável de valor para o negócio.
       
       Competências: Python · UiPath · RPA · Automação de Processos · Processamento de Dados · Validação de Dados · Análise de Dados · Automação de Regras de Negócio · Automação de Fluxos de Trabalho · Tratamento de Exceções · Registro de Logs · Monitoramento · Analytics Operacional · Otimização de Processos · Eficiência Operacional · Redução de Custos · Redução de Riscos"
-    demo: "assets/www/cases/Automação-de-Processos-para-Identificação-e-Exclusão-de-Associados-Inativos-e-sem-Reciprocidade"
+    demo: "assets/www/cases/Automação-de-Processos-para-Identificação-e-Exclusão-de-Associados-Inativos-e-sem-Reciprocidade.html"
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: engenharia-dados-denodo
     title: "Engenharia de Dados e Modernização Analítica"
     short_description: "O projeto surgiu a partir de um processo AS-IS altamente manual, descentralizado e dependente do conhecimento individual dos usuários para obtenção e disponibilização de dados corporativos. A necessidade de uma análise iniciava com o acesso à plataforma Denodo, identificação manual de tabelas, views e consultas, seguida por extrações recorrentes para CSV ou Excel. Os arquivos eram armazenados em computadores pessoais, pastas compartilhadas ou repositórios locais e posteriormente tratados, consolidados e utilizados na construção de relatórios, dashboards e indicadores. Esse fluxo gerava retrabalho, duplicidade de esforços, riscos operacionais, inconsistências entre áreas, baixa rastreabilidade e dificuldades para garantir atualizações recorrentes e padronizadas.
       
@@ -356,7 +356,7 @@ projects:
     demo: "assets/www/cases/Engenharia-de-Dados-e-Modernização-Analítica.html"
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: plataforma-ativos-imobilizados
     title: "Plataforma Web para Gestão e Comercialização de Ativos Imobilizados"
     short_description: "O projeto consistiu no desenvolvimento de uma plataforma web corporativa para digitalizar, centralizar e automatizar o processo de gestão e comercialização de ativos imobilizados destinados a colaboradores de uma instituição financeira cooperativa. Antes da solução, o processo era descentralizado e dependente de planilhas, controles manuais, comunicação entre áreas e acompanhamento individual das etapas, gerando elevado esforço administrativo, retrabalho, baixa rastreabilidade e dificuldade para identificar o estágio de cada venda.
       A solução foi desenvolvida em R Shiny e PostgreSQL, integrando aplicação, dados, regras de negócio, automação documental e workflow operacional em uma única plataforma. O sistema incorporou autenticação de usuários, catálogo de ativos, galeria de imagens, consulta de disponibilidade, seleção e reserva de unidades, registro das vendas, integração com bases corporativas de colaboradores e associados, geração automatizada de contratos, acompanhamento de assinaturas e controle das etapas de entrega.
@@ -370,7 +370,7 @@ projects:
     featured: true
   
 
-  - id: analytics-shiny-dashboard
+  - id: painel-incidencia-casos
     title: "Painel de Acompanhamento de Incidência de Casos — 15ª Regional de Saúde"
     short_description: "O projeto foi desenvolvido em parceria com a Universidade Estadual de Maringá (UEM) e a 15ª Regional de Saúde do Paraná, com o objetivo de transformar dados epidemiológicos da COVID-19 em informações acessíveis para acompanhamento e apoio à tomada de decisão. A necessidade surgiu diante do grande volume de dados gerados durante a pandemia e da importância de acompanhar a evolução dos casos de forma regionalizada, permitindo identificar diferentes padrões de incidência entre os municípios.
       Como solução, foi desenvolvido um painel interativo utilizando **R e Shiny**, estruturado para consolidar, analisar e apresentar indicadores epidemiológicos de maneira dinâmica. A aplicação possibilitou explorar a incidência de casos, acompanhar a evolução temporal da doença e analisar a distribuição dos registros entre os municípios da 15ª Regional de Saúde. A abordagem de **Data Analytics e Data Visualization** permitiu transformar dados epidemiológicos em informações visuais mais intuitivas, facilitando a interpretação dos indicadores e a comparação entre diferentes períodos e localidades.
@@ -378,7 +378,7 @@ projects:
     demo: "https://mlealserver.shinyapps.io/covid19_15RS/"
     featured: true
   
-  - id: analytics-shiny-dashboard
+  - id: modelagem-estatistica-tcc
     title: "Modelagem Estatística e Métodos Não Paramétricos — TCC"
     short_description: "Trabalho acadêmico voltado à avaliação de métodos não paramétricos aplicados à predição em modelos aditivos, comparando Kernel Smoothing, LOESS e Splines de Regressão linear e cúbica. Aplicação de validação cruzada Leave-One-Out, seleção de hiperparâmetros, simulações estatísticas, análise de viés e variância e avaliação de desempenho preditivo. 
       

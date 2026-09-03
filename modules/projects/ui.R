@@ -27,7 +27,28 @@ mod_projects_ui <- function(id) {
       )
     ),
 
-    div(class = "projects-tabs", uiOutput(ns("projects_tabs_ui")))
+    div(class = "projects-tabs", uiOutput(ns("projects_tabs_ui"))),
+    tags$script(HTML("(function() {
+  function loadVisibleDemo() {
+    document.querySelectorAll('.projects-tabs .tab-pane.active, .projects-tabs .tab-pane.show.active').forEach(function(pane) {
+      var frame = pane.querySelector('iframe[data-src]');
+      if (frame && !frame.getAttribute('src')) frame.setAttribute('src', frame.getAttribute('data-src'));
+    });
+  }
+
+  document.addEventListener('shown.bs.tab', function(event) {
+    var target = event.target.getAttribute('data-bs-target') || event.target.getAttribute('href');
+    if (!target || target.charAt(0) !== '#') return;
+    var pane = document.querySelector(target);
+    if (pane) {
+      var frame = pane.querySelector('iframe[data-src]');
+      if (frame && !frame.getAttribute('src')) frame.setAttribute('src', frame.getAttribute('data-src'));
+    }
+  });
+
+  new MutationObserver(loadVisibleDemo).observe(document.body, { childList: true, subtree: true });
+  loadVisibleDemo();
+})();"))
   )
   )
 }
