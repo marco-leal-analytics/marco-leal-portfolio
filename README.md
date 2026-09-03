@@ -183,6 +183,8 @@ Outros arquivos YAML mantêm catálogos complementares:
 
 O `resume_full.yml` é a fonte prioritária para o currículo e para a aba Projetos. Os IDs dos projetos são únicos e o servidor ainda aplica uma proteção com `make.unique()` para evitar conflitos de abas.
 
+O arquivo `.gitattributes` marca documentos HTML renderizados pelo Quarto, páginas de cases e bibliotecas empacotadas como conteúdo gerado ou de terceiros. Isso evita que esses artefatos dominem a classificação de linguagens do GitHub e permite que a contribuição dos arquivos R da aplicação seja representada com mais precisão.
+
 ## Dependências
 
 ### Pacotes R

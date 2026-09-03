@@ -1,0 +1,7 @@
+# Exclude generated Quarto output and bundled assets from GitHub language statistics.
+modules/home/*.html linguist-generated=true
+modules/about/*.html linguist-generated=true
+modules/resume/*.html linguist-generated=true
+modules/*/*_files/** linguist-vendored=true
+assets/www/cases/*.html linguist-generated=true
+modules/projects/assets/*.html linguist-generated=true
