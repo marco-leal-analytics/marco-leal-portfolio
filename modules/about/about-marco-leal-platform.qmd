@@ -1,0 +1,161 @@
+---
+title: "Sobre a plataforma"
+description: "Conheça a arquitetura, o conteúdo e as tecnologias do portfólio Marco Leal."
+page-layout: full
+format:
+  html:
+    toc: false
+    self-contained: false
+css: ../../assets/css/app.css
+---
+
+<style>
+.platform-hero-copy { max-width: 780px; }
+.platform-hero-copy .hero-summary { max-width: 700px; }
+.platform-flow { margin: 0; color: var(--mla-accent-2); font-size: 1.15rem; font-weight: 700; line-height: 1.8; }
+.platform-flow span { margin: 0 .45rem; color: var(--mla-muted); }
+.platform-section-intro { max-width: 780px; color: var(--mla-muted); }
+.platform-list { color: var(--mla-text); }
+.platform-list li { margin-bottom: .65rem; }
+.platform-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.platform-links a { display: inline-flex; align-items: center; min-height: 44px; padding: .65rem 1rem; border-radius: 6px; font-weight: 700; }
+.platform-links .secondary { border: 1px solid var(--mla-accent); color: var(--mla-accent-2); }
+.platform-links .secondary:hover { background: var(--mla-accent-soft); color: var(--mla-text); }
+@media (max-width: 700px) {
+  .platform-links a { width: 100%; justify-content: center; }
+  .platform-flow { font-size: 1rem; }
+}
+</style>
+
+<div class="mla-hero">
+
+<div class="hero-copy platform-hero-copy">
+
+<span class="eyebrow">MARCO LEAL PORTFOLIO · SOBRE</span>
+
+# Uma plataforma para conectar trajetória, projetos e soluções de dados
+
+<p class="hero-summary">
+Este portfólio foi construído para apresentar, em uma experiência única, a formação, a trajetória profissional e as soluções desenvolvidas por Marco Aurélio Valles Leal.
+</p>
+
+<div class="platform-links">
+<a class="btn btn-primary" href="https://github.com/marco-leal-analytics/marco-leal-portfolio" target="_blank" rel="noopener noreferrer">Ver código no GitHub</a>
+<a class="secondary" href="#perfil" onclick="return selectParentTab('Perfil');">Conhecer o perfil</a>
+</div>
+
+</div>
+
+<div class="hero-visual hero-mark" aria-label="Arquitetura da plataforma">R · Shiny</div>
+
+</div>
+
+::: {.callout-success}
+## Objetivo da plataforma
+
+Organizar informações profissionais e resultados de projetos em uma experiência digital clara, navegável e orientada a recrutadores, gestores e profissionais de tecnologia.
+
+A plataforma funciona simultaneamente como portfólio profissional, currículo interativo, catálogo de projetos e demonstração prática de desenvolvimento em R, Shiny, Quarto, HTML e CSS.
+:::
+
+## O que pode ser encontrado
+
+::: {.insight-grid}
+::: {.insight-box}
+### Perfil
+
+Uma síntese da identidade profissional, formação em Estatística, proposta de valor, áreas de atuação e principais evidências.
+:::
+
+::: {.insight-box}
+### Currículo
+
+Experiências, formação acadêmica, competências, certificações, contatos e projetos relevantes organizados para consulta.
+:::
+
+::: {.insight-box}
+### Projetos
+
+Cases de Analytics, BI, automação, Engenharia de Dados e aplicações corporativas, com descrições, tecnologias e demonstrações.
+:::
+
+::: {.insight-box}
+### Contato
+
+Canais profissionais para conhecer o trabalho e estabelecer uma conexão com Marco.
+:::
+:::
+
+## Como a plataforma está organizada
+
+<p class="platform-section-intro">Cada área tem uma função própria. O visitante pode começar pelo posicionamento, aprofundar a trajetória, avaliar evidências técnicas e, então, acessar os canais profissionais.</p>
+
+<p class="platform-flow">
+Perfil <span>→</span> Currículo <span>→</span> Projetos <span>→</span> Contato
+</p>
+
+## Tecnologias utilizadas
+
+::: {.insight-grid}
+::: {.insight-box}
+### R e Shiny
+
+Composição da aplicação, módulos UI/server, navegação, reatividade, leitura de dados e renderização de componentes.
+:::
+
+::: {.insight-box}
+### Quarto e Markdown
+
+Produção de páginas editoriais pré-renderizadas, como Perfil e Sobre, incorporadas à aplicação por iframe.
+:::
+
+::: {.insight-box}
+### HTML, CSS e JavaScript
+
+Estrutura semântica, tema responsivo, componentes visuais, acessibilidade, navegação e carregamento controlado de conteúdo.
+:::
+
+::: {.insight-box}
+### YAML e dados
+
+Separação entre conteúdo e apresentação, permitindo atualizar currículo, experiências, projetos e certificações sem reescrever toda a interface.
+:::
+:::
+
+## Competências demonstradas pelo projeto
+
+<ul class="platform-list">
+<li>Organização modular de uma aplicação R Shiny.</li>
+<li>Separação entre apresentação, lógica, serviços e dados.</li>
+<li>Construção de interfaces responsivas orientadas à leitura.</li>
+<li>Renderização de timelines, cards, indicadores e catálogos.</li>
+<li>Uso de Quarto para comunicação editorial e documentação profissional.</li>
+<li>Integração de páginas, imagens, documentos, links externos e demonstrações.</li>
+<li>Tratamento de dados YAML, cache, filtros e carregamento sob demanda.</li>
+<li>Aplicação de princípios de visualização e comunicação analítica.</li>
+</ul>
+
+::: {.closing-statement}
+## Uma demonstração do processo de construção
+
+Além de apresentar resultados profissionais, esta plataforma demonstra como R, Shiny, Quarto, dados e tecnologias web podem ser combinados para construir uma experiência digital modular, documentada e orientada a objetivos.
+
+<div class="platform-links">
+<a class="btn btn-primary" href="#perfil" onclick="return selectParentTab('Perfil');">Voltar ao perfil</a>
+<a class="secondary" href="https://github.com/marco-leal-analytics/marco-leal-portfolio" target="_blank" rel="noopener noreferrer">Explorar o repositório</a>
+</div>
+:::
+
+<script>
+function selectParentTab(target) {
+  var parentDocument = window.parent.document;
+  var links = parentDocument.querySelectorAll('[data-value]');
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].getAttribute('data-value') === target) {
+      links[i].click();
+      return false;
+    }
+  }
+  return true;
+}
+</script>

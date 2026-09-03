@@ -9,6 +9,7 @@ library(memoise)
 # Expõe assets estáticos por caminhos estáveis usados pelas interfaces dos módulos.
 addResourcePath("assets", normalizePath("assets", winslash = "/", mustWork = FALSE))
 addResourcePath("home-document", normalizePath(file.path("modules", "home"), winslash = "/", mustWork = FALSE))
+addResourcePath("about-document", normalizePath(file.path("modules", "about"), winslash = "/", mustWork = FALSE))
 
 source("utils/theme.R")
 source("utils/helpers.R")

@@ -21,6 +21,7 @@ O conteúdo é mantido em arquivos YAML para separar dados e apresentação. Ass
 A aplicação principal é composta pelas seguintes áreas:
 
 - **Perfil**: página inicial com apresentação profissional pré-renderizada em Quarto e exibida em um iframe interno.
+- **Sobre**: apresentação da plataforma, sua arquitetura, tecnologias e competências demonstradas pelo projeto.
 - **Currículo**: timeline de experiências e formação, competências, certificações, contatos e resumo profissional.
 - **Projetos**: catálogo com pesquisa, navegação por abas e demos incorporadas abaixo dos detalhes de cada projeto.
 - **Contato**: links para GitHub e LinkedIn. O antigo fluxo de envio de e-mail foi removido por não possuir formulário ativo.
@@ -38,13 +39,15 @@ flowchart TD
   B --> D[services]
   B --> E[data/*.yml]
   A --> F[ módulos UI e server ]
-  F --> G[Home / Quarto]
-  F --> H[Currículo / Shiny]
-  F --> I[Projetos / Shiny]
-  F --> J[Contato / links]
-  I --> K[embeds sob demanda]
-  G --> L[HTML pré-renderizado]
-  C --> M[assets/css e assets/www]
+  F --> G[Perfil / Quarto]
+  F --> H[Sobre / Quarto]
+  F --> I[Currículo / Shiny]
+  F --> J[Projetos / Shiny]
+  F --> K[Contato / links]
+  J --> L[embeds sob demanda]
+  G --> M[HTML pré-renderizado]
+  H --> M
+  C --> N[assets/css e assets/www]
 ```
 
 ### Por que essa arquitetura?
@@ -55,7 +58,7 @@ flowchart TD
 - **YAML como fonte de conteúdo**: separa dados profissionais da apresentação. Alterações no currículo não exigem mudanças na estrutura da aplicação.
 - **Serviços isolados**: leitura de projetos e integração com a API do GitHub ficam fora dos módulos visuais, reduzindo acoplamento e centralizando tratamento de erros.
 - **Componentes reutilizáveis**: cards, badges, KPIs e tokens de tema são definidos em `utils/`, evitando cópia de marcação e mantendo consistência visual.
-- **Quarto para a página inicial**: permite uma apresentação editorial rica e pré-renderizada, enquanto o Shiny permanece responsável pela navegação e pelas áreas interativas.
+- **Quarto para Perfil e Sobre**: permite apresentações editoriais ricas e pré-renderizadas, enquanto o Shiny permanece responsável pela navegação e pelas áreas interativas.
 - **Embeds sob demanda**: as demonstrações são exibidas abaixo dos projetos, mas só são carregadas quando a aba correspondente é selecionada. Isso reduz requisições externas e evita a abertura automática de páginas.
 - **Assets estáticos servidos pelo Shiny**: imagens, PDFs, CSS e cases HTML permanecem versionados no projeto e são expostos por caminhos previsíveis.
 
@@ -144,7 +147,8 @@ O projeto utiliza princípios de visualização e comunicação de dados para or
 ├── global.R                      # Bibliotecas, tema, cache, dados e módulos
 ├── data/                         # Dados do currículo e catálogos em YAML
 ├── modules/
-│   ├── home/                     # Página inicial Quarto e artefatos renderizados
+│   ├── home/                     # Perfil profissional e artefatos renderizados
+│   ├── about/                    # Página Quarto sobre a plataforma
 │   ├── resume/                   # Currículo interativo e documentos de apoio
 │   ├── projects/                 # Catálogo, filtros e embeds de projetos
 │   ├── blog/                     # Estrutura futura de publicações
