@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 .Renviron
+.smtp_creds
 modules/home/rendered/
