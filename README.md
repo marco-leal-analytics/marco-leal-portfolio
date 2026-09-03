@@ -1,91 +1,265 @@
-# marco-leal-portfolio
+# Marco Leal Portfolio
 
-Portfólio profissional em R Shiny para apresentação de experiência, projetos, certificações e recursos relacionados. Projeto modular e responsivo com foco em apresentação recruiter-first (visão rápida e clara do currículo).
+Portfólio profissional desenvolvido em **R, Shiny, HTML e CSS** para apresentar a trajetória de Marco Aurélio Valles Leal em Estatística, Data Analytics, Business Intelligence, Data Science e Data Engineering.
 
-Estrutura principal
+O projeto foi estruturado como uma aplicação web recruiter-first: o visitante consegue consultar rapidamente o perfil, a experiência profissional, as competências, os projetos, as certificações, os materiais de apoio e os canais profissionais de contato.
 
-- `app.R` — ponto de entrada e navbar principal
-- `global.R` — configurações e helpers globais
-- `modules/` — módulos UI/Server (home, about, projects, blog, etc.)
-- `data/` — conteúdo base em YAML (ex.: `resume_full.yml`)
-- `assets/` — imagens e `assets/css/app.css`
+## Objetivo do projeto
 
-Como rodar localmente
+O objetivo é transformar informações profissionais e resultados de projetos em uma experiência digital clara, navegável e visualmente consistente. A aplicação funciona como:
+
+- portfólio profissional e marca pessoal;
+- currículo interativo baseado em dados;
+- catálogo de projetos de Analytics, BI, automação e Engenharia de Dados;
+- demonstração prática de desenvolvimento em R e Shiny;
+- espaço para apresentar dashboards, aplicações web, pipelines e soluções orientadas a decisão.
+
+O conteúdo é mantido em arquivos YAML para separar dados e apresentação. Assim, experiências, projetos, formação e certificações podem ser atualizados sem reescrever toda a interface.
+
+## Aplicação
+
+A aplicação principal é composta pelas seguintes áreas:
+
+- **Sobre**: página inicial com apresentação profissional pré-renderizada em Quarto e exibida em um iframe interno.
+- **Currículo**: timeline de experiências e formação, competências, certificações, contatos e resumo profissional.
+- **Projetos**: catálogo com pesquisa, navegação por abas e demos incorporadas abaixo dos detalhes de cada projeto.
+- **Contato**: links para GitHub e LinkedIn. O antigo fluxo de envio de e-mail foi removido por não possuir formulário ativo.
+
+Os demos dos projetos são carregados sob demanda. O iframe recebe a URL somente quando o projeto é selecionado, evitando que várias páginas externas sejam abertas ou carregadas ao acessar a aba Projetos.
+
+## Tecnologias utilizadas
+
+### Linguagem e framework
+
+- **R**: leitura e transformação de dados, regras de negócio, composição da interface e renderização reativa.
+- **Shiny**: aplicação web reativa, módulos UI/server, navegação, filtros e renderização dinâmica.
+- **bslib**: navbar, tema e integração com o sistema visual do Shiny.
+- **HTML**: estrutura semântica das páginas, links, imagens, iframes, timelines e componentes gerados pelo Shiny.
+- **CSS**: layout responsivo, tokens visuais, tipografia, grids, cards, timelines e estados de interação.
+- **JavaScript**: navegação suave, botão voltar ao topo e ativação sob demanda dos embeds de projetos.
+
+### Dados e conteúdo
+
+- **YAML**: fonte principal dos dados do currículo e dos projetos.
+- **Quarto**: geração da página inicial pré-renderizada.
+- **R Markdown/knitr/Pandoc/LaTeX**: suporte aos materiais e à geração opcional do currículo em PDF.
+
+### Integrações e suporte
+
+- **GitHub API** com `httr2`, `jsonlite` e cache via `memoise`.
+- **tibble**: criação das tabelas normalizadas de projetos.
+- **Google Fonts** para tipografia da aplicação.
+- **Arquivos HTML, PDF, JPG e PNG** para demos, currículo, foto e identidade visual.
+
+## Competências demonstradas
+
+Este repositório demonstra o uso integrado de **R, Shiny e HTML** em um projeto de Data Visualization e comunicação analítica.
+
+### R
+
+- leitura segura e cacheada de dados YAML;
+- construção de funções reutilizáveis para componentes de interface;
+- normalização de projetos e geração de identificadores únicos;
+- tratamento de datas para exibição em timelines;
+- filtros reativos por texto;
+- integração com serviços externos;
+- tratamento de erros em chamadas de API;
+- organização modular entre UI e server.
+
+### Shiny
+
+- composição de uma aplicação com `page_navbar`;
+- módulos independentes com `NS`, `moduleServer`, `renderUI` e reatividade;
+- renderização de timelines, listas, cards e indicadores;
+- navegação por abas e filtros de projetos;
+- carregamento controlado de conteúdo externo;
+- separação entre dados, componentes e regras de apresentação.
+
+### HTML, CSS e JavaScript
+
+- criação de layouts responsivos e acessíveis;
+- uso de links externos com `target="_blank"` e `rel="noopener noreferrer"` quando aplicável;
+- incorporação de demos por iframe;
+- lazy loading controlado dos embeds para reduzir carregamentos desnecessários;
+- uso de classes semânticas para cards, timelines, grids e seções;
+- adaptação para desktop e dispositivos móveis.
+
+### Data Visualization e comunicação
+
+O projeto utiliza princípios de visualização e comunicação de dados para organizar informação profissional em estruturas de leitura rápida, como:
+
+- indicadores de impacto;
+- timelines de experiência e formação;
+- cards de projetos e competências;
+- navegação por categorias;
+- links para dashboards e aplicações analíticas;
+- organização de resultados técnicos em linguagem orientada ao negócio.
+
+## Estrutura do projeto
+
+```text
+.
+├── app.R                         # Entrada da aplicação e navbar principal
+├── global.R                      # Bibliotecas, tema, cache, dados e módulos
+├── data/                         # Dados do currículo e catálogos em YAML
+├── modules/
+│   ├── home/                     # Página inicial Quarto e artefatos renderizados
+│   ├── resume/                   # Currículo interativo e documentos de apoio
+│   ├── projects/                 # Catálogo, filtros e embeds de projetos
+│   ├── about/                    # Módulo de apresentação alternativa
+│   ├── blog/                     # Estrutura futura de publicações
+│   └── contact/                  # Links profissionais
+├── services/                    # Integrações externas e leitura de projetos
+├── utils/                       # Helpers, componentes e tema
+├── assets/
+│   ├── css/                     # Folhas de estilo da aplicação
+│   ├── sass/                    # Fontes SASS e variáveis visuais
+│   └── www/                     # Imagens, PDFs e páginas de cases
+└── rsconnect/                   # Metadados de publicação no shinyapps.io
+```
+
+## Fonte dos dados
+
+O arquivo principal é `data/resume_full.yml`. Ele contém:
+
+- nome e informações profissionais;
+- resumo completo e resumo curto;
+- competências e stack tecnológica;
+- experiências profissionais com bullets hierárquicos;
+- formação acadêmica;
+- certificações;
+- projetos, descrições, links, demos e indicador de destaque.
+
+Outros arquivos YAML mantêm catálogos complementares:
+
+- `data/projects.yml`;
+- `data/education.yml`;
+- `data/experience.yml`;
+- `data/certifications.yml`.
+
+O `resume_full.yml` é a fonte prioritária para o currículo e para a aba Projetos. Os IDs dos projetos são únicos e o servidor ainda aplica uma proteção com `make.unique()` para evitar conflitos de abas.
+
+## Dependências
+
+### Pacotes R
+
+Instale os pacotes utilizados pelos scripts da aplicação:
 
 ```r
-# instalar dependências mínimas
-install.packages(c("shiny","bslib","yaml","dplyr","glue"))
+install.packages(c(
+  "shiny",
+  "bslib",
+  "yaml",
+  "fs",
+  "memoise",
+  "htmltools",
+  "glue",
+  "httr2",
+  "jsonlite",
+  "dplyr",
+  "stringr",
+  "tibble",
+  "knitr"
+))
+```
 
-# executar a aplicação
+### Ferramentas opcionais
+
+As ferramentas abaixo são necessárias apenas para regenerar documentos derivados:
+
+- **Quarto CLI** para renderizar os arquivos `.qmd`;
+- **Pandoc**, normalmente instalado ou gerenciado pelo Quarto;
+- **LaTeX/pdfLaTeX** para gerar o currículo PDF a partir de `Resume.Rmd`;
+- pacote R **rsconnect** para publicação no shinyapps.io;
+- navegador moderno com suporte a CSS Grid, `MutationObserver`, iframes e JavaScript.
+
+## Como executar localmente
+
+Abra o projeto no RStudio ou no VS Code com suporte a R e execute na raiz do repositório:
+
+```r
 shiny::runApp()
 ```
 
-Resumo das modificações recentes
+Ou execute:
 
-- Tema escuro global unificado em `assets/css/app.css` (variáveis CSS, componentes e responsividade).
-- Redesign completo da aba `Home` para formato de currículo (resume), alimentado por `data/resume_full.yml`.
-- `Tech Stack` renderizado dinamicamente a partir do YAML e exibido em linhas únicas com separador `|`.
-- Contatos e Links da sidebar alinhados lado-a-lado, com ícones inline e comportamento `no-wrap` para evitar quebras de e-mail/telefone.
-- Download do CV detectado e linkado automaticamente a partir de `www/` ou `assets/www/` (procura por arquivo PDF com nome padrão).
-- Header/branding:
-	- Título do site revertido para texto: **Marco Leal - Portfólio** (`app.R`).
-	- Removeu-se o hero/header fixo da Home (imagem removida a pedido).
-- Navegação interna adicionada: menu de âncoras (`sticky-side-nav`) para rolar entre seções da aba Home (Formação, Experiência, Tech Stack, Idiomas, Projetos).
-- CSS do header inicialmente ajustado e depois removido; quando presente usa `object-fit:contain` para evitar cortes em redimensionamento.
+```r
+shiny::runApp(".")
+```
 
-Arquivos alterados principais
+O Shiny informará no console o endereço local, normalmente semelhante a `http://127.0.0.1:xxxx`.
 
-- `assets/css/app.css` — tema escuro, regras de layout, `.resume-wrapper`, `.home-header-img`, `.sticky-side-nav` e utilitários.
-- `modules/home/ui.R` — layout da Home reorganizado (sidebar, main, seções com ids namespaced e menu de navegação por âncoras).
-- `modules/home/server.R` — renderização a partir de `data/resume_full.yml` (timelines, tech stack, competências, certificações, contatos, links, footer keywords).
-- `app.R` — navbar/title ajustado para mostrar o texto do site e carregar CSS.
+## Como atualizar o conteúdo
 
-Próximos passos sugeridos
+1. Edite os dados em `data/resume_full.yml`.
+2. Para adicionar um projeto, use um `id` exclusivo, um título, uma descrição e, quando disponível, uma URL em `demo`.
+3. Para demos locais, mantenha o arquivo dentro de `assets/www/` e use o caminho relativo servido pela aplicação.
+4. Para alterar a estrutura visual, edite o módulo correspondente em `modules/`.
+5. Para alterar o tema global, edite `assets/css/app.css` e os tokens em `utils/theme.R`.
 
-- Verificar visual localmente com `shiny::runApp()` e ajustar espaçamentos finos.
-- Otimizar e gerar versão exata do banner/header (1360×180) caso queira reintroduzir sem perda de informação.
-- Adicionar destaque do item ativo no menu de âncoras (scrollspy) e ícones SVG nas entradas do menu.
-- Adicionar `renv` e um `Dockerfile` para facilitar deploy e reprodutibilidade.
+O conteúdo do `summary` usa blocos YAML dobrados (`summary: >`), permitindo organizar o texto em várias linhas no arquivo sem criar quebras artificiais na tela. A separação visual entre parágrafos é feita pelo renderer e pelo CSS.
 
-Notas
+## Segurança e configuração
 
-- Se quiser que eu gere automaticamente uma imagem de banner otimizada a partir das imagens em `assets/www/`, posso fazê-lo e atualizar o layout para reintroduzir um hero responsivo.
-- Para testes visuais, execute `shiny::runApp()` e abra o navegador em http://127.0.0.1:xxxx (porta mostrada no console).
+- Arquivos locais de credenciais, como `.smtp_creds` e `.Renviron`, são ignorados pelo Git.
+- Tokens e chaves de API devem ser fornecidos por variáveis de ambiente, nunca gravados no código.
+- O fluxo de envio de e-mail foi removido; a aba Contato atualmente não depende de credenciais de e-mail.
+- O consumo da GitHub API possui uma camada segura com tratamento de erros para evitar que uma falha externa encerre a sessão Shiny.
+- Links externos devem ser revisados antes da publicação, especialmente demos hospedados fora do projeto.
 
-Contato
+## Evolução implementada
 
-- Autor: Marco Leal
-- Este repositório é mantido como portfólio pessoal.
+Durante a evolução do projeto foram implementadas as seguintes melhorias:
 
-## Changelog
+- criação da aplicação modular em Shiny;
+- definição de tema escuro global e tokens visuais;
+- reorganização das abas e do layout recruiter-first;
+- centralização do currículo em `resume_full.yml`;
+- renderização dinâmica de experiências, formação, competências e certificações;
+- suporte a três parágrafos no resumo profissional;
+- preservação do conteúdo completo de `summary` sem quebras artificiais de linha;
+- espaçamento visual entre parágrafos na seção Sobre;
+- correção dos IDs duplicados dos projetos;
+- geração defensiva de IDs únicos no servidor;
+- inclusão de demos incorporadas abaixo dos detalhes dos projetos;
+- carregamento sob demanda dos embeds para evitar abertura automática de páginas;
+- correção de caminhos de demos locais;
+- remoção do fluxo de contato incompleto e do helper de envio de e-mail;
+- remoção de referências de credenciais do versionamento;
+- documentação dos scripts R, UI, server, serviços e utilitários em português do Brasil;
+- melhoria da responsividade para telas menores;
+- inclusão de navegação por âncoras e botão voltar ao topo.
 
-Versão: Unreleased — 2026-08-18
+## Estado atual e próximos passos
 
-- Tema e Estilo
-	- Consolidado tema escuro global em `assets/css/app.css` com variáveis e regras responsivas.
+O projeto está funcional como portfólio profissional e currículo web. As áreas que ainda podem evoluir são:
 
-- Aba Home (Resume)
-	- Redesenho completo da aba `Home` para layout tipo currículo, consumindo `data/resume_full.yml`.
-	- Seções principais namespaced e identificadas: `education`, `experience`, `tech`, `languages`, `projects`, `footer`.
-	- Implementado menu de navegação por âncoras (`sticky-side-nav`) para rolar entre seções.
+- adicionar testes automatizados para leitura YAML e renderização de dados;
+- criar um `renv.lock` para fixar versões dos pacotes R;
+- adicionar pipeline de validação e deploy contínuo;
+- substituir o conteúdo provisório do Blog por uma fonte real de artigos;
+- decidir se o módulo `about` será integrado à navegação ou removido;
+- melhorar a validação visual dos links e demos externas;
+- adicionar uma estratégia formal para publicação das páginas Quarto e dos documentos PDF.
 
-- Conteúdo dinâmico
-	- `Tech Stack` agora renderiza por categoria a partir do YAML e exibe cada categoria como linha única com itens separados por ` | `.
-	- Competências e Certificações renderizadas em colunas dedicadas.
+## Publicação
 
-- Sidebar e Contatos
-	- Contatos e Links alinhados lado-a-lado com ícones inline; aplicado `.no-wrap` para evitar quebras de email/telefone.
-	- Link de download do CV detectado automaticamente em `www/` e `assets/www/`.
+O diretório `rsconnect/shinyapps.io/` contém metadados de publicação do projeto no shinyapps.io. Para publicar, configure as credenciais do serviço no ambiente local e utilize o fluxo de publicação do RStudio ou do pacote `rsconnect`.
 
-- Header e Branding
-	- Título do navbar revertido para texto: **Marco Leal - Portfólio** (`app.R`).
-	- Hero/header da Home removido por solicitação; CSS contém regras para reintrodução com `object-fit:contain` caso necessário.
+Antes da publicação, revise:
 
-- Limpeza e manutenção
-	- Refatoração e consolidação de regras CSS para reduzir duplicação e uniformizar espaçamentos.
-	- README atualizado com resumo das modificações e próximos passos.
+- URLs de demos e redes sociais;
+- existência das imagens e PDFs em `assets/www/`;
+- disponibilidade de todas as dependências R;
+- configuração das variáveis de ambiente;
+- comportamento dos iframes em produção;
+- compatibilidade dos caminhos relativos com o provedor de hospedagem.
 
----
+## Autor
 
-Se preferir, posso transformar este histórico em um `CHANGELOG.md` seguindo o formato "Keep a Changelog" ou extrair entradas a partir do histórico Git (se o repositório estiver versionado). Deseja que eu faça isso? 
+**Marco Aurélio Valles Leal**  
+Estatístico | Data Analyst | Data Scientist | Business Intelligence | Data Engineering
 
+- GitHub: <https://github.com/marco-leal-analytics>
+- LinkedIn: <https://www.linkedin.com/in/marco-a-v-leal/>
+- Portfólio: <https://marco-leal-analytics.shinyapps.io/marco-leal-portfolio/>
