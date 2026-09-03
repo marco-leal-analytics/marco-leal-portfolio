@@ -1,10 +1,5 @@
 library(shiny)
 mod_contact_ui <- function(id) {
-  print(id)
-  print(class(id))
-  print(typeof(id))
-  ns <- shiny::NS(id)
-
   tagList(
     tags$section(
       class = "module-shell contact-module",
